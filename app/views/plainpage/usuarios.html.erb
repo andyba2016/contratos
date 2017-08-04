@@ -1,0 +1,186 @@
+<!-- page content -->
+<div class="right_col" role="main">
+  <div class="">
+    <div class="page-title">
+      <div class="title_left">
+        <h3>Usuarios</h3>
+      </div>
+
+      <div class="title_right">
+        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                              <button class="btn btn-default" type="button">Go!</button>
+                          </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="row">
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height:400px;">
+          <div class="x_title">
+            <h2>Usuarios</h2>
+            <ul class="nav navbar-right panel_toolbox">
+              <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Settings 1</a>
+                  </li>
+                  <li><a href="#">Settings 2</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+           <%= @user %>
+            <div class="clearfix"></div>
+          </div>
+<table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
+                          <th>Perfil</th>
+                          <th>Area</th>
+		          <th>Email</th>
+		          <th>Acciones</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                          <% @usuarios.each do |p| %>
+                          <tr>
+                          <th scope="row"><%= p.id%></th>
+                          <td><%= p.nombre%></td>
+                          <td><%= p.apellido%></td>
+                          <td><%= p.usuario%></td>
+			  <td><%= p.rol.descripcion if p.rol%></td>
+                          <td><%= p.area.descripcion if p.area%></td>
+			  <td><%= p.email %></td>
+			  <td>
+				<a href="/usuarios/delete/<%= p.id%>"><span class="fa fa-close" style="cursor:pointer;" alt="Eliminar"/></a>
+
+                                <a href="/usuarios/update/<%= p.id%>"><span style='padding-left:15Px;cursor:pointer;' class="fa fa-pencil" alt="Editar"/></a>
+
+
+
+			  </td>
+                        </tr>
+			<% end %>
+                      </tbody>
+                    </table>
+
+
+</div>
+    <div class="row">
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height:300px;">
+          <div class="x_title">
+            <h2>Nuevo</h2>
+            <ul class="nav navbar-right panel_toolbox">
+              <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Settings 1</a>
+                  </li>
+                  <li><a href="#">Settings 2</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+           <%= @user %>
+            <div class="clearfix"></div>
+          </div>
+
+
+
+<form method="POST" action="/usuarios/save">
+<div class="col-md-3 col-sm-3 col-xs-12 form-group has-feedback">
+   <input class="form-control has-feedback-left" name="nombre" id="nombre" placeholder="Nombre" value="<%= @usuario.nombre%>"  type="text">
+   <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+</div>
+<div class="col-md-3 col-sm-3 col-xs-12 form-group has-feedback">
+   <input class="form-control has-feedback-left" id="apellido" name="apellido" placeholder="Apellido" value="<%= @usuario.apellido%>" type="text">
+   <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+ <input class="form-control has-feedback-left" id="email" name="email" placeholder="Email" value="<%= @usuario.email%>" type="email">
+</div>
+
+<div class="col-md-3 col-sm-3 col-xs-12 form-group has-feedback">
+
+
+<!-- <% debug(@perfiles)%>-->
+
+<select name="perfil_id" id="perfil_id" class="form-control">
+   <option>Perfil</option>
+    <%
+    @seleccionado = ""
+    @perfiles.each do |per| 
+    unless @usuario.blank?
+     if @usuario.perfil_id == per.id
+        @seleccionado = "selected='selected'"
+     else
+        @seleccionado = ""
+     end
+    end
+    %>
+    <option value="<%= per.id %>" <%= @seleccionado %>><%= per.descripcion %></option>
+   
+   <% end %>
+</select>
+
+</div>
+<div class="col-md-3 col-sm-3 col-xs- form-group has-feedback">
+<select name="area_id" id="area_id" class="form-control">
+<option>Area</option>
+
+<%
+@seleccionado = ""
+@areas.each do |area|
+    unless @usuario.blank?
+     if @usuario.area_id == area.id
+        @seleccionado = "selected='selected'"
+     else
+        @seleccionado = ""
+     end
+    end
+ %>
+  <option value="<%= area.id %>" <%= @seleccionado %>><%= area.descripcion %></option>
+<% end %>
+
+</select>
+
+</div>
+
+
+<div class="col-md-3 col-sm-3 col-xs-6 form-group has-feedback">
+   <input class="form-control has-feedback-left" id="usuario" name="usuario" placeholder="Usuario" value="<%= @usuario.usuario%>" type="text">
+   <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+</div>
+<div class="col-md-3 col-sm-3 col-xs-6 form-group has-feedback">
+   <input class="form-control has-feedback-left" id="password" name="password" placeholder="Password" value="<%= @usuario.password%>" type="password">
+   <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+</div>
+<div class="col-lg-12 col-md-3 col-sm-3 col-xs-6 form-group has-feedback">
+   <input class="btn btn-success" value="Guardar" type="submit">
+</div>
+</form>
+
+
+
+
+</div>
+</div>
+</div>
+</div>

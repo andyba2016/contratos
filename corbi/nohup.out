@@ -1,0 +1,6 @@
+A server is already running. Check /opt/corbi/tmp/pids/server.pid.
+=> Booting WEBrick
+=> Rails 4.2.4 application starting in development on http://0.0.0.0:80
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+Exiting
