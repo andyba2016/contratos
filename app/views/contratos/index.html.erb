@@ -44,7 +44,6 @@
 
 		</div>
           </div>
-          <%= @object.attributes.class %>
           
           
 <table class="table table-bordered table-stripped">
@@ -54,7 +53,7 @@
                           <th><%= attr_name.camelize %></th>
 
 <% end %>                       
-                          
+      <th>Acciones</th>                    
                         </tr>
                       </thead>
                       <tbody>
@@ -65,9 +64,19 @@
 
 		<% @result.each do |r| %>
 			<tr>
-			<% @result.column_names.each do |col| %>
+		
+	<% @result.column_names.each do |col| %>
   
-				<td><%= r[col] %></td>
+				<td>
+<% if col.end_with?('_id') && col!='usuarios_id'  %>
+	<% @atributo = col[0...-3] %>
+	<%= @atributo %> 
+	<% unless r.send(@atributo).nil? %>
+	<%=  r.send(@atributo).descripcion %>
+	<% end %>
+<% else %>
+	<%= r[col] %>
+<% end %>      </td>
 			<% end %>
 
 
