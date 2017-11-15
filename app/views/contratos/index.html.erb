@@ -10,7 +10,7 @@
         <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Search for...">
-                    <span class="input-group-btn">
+            <span class="input-group-btn">
                               <button class="btn btn-default" type="button">Go!</button>
                           </span>
           </div>
@@ -22,122 +22,221 @@
     <div class="row">
 
       <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel" style="height:600px;">
+        <div class="x_panel" style="height:300px;">
           <div class="x_title">
             <h2>Contratos</h2>
             <ul class="nav navbar-right panel_toolbox">
-              <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Settings 1</a>
-                  </li>
-                  <li><a href="#">Settings 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li><a class="close-link"><i class="fa fa-close"></i></a>
-              </li>
             </ul>
             <div class="clearfix">
 
-		</div>
+            </div>
           </div>
-          
-          
-<table class="table table-bordered table-stripped">
-                      <thead>
-                        <tr>
-<% @object.attributes.each do |attr_name, attr_value| %>
-                          <th><%= attr_name.camelize %></th>
+          <form  class="form-inline" method="post" action="/contratos">
+            <div class="form-group">
+              <div class="controls">
+                <div class="col-md-11 col-sm-11 xdisplay_inputx form-group has-feedback">
+                  <input type="text" id="datetimepicker1" class="form-control has-feedback-left"  placeholder="First Date" aria-describedby="inputSuccess2Status4">
+                  <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
+                  <span id="inputSuccess2Status4" class="sr-only">(success)</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="controls">
+                <div class="col-md-11 col-sm-11 xdisplay_inputx form-group has-feedback">
+                  <input type="text" id="datetimepicker2" class="form-control has-feedback-left" data-datetimepicker data-click-target id="single_cal4" placeholder="First Date" aria-describedby="inputSuccess2Status4">
+                  <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
+                  <span id="inputSuccess2Status4" class="sr-only">(success)</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="area">Area:</label>
+              <select  name="area" class="form-control">
+              <% @lista_areas.each do |attr_name, attr_value| %>
+                    <option value="<%= attr_name.id %>"><%= attr_name.descripcion.camelize%></option>
+              <% end %>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="tipo">Tipo:</label>
+              <select name="tipo" class="form-control">
+                <% @lista_tipo.each do |attr_name| %>
+                    <option value="<%= attr_name %>"><%= attr_name[0]%></option>
+                <% end %>
+              </select>
+            </div>
+            <div class="form-group pull-right">
+              <button type="submit" class="btn btn-default">Buscar</button>
+            </div>
+          </form>
+          <table class="table table-bordered dataTable  table-stripped" id="tabla">
+            <thead>
+            <tr>
+              <% @object.attributes.each do |attr_name, attr_value| %>
+                  <th><%= attr_name.camelize %></th>
 
-<% end %>                       
-      <th>Acciones</th>                    
-                        </tr>
-                      </thead>
-                      <tbody>
+              <% end %>
+              <th>Acciones</th>
+            </tr>
+            </thead>
+            <tbody>
 
 
+            <% @result.each do |r| %>
+                <tr>
+
+                  <% @result.column_names.each do |col| %>
+
+                      <td>
+                        <% if col.end_with?('_id') && col!='usuarios_id' %>
+                            <% @atributo = col[0...-3] %>
+                            <!-- #@atributo-->
+                            <% unless r.send(@atributo).nil? %>
+                                <%= r.send(@atributo).descripcion %>
+                            <% end %>
+                        <% else %>
+                            <%= r[col] %>
+                        <% end %>      </td>
+                  <% end %>
 
 
+                  <td>
+                    <a href="/<%= controller_name %>/delete/<%= r.id %>"><span class="fa fa-close" style="cursor:pointer;" alt="Eliminar"/></a>
 
-		<% @result.each do |r| %>
-			<tr>
-		
-	<% @result.column_names.each do |col| %>
-  
-				<td>
-<% if col.end_with?('_id') && col!='usuarios_id'  %>
-	<% @atributo = col[0...-3] %>
-	<%= @atributo %> 
-	<% unless r.send(@atributo).nil? %>
-	<%=  r.send(@atributo).descripcion %>
-	<% end %>
-<% else %>
-	<%= r[col] %>
-<% end %>      </td>
-			<% end %>
+                    <a href="/<%= controller_name %>/update/<%= r.id %>"><span style='padding-left:15Px;cursor:pointer;' class="fa fa-pencil" alt="Editar"/></a>
 
 
-			  <td>
-				<a href="/<%=controller_name %>/delete/<%= r.id%>"><span class="fa fa-close" style="cursor:pointer;" alt="Eliminar"/></a>
+                  </td>
 
-                                <a href="/<%=controller_name %>/update/<%= r.id%>"><span style='padding-left:15Px;cursor:pointer;' class="fa fa-pencil" alt="Editar"/></a>
+            <% end %>
+            </tr>
 
-
-
-			  </td>
-
-		<% end %>                 
-			</tr>
-                        
-                      </tbody>
-                    </table>
-
-
+            </tbody>
+          </table>
 
 
         </div>
- <div class="row">
+        <div class="row">
 
 
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel" style="">
+              <div class="x_title">
+                <h2>Nuevo</h2>
+                <ul class="nav navbar-right panel_toolbox"></ul>
+                <div class="clearfix"></div>
+              </div>
 
+<!--              <form method="POST" action="/<%= controller_name %>/save">
 
-      <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel" style="height:300px;">
-          <div class="x_title">
-            <h2>Nuevo</h2>
-            <ul class="nav navbar-right panel_toolbox"></ul>
-            <div class="clearfix"></div>
+<%=  @object.inspect %>
+                <% @object.attributes.each do |attr_name, attr_value| %>
+                    <% if attr_name != "fecha_baja" and attr_name != "fecha_alta" and attr_name != "estado" %>
+                        <% if attr_name == "id" %>
+                            <input type="hidden" name="<%= attr_name %>" value="<%= attr_value %>"/>
+                        <% else %>
+                            <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
+                              <input class="form-control has-feedback-left" placeholder="<%= attr_name.camelize %>" name="<%= attr_name %>" value="<%= attr_value %>" type="text">
+                              <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                            </div>
+
+                        <% end %>
+                    <% end %>
+
+                <% end %>
+                <div class="col-lg-12 col-md-3 col-sm-3 col-xs-6 form-group has-feedback">
+                  <input class="btn btn-success" value="Guardar" type="submit">
+                </div>
+              </form>-->
+              <form id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
+
+                <div class="form-group">
+                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Tipo de contrato<span class="required">*</span>
+                  </label>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <select class="form-control">
+                      <option>Choose option</option>
+                      <option>Option one</option>
+                      <option>Option two</option>
+                      <option>Option three</option>
+                      <option>Option four</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Persona<span class="required">*</span>
+                  </label>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <select class="form-control">
+                      <option>Choose option</option>
+                      <option>Option one</option>
+                      <option>Option two</option>
+                      <option>Option three</option>
+                      <option>Option four</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Autoridad<span class="required">*</span>
+                  </label>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <select class="form-control">
+                      <option>Choose option</option>
+                      <option>Option one</option>
+                      <option>Option two</option>
+                      <option>Option three</option>
+                      <option>Option four</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Area <span class="required">*</span>
+                  </label>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <select class="form-control">
+                      <option>Choose option</option>
+                      <option>Option one</option>
+                      <option>Option two</option>
+                      <option>Option three</option>
+                      <option>Option four</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Fecha desde</label>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-md-3 col-sm-3 col-xs-12">Fecha hasta<span class="required">*</span>
+                  </label>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-md-3 col-sm-3 col-xs-12">Tarea<span class="required">*</span>
+                  </label>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <textarea id="message" required="required" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.." data-parsley-validation-threshold="10"></textarea>
+                  </div>
+                </div>
+
+                <div class="ln_solid"></div>
+                <div class="form-group">
+                  <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                  </div>
+                </div>
+
+              </form>
+
+            </div>
           </div>
-
-<form method="POST" action="/<%=controller_name%>/save">
-
-
-<% @object.attributes.each do |attr_name, attr_value| %>
-	 <% if attr_name != "fecha_baja" and attr_name != "fecha_alta" and attr_name != "estado" %>
-		<% if attr_name == "id" %>
-			<input type="hidden" name="<%= attr_name %>" value="<%= attr_value %>" />
-		<% else %>
-<div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
-   <input class="form-control has-feedback-left" placeholder="<%= attr_name.camelize %>" name="<%= attr_name %>" value="<%= attr_value %>" type="text">
-   <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
-</div>
-
-		<% end %>
-	<% end %>
-
-<% end %>
-<div class="col-lg-12 col-md-3 col-sm-3 col-xs-6 form-group has-feedback">
-   <input class="btn btn-success" value="Guardar" type="submit">
-</div>
-</form>
-
-
-
-
-</div>
-</div>
-</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

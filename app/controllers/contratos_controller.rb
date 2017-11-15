@@ -5,6 +5,9 @@ class ContratosController < ApplicationController
        @usuario = User.new(JSON.parse(session[:user].to_json))      
        @object = ContratoImplementacion.new(@usuario)
        @result = @object.search()
+       @lista_areas = Area.where(estado: 1)
+       @lista_tipo = {'Locacion de Obra' => 1, 'Locacion de Servicio' => 2}
+
        if params[:id]
 		      @object   = ContratoImplementacion.find(params[:id])
        end

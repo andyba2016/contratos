@@ -209,4 +209,4 @@ var theme = {
                     textStyle: {
                         fontFamily: 'Arial, Verdana, sans-serif'
                     }
-                }
+                };

@@ -13,6 +13,7 @@ Rails.application.routes.draw do
      get 'login' => 'plainlogin#login'
      post 'verify' => 'user#verify'
      get 'contratos'=>'contratos#index'
+     post 'contratos'=>'contratos#index'
      get 'contratos/update/:id'  => 'contratos#index' 
      get 'contratos/delete/:id'  => 'contratos#delete'
      post 'contratos/save'  => 'contratos#save'

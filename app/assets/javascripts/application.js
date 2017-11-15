@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require bootstrap-sprockets
+//= require js/datatables/jquery.dataTables.min.js
 
 //= require jquery_ujs
 //= require turbolinks
@@ -42,3 +43,6 @@
 //= require flash.js
 
 //= require plainpage
+
+//= require contratos.js
+
