@@ -35,7 +35,7 @@
             <div class="form-group">
               <div class="controls">
                 <div class="col-md-11 col-sm-11 xdisplay_inputx form-group has-feedback">
-                  <input type="text" id="datetimepicker1" class="form-control has-feedback-left"  placeholder="First Date" aria-describedby="inputSuccess2Status4">
+                  <input type="text" id="datetimepicker1" class="form-control has-feedback-left datetimepicker"  placeholder="First Date" aria-describedby="inputSuccess2Status4">
                   <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
                   <span id="inputSuccess2Status4" class="sr-only">(success)</span>
                 </div>
@@ -44,7 +44,7 @@
             <div class="form-group">
               <div class="controls">
                 <div class="col-md-11 col-sm-11 xdisplay_inputx form-group has-feedback">
-                  <input type="text" id="datetimepicker2" class="form-control has-feedback-left" data-datetimepicker data-click-target id="single_cal4" placeholder="First Date" aria-describedby="inputSuccess2Status4">
+                  <input type="text" id="datetimepicker2" class="form-control has-feedback-left datetimepicker" data-datetimepicker data-click-target id="single_cal4" placeholder="First Date" aria-describedby="inputSuccess2Status4">
                   <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
                   <span id="inputSuccess2Status4" class="sr-only">(success)</span>
                 </div>
@@ -149,18 +149,24 @@
                   <input class="btn btn-success" value="Guardar" type="submit">
                 </div>
               </form>-->
-              <form id="demo-form2" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
+              <form id="demo-form2"  method="POST" action="/<%= controller_name %>/save" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
 
                 <div class="form-group">
                   <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Tipo de contrato<span class="required">*</span>
                   </label>
                   <div class="col-md-6 col-sm-6 col-xs-12">
-                    <select class="form-control">
-                      <option>Choose option</option>
-                      <option>Option one</option>
-                      <option>Option two</option>
-                      <option>Option three</option>
-                      <option>Option four</option>
+                    <select class="form-control" name="tipo_id" id="tipo_id">
+                          <%
+                           @lista_tipo.each do |k,v|
+                          %>
+                          <option value="<%=v  %>">
+                              <%=
+                              k
+                              %>
+                          </option>
+                          <%
+                          end
+                          %>
                     </select>
                   </div>
                 </div>
@@ -168,12 +174,18 @@
                   <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Persona<span class="required">*</span>
                   </label>
                   <div class="col-md-6 col-sm-6 col-xs-12">
-                    <select class="form-control">
-                      <option>Choose option</option>
-                      <option>Option one</option>
-                      <option>Option two</option>
-                      <option>Option three</option>
-                      <option>Option four</option>
+                    <select name="persona_id" id="persona_id" class="form-control">
+                      <%=
+                        @persona.each do |k,v|
+                      %>
+                          <option value="<%=k.id%>">
+                            <%=
+                              k.apellido+', '+k.nombre
+                            %>
+                          </option>
+                      <%
+                        end
+                      %>
                     </select>
                   </div>
                 </div>
@@ -181,46 +193,65 @@
                   <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Autoridad<span class="required">*</span>
                   </label>
                   <div class="col-md-6 col-sm-6 col-xs-12">
-                    <select class="form-control">
-                      <option>Choose option</option>
-                      <option>Option one</option>
-                      <option>Option two</option>
-                      <option>Option three</option>
-                      <option>Option four</option>
-                    </select>
+                      <select name="autoridad_id" id="autoridad_id" class="form-control">
+                        <%=
+                          @persona.each do |k,v|
+                        %>
+                            <option value="<%=k.id%>">
+                              <%=
+                                k.apellido+', '+k.nombre
+                              %>
+                            </option>
+                        <%
+                          end
+                        %>
+                      </select>
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Area <span class="required">*</span>
                   </label>
                   <div class="col-md-6 col-sm-6 col-xs-12">
-                    <select class="form-control">
-                      <option>Choose option</option>
-                      <option>Option one</option>
-                      <option>Option two</option>
-                      <option>Option three</option>
-                      <option>Option four</option>
+                    <select name="area_id" id="area_id" class="form-control">
+                      <%=
+                        @lista_areas.each do |k,v|
+                      %>
+                          <option value="<%= k.id%>">
+                            <%= k.descripcion %>
+                          </option>
+                      <%
+                        end
+                      %>
                     </select>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Fecha desde</label>
-                  <div class="col-md-6 col-sm-6 col-xs-12">
+                  <!--div class="col-md-6 col-sm-6 col-xs-12">
                     <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                  </div-->
+
+                  <div class="col-md-6 col-sm-6 xdisplay_inputx form-group has-feedback">
+                    <input type="text"  name="fecha_desde_id" id="fecha_desde_id" id="datetimepicker3" data-datetimepicker class="form-control has-feedback-left datetimepicker"  placeholder="Fecha desde" aria-describedby="inputSuccess2Status4">
+                    <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
+                    <span id="inputSuccess2Status4" class="sr-only">(success)</span>
                   </div>
+
                 </div>
                 <div class="form-group">
                   <label class="control-label col-md-3 col-sm-3 col-xs-12">Fecha hasta<span class="required">*</span>
                   </label>
-                  <div class="col-md-6 col-sm-6 col-xs-12">
-                    <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                  <div class="col-md-6 col-sm-6 xdisplay_inputx form-group has-feedback">
+                    <input type="text"  name="fecha_hasta_id" id="fecha_hasta_id" data-datetimepicker class="form-control has-feedback-left datetimepicker"  placeholder="Fecha desde" aria-describedby="inputSuccess2Status4">
+                    <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
+                    <span id="inputSuccess2Status4" class="sr-only">(success)</span>
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="control-label col-md-3 col-sm-3 col-xs-12">Tarea<span class="required">*</span>
                   </label>
                   <div class="col-md-6 col-sm-6 col-xs-12">
-                    <textarea id="message" required="required" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.." data-parsley-validation-threshold="10"></textarea>
+                    <textarea id="message" name="tarea" id="tarea" required="required" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.." data-parsley-validation-threshold="10"></textarea>
                   </div>
                 </div>
 
