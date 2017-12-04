@@ -30,6 +30,8 @@ class ContratosController < ApplicationController
     @contrato.autoridad_id = params[:autoridad_id]
     @contrato.fecha_desde = params[:fecha_desde_id]
     @contrato.fecha_hasta = params[:fecha_hasta_id]
+    @contrato.estado = 1
+
 
     puts params.inspect
 

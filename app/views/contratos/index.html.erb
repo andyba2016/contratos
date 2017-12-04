@@ -7,14 +7,6 @@
       </div>
 
       <div class="title_right">
-        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search for...">
-            <span class="input-group-btn">
-                              <button class="btn btn-default" type="button">Go!</button>
-                          </span>
-          </div>
-        </div>
       </div>
     </div>
     <div class="clearfix"></div>
@@ -22,7 +14,7 @@
     <div class="row">
 
       <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="x_panel" style="height:300px;">
+        <div class="x_panel" >
           <div class="x_title">
             <h2>Contratos</h2>
             <ul class="nav navbar-right panel_toolbox">
@@ -86,10 +78,11 @@
             <% @result.each do |r| %>
                 <tr>
 
-                  <% @result.column_names.each do |col| %>
+                  <% @result.column_names.each do |col|
+                  %>
 
                       <td>
-                        <% if col.end_with?('_id') && col!='usuarios_id' %>
+                        <% if col.end_with?('_id') && col!='usuarios_id' && col!='estado' %>
                             <% @atributo = col[0...-3] %>
                             <!-- #@atributo-->
                             <% unless r.send(@atributo).nil? %>
@@ -101,10 +94,24 @@
                   <% end %>
 
 
-                  <td>
-                    <a href="/<%= controller_name %>/delete/<%= r.id %>"><span class="fa fa-close" style="cursor:pointer;" alt="Eliminar"/></a>
 
-                    <a href="/<%= controller_name %>/update/<%= r.id %>"><span style='padding-left:15Px;cursor:pointer;' class="fa fa-pencil" alt="Editar"/></a>
+                  <td>
+
+                    <%
+                    if @usuario.perfil_id == 1
+                    %>
+                    <a><span  class="fa fa-file" alt="Ver"/></a>
+                    <a><span class="fa fa-money" style="cursor:pointer;" alt="Pagos"/></a>
+                    <a href="/<%= controller_name %>/update/<%= r.id %>" ><span class="fa fa-pencil" alt="Editar"/></a>
+                    <a href="/<%= controller_name %>/delete/<%= r.id %>" class="eliminar"><span class="fa fa-close" style="cursor:pointer;" alt="Eliminar"/></a>
+                    <%
+                    else
+                      %>
+
+                        <a><span style='padding-left:15Px;cursor:pointer;' class="fa fa-file" alt="Ver"/></a>
+                        <%
+                    end
+                    %>
 
 
                   </td>
@@ -117,18 +124,23 @@
 
 
         </div>
-        <div class="row">
 
 
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="x_panel" style="">
-              <div class="x_title">
-                <h2>Nuevo</h2>
-                <ul class="nav navbar-right panel_toolbox"></ul>
-                <div class="clearfix"></div>
-              </div>
+    </div>
+  </div>
+</div>
+  <div class="row">
 
-<!--              <form method="POST" action="/<%= controller_name %>/save">
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="x_panel" style="">
+        <div class="x_title">
+          <h2>Nuevo</h2>
+          <ul class="nav navbar-right panel_toolbox"></ul>
+          <div class="clearfix"></div>
+        </div>
+
+        <!--              <form method="POST" action="/<%= controller_name %>/save">
 
 <%=  @object.inspect %>
                 <% @object.attributes.each do |attr_name, attr_value| %>
@@ -149,125 +161,124 @@
                   <input class="btn btn-success" value="Guardar" type="submit">
                 </div>
               </form>-->
-              <form id="demo-form2"  method="POST" action="/<%= controller_name %>/save" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
+        <form id="demo-form2"  method="POST" action="/<%= controller_name %>/save" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
 
-                <div class="form-group">
-                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Tipo de contrato<span class="required">*</span>
-                  </label>
-                  <div class="col-md-6 col-sm-6 col-xs-12">
-                    <select class="form-control" name="tipo_id" id="tipo_id">
-                          <%
-                           @lista_tipo.each do |k,v|
-                          %>
-                          <option value="<%=v  %>">
-                              <%=
-                              k
-                              %>
-                          </option>
-                          <%
-                          end
-                          %>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Persona<span class="required">*</span>
-                  </label>
-                  <div class="col-md-6 col-sm-6 col-xs-12">
-                    <select name="persona_id" id="persona_id" class="form-control">
+          <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Tipo de contrato<span class="required">*</span>
+            </label>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <select class="form-control" name="tipo_id" id="tipo_id">
+                <%
+                  @lista_tipo.each do |k,v|
+                %>
+                    <option value="<%=v  %>">
                       <%=
-                        @persona.each do |k,v|
+                        k
                       %>
-                          <option value="<%=k.id%>">
-                            <%=
-                              k.apellido+', '+k.nombre
-                            %>
-                          </option>
-                      <%
-                        end
-                      %>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Autoridad<span class="required">*</span>
-                  </label>
-                  <div class="col-md-6 col-sm-6 col-xs-12">
-                      <select name="autoridad_id" id="autoridad_id" class="form-control">
-                        <%=
-                          @persona.each do |k,v|
-                        %>
-                            <option value="<%=k.id%>">
-                              <%=
-                                k.apellido+', '+k.nombre
-                              %>
-                            </option>
-                        <%
-                          end
-                        %>
-                      </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Area <span class="required">*</span>
-                  </label>
-                  <div class="col-md-6 col-sm-6 col-xs-12">
-                    <select name="area_id" id="area_id" class="form-control">
-                      <%=
-                        @lista_areas.each do |k,v|
-                      %>
-                          <option value="<%= k.id%>">
-                            <%= k.descripcion %>
-                          </option>
-                      <%
-                        end
-                      %>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Fecha desde</label>
-                  <!--div class="col-md-6 col-sm-6 col-xs-12">
-                    <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
-                  </div-->
-
-                  <div class="col-md-6 col-sm-6 xdisplay_inputx form-group has-feedback">
-                    <input type="text"  name="fecha_desde_id" id="fecha_desde_id" id="datetimepicker3" data-datetimepicker class="form-control has-feedback-left datetimepicker"  placeholder="Fecha desde" aria-describedby="inputSuccess2Status4">
-                    <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
-                    <span id="inputSuccess2Status4" class="sr-only">(success)</span>
-                  </div>
-
-                </div>
-                <div class="form-group">
-                  <label class="control-label col-md-3 col-sm-3 col-xs-12">Fecha hasta<span class="required">*</span>
-                  </label>
-                  <div class="col-md-6 col-sm-6 xdisplay_inputx form-group has-feedback">
-                    <input type="text"  name="fecha_hasta_id" id="fecha_hasta_id" data-datetimepicker class="form-control has-feedback-left datetimepicker"  placeholder="Fecha desde" aria-describedby="inputSuccess2Status4">
-                    <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
-                    <span id="inputSuccess2Status4" class="sr-only">(success)</span>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="control-label col-md-3 col-sm-3 col-xs-12">Tarea<span class="required">*</span>
-                  </label>
-                  <div class="col-md-6 col-sm-6 col-xs-12">
-                    <textarea id="message" name="tarea" id="tarea" required="required" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.." data-parsley-validation-threshold="10"></textarea>
-                  </div>
-                </div>
-
-                <div class="ln_solid"></div>
-                <div class="form-group">
-                  <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                    <button type="submit" class="btn btn-success">Enviar</button>
-                  </div>
-                </div>
-
-              </form>
-
+                    </option>
+                <%
+                  end
+                %>
+              </select>
             </div>
           </div>
-        </div>
+          <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Persona<span class="required">*</span>
+            </label>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <select name="persona_id" id="persona_id" class="form-control">
+                <%=
+                  @persona.each do |k,v|
+                %>
+                    <option value="<%=k.id%>">
+                      <%=
+                        k.apellido+', '+k.nombre
+                      %>
+                    </option>
+                <%
+                  end
+                %>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Autoridad<span class="required">*</span>
+            </label>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <select name="autoridad_id" id="autoridad_id" class="form-control">
+                <%=
+                  @persona.each do |k,v|
+                %>
+                    <option value="<%=k.id%>">
+                      <%=
+                        k.apellido+', '+k.nombre
+                      %>
+                    </option>
+                <%
+                  end
+                %>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Area <span class="required">*</span>
+            </label>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <select name="area_id" id="area_id" class="form-control">
+                <%=
+                  @lista_areas.each do |k,v|
+                %>
+                    <option value="<%= k.id%>">
+                      <%= k.descripcion %>
+                    </option>
+                <%
+                  end
+                %>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Fecha desde</label>
+            <!--div class="col-md-6 col-sm-6 col-xs-12">
+              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+            </div-->
+
+            <div class="col-md-6 col-sm-6 xdisplay_inputx form-group has-feedback">
+              <input type="text"  name="fecha_desde_id" id="fecha_desde_id" id="datetimepicker3" data-datetimepicker class="form-control has-feedback-left datetimepicker"  placeholder="Fecha desde" aria-describedby="inputSuccess2Status4">
+              <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
+              <span id="inputSuccess2Status4" class="sr-only">(success)</span>
+            </div>
+
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12">Fecha hasta<span class="required">*</span>
+            </label>
+            <div class="col-md-6 col-sm-6 xdisplay_inputx form-group has-feedback">
+              <input type="text"  name="fecha_hasta_id" id="fecha_hasta_id" data-datetimepicker class="form-control has-feedback-left datetimepicker"  placeholder="Fecha desde" aria-describedby="inputSuccess2Status4">
+              <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
+              <span id="inputSuccess2Status4" class="sr-only">(success)</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12">Tarea<span class="required">*</span>
+            </label>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <textarea id="message" name="tarea" id="tarea" required="required" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.." data-parsley-validation-threshold="10"></textarea>
+            </div>
+          </div>
+
+          <div class="ln_solid"></div>
+          <div class="form-group">
+            <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+              <button type="submit" class="btn btn-success">Enviar</button>
+            </div>
+          </div>
+
+        </form>
+
       </div>
     </div>
   </div>
 </div>
+</div>
+<%= javascript_include_tag( 'contratos' ) %>

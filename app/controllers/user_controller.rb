@@ -15,7 +15,7 @@ class UserController < ApplicationController
      unless @users.nil?
           if @users.password == self.create(params[:password])
               session[:user] = @users
-              redirect_to url_for(:controller => 'plainpage', :action => 'usuarios')
+              redirect_to url_for(:controller => 'contratos', :action => 'index')
               return     
           end
      end

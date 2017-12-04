@@ -26,6 +26,7 @@
 
       <br />
 
+
       <!-- sidebar menu -->
       <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
@@ -34,6 +35,7 @@
           <ul class="nav side-menu">
             <li><a href="/contratos"><i class="fa fa-table"></i> Contratos </a>
             </li>
+            <% if usuario.perfil_id == 1 %>
             <li><a><i class="fa fa-table"></i> Administrador <span class="fa fa-chevron-down"></span></a>
               <ul class="nav child_menu" style="display: none">
                 <li><a href="/usuarios">Usuarios</a>
@@ -46,11 +48,13 @@
                 </li>
               </ul>
             </li>
+            <% end %>
           </ul>
         </div>
 
       </div>
       <!-- /sidebar menu -->
+
 
       <!-- /menu footer buttons -->
       <div class="sidebar-footer hidden-small">

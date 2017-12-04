@@ -44,5 +44,4 @@
 
 //= require plainpage
 
-//= require contratos.js
 
