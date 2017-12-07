@@ -100,8 +100,8 @@
                     <%
                     if @usuario.perfil_id == 1
                     %>
-                    <a><span  class="fa fa-file" alt="Ver"/></a>
-                    <a><span class="fa fa-money" style="cursor:pointer;" alt="Pagos"/></a>
+                    <a  href="/cuotas/update/<%= r.id %>"><span  class="fa fa-file" alt="Ver"/></a>
+                    <a href="/cuotas/update/<%= r.id %>"><span class="fa fa-money" style="cursor:pointer;" alt="Pagos"/></a>
                     <a href="/<%= controller_name %>/update/<%= r.id %>" ><span class="fa fa-pencil" alt="Editar"/></a>
                     <a href="/<%= controller_name %>/delete/<%= r.id %>" class="eliminar"><span class="fa fa-close" style="cursor:pointer;" alt="Eliminar"/></a>
                     <%
