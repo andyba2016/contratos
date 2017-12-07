@@ -4,7 +4,7 @@ class CuotasController < ApplicationController
         @result = Cuota.where(estado:1)
         @object = Cuota.new
         if params[:id]
-                @object   =Cuota.find(params[:id])
+                @object   =Cuota.where({contrato_id: params[:id]})
         end
         @ref = request.referer
  end
