@@ -2,7 +2,6 @@ class ContratosController < ApplicationController
  before_action :require_login
 
    def index
-       print(params)
        @usuario = User.new(JSON.parse(session[:user].to_json))      
        @object = ContratoImplementacion.new(@usuario)
        @result = @object.search()

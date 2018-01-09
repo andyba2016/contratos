@@ -162,6 +162,7 @@
                   <input class="btn btn-success" value="Guardar" type="submit">
                 </div>
               </form>-->
+        <%=@object.inspect  %>
         <form id="demo-form2"  method="POST" action="/<%= controller_name %>/save" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
 
           <div class="form-group">
@@ -245,7 +246,8 @@
             </div-->
 
             <div class="col-md-6 col-sm-6 xdisplay_inputx form-group has-feedback">
-              <input type="text"  name="fecha_desde_id" id="fecha_desde_id" id="datetimepicker3" data-datetimepicker class="form-control has-feedback-left datetimepicker"  placeholder="Fecha desde" aria-describedby="inputSuccess2Status4">
+              <input type="text"  name="fecha_desde_id" id="fecha_desde_id" id="datetimepicker3" data-datetimepicker class="form-control has-feedback-left datetimepicker"  placeholder="Fecha desde" aria-describedby="inputSuccess2Status4"
+                     va='01/01/2015' value="<%= @object.fecha_desde.to_date.strftime('%d/%m/%Y') %>">
               <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
               <span id="inputSuccess2Status4" class="sr-only">(success)</span>
             </div>
@@ -255,7 +257,8 @@
             <label class="control-label col-md-3 col-sm-3 col-xs-12">Fecha hasta<span class="required">*</span>
             </label>
             <div class="col-md-6 col-sm-6 xdisplay_inputx form-group has-feedback">
-              <input type="text"  name="fecha_hasta_id" id="fecha_hasta_id" data-datetimepicker class="form-control has-feedback-left datetimepicker"  placeholder="Fecha desde" aria-describedby="inputSuccess2Status4">
+              <input type="text"  name="fecha_hasta_id" id="fecha_hasta_id" data-datetimepicker class="form-control has-feedback-left datetimepicker"  placeholder="Fecha desde" aria-describedby="inputSuccess2Status4"
+                     va='01/01/2015' value="<%= @object.fecha_hasta.to_date.strftime('%d/%m/%Y') %>">
               <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
               <span id="inputSuccess2Status4" class="sr-only">(success)</span>
             </div>

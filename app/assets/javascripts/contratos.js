@@ -63,6 +63,13 @@ showDropdowns: true
 });
 
 
+    var date1 = $('#fecha_desde_id').val();
+    var date2 = $('#fecha_hasta_id').val();
+
+    // set the values
+    $('#fecha_desde_id').val(date1);
+    $('#fecha_hasta_id').val(date2);
+
 } );
 
 
