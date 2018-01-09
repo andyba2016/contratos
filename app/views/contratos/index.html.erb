@@ -27,7 +27,7 @@
             <div class="form-group">
               <div class="controls">
                 <div class="col-md-11 col-sm-11 xdisplay_inputx form-group has-feedback">
-                  <input type="text" id="datetimepicker1" class="form-control has-feedback-left datetimepicker"  placeholder="First Date" aria-describedby="inputSuccess2Status4">
+                  <input type="text" id="datetimepicker1" class="form-control has-feedback-left datetimepicker"  name="fecha_desde" placeholder="First Date" aria-describedby="inputSuccess2Status4">
                   <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
                   <span id="inputSuccess2Status4" class="sr-only">(success)</span>
                 </div>
@@ -36,7 +36,7 @@
             <div class="form-group">
               <div class="controls">
                 <div class="col-md-11 col-sm-11 xdisplay_inputx form-group has-feedback">
-                  <input type="text" id="datetimepicker2" class="form-control has-feedback-left datetimepicker" data-datetimepicker data-click-target id="single_cal4" placeholder="First Date" aria-describedby="inputSuccess2Status4">
+                  <input type="text" id="datetimepicker2" class="form-control has-feedback-left datetimepicker" name="fecha_hasta" data-datetimepicker data-click-target id="single_cal4" placeholder="First Date" aria-describedby="inputSuccess2Status4">
                   <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
                   <span id="inputSuccess2Status4" class="sr-only">(success)</span>
                 </div>
@@ -45,6 +45,7 @@
             <div class="form-group">
               <label for="area">Area:</label>
               <select  name="area" class="form-control">
+                <option value="-1">Todas</option>
               <% @lista_areas.each do |attr_name, attr_value| %>
                     <option value="<%= attr_name.id %>"><%= attr_name.descripcion.camelize%></option>
               <% end %>
@@ -100,8 +101,8 @@
                     <%
                     if @usuario.perfil_id == 1
                     %>
-                    <a  href="/cuotas/update/<%= r.id %>"><span  class="fa fa-file" alt="Ver"/></a>
-                    <a href="/cuotas/update/<%= r.id %>"><span class="fa fa-money" style="cursor:pointer;" alt="Pagos"/></a>
+                    <a><span  class="fa fa-file" alt="Ver"/></a>
+                    <a><span class="fa fa-money" style="cursor:pointer;" alt="Pagos"/></a>
                     <a href="/<%= controller_name %>/update/<%= r.id %>" ><span class="fa fa-pencil" alt="Editar"/></a>
                     <a href="/<%= controller_name %>/delete/<%= r.id %>" class="eliminar"><span class="fa fa-close" style="cursor:pointer;" alt="Eliminar"/></a>
                     <%

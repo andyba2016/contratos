@@ -10,6 +10,7 @@ $(document).ready(function() {
         "searching": false,
         "pageLength": 10,
         "bLengthChange": false,
+        "order": [[ 0, 'desc' ]],
         "language": {
             "paginate": {
                 "previous": "Anterior",
