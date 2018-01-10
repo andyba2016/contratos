@@ -8,10 +8,16 @@ class ContratosController < ApplicationController
        @lista_areas = Area.where(estado: 1)
        @lista_tipo = {'Locacion de Obra' => 1, 'Locacion de Servicio' => 2}
        @persona = Personas.where(estado:1)
+       @usuarios = User.where(estado:1)
+
 
        if params[:id]
 		      @object   = ContratoImplementacion.find(params[:id])
+       else
+         print "Paso"
+         @object = Contrato.new()
        end
+
        @ref = request.referer
    end   
    

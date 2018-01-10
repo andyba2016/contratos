@@ -163,6 +163,18 @@
                 </div>
               </form>-->
         <%=@object.inspect  %>
+        <%=@usuario.inspect%>
+        <%
+
+          if(@object.fecha_hasta.nil?)
+
+            @object.fecha_hasta = Time.now.strftime("%Y-%m-%d")
+            @object.fecha_desde = Time.now.strftime("%Y-%m-%d")
+            @object.area_id = 1
+            @object.personas_id = 1
+          end
+
+        %>
         <form id="demo-form2"  method="POST" action="/<%= controller_name %>/save" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
 
           <div class="form-group">
@@ -190,15 +202,7 @@
             <div class="col-md-6 col-sm-6 col-xs-12">
               <select name="persona_id" id="persona_id" class="form-control">
                 <%=
-                  @persona.each do |k,v|
-                %>
-                    <option value="<%=k.id%>">
-                      <%=
-                        k.apellido+', '+k.nombre
-                      %>
-                    </option>
-                <%
-                  end
+                  options_from_collection_for_select(@persona, 'id', 'descripcion', @object.personas_id)
                 %>
               </select>
             </div>
@@ -209,15 +213,9 @@
             <div class="col-md-6 col-sm-6 col-xs-12">
               <select name="autoridad_id" id="autoridad_id" class="form-control">
                 <%=
-                  @persona.each do |k,v|
-                %>
-                    <option value="<%=k.id%>">
-                      <%=
-                        k.apellido+', '+k.nombre
-                      %>
-                    </option>
-                <%
-                  end
+
+                  options_from_collection_for_select(@usuarios, 'id', 'apellido', @object.autoridad_id)
+
                 %>
               </select>
             </div>
@@ -228,13 +226,7 @@
             <div class="col-md-6 col-sm-6 col-xs-12">
               <select name="area_id" id="area_id" class="form-control">
                 <%=
-                  @lista_areas.each do |k,v|
-                %>
-                    <option value="<%= k.id%>">
-                      <%= k.descripcion %>
-                    </option>
-                <%
-                  end
+                  options_from_collection_for_select(@lista_areas, 'id', 'descripcion', @object.area_id)
                 %>
               </select>
             </div>
@@ -244,7 +236,6 @@
             <!--div class="col-md-6 col-sm-6 col-xs-12">
               <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
             </div-->
-
             <div class="col-md-6 col-sm-6 xdisplay_inputx form-group has-feedback">
               <input type="text"  name="fecha_desde_id" id="fecha_desde_id" id="datetimepicker3" data-datetimepicker class="form-control has-feedback-left datetimepicker"  placeholder="Fecha desde" aria-describedby="inputSuccess2Status4"
                      va='01/01/2015' value="<%= @object.fecha_desde.to_date.strftime('%d/%m/%Y') %>">

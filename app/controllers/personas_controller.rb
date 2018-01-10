@@ -10,7 +10,7 @@ def index
  end
 
   def save
-        Rails.logger.debug(params)
+	Rails.logger.debug(params)
 	@personas = Personas.where({id: params[:id]}).first_or_create(:estado=>1)
 	@personas.nombre=params[:nombre]
 	@personas.apellido=params[:apellido]

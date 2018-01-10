@@ -5,5 +5,7 @@ class Contrato < ActiveRecord::Base
    belongs_to :usuarios, foreign_key: "usuarios_id"
    belongs_to :autoridad, foreign_key: "autoridad__id"
    belongs_to :tipo_contrato, foreign_key: "tipo_contrato_id"
+
+
 end
 
