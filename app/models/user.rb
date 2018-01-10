@@ -6,6 +6,10 @@ class User < ActiveRecord::Base
       write_attribute(:password, Digest::SHA2.hexdigest("barbieri" + str))
   end
 
+  def descripcion()
+    self.apellido+', '+self.nombre
+  end
+
 end
 
 
