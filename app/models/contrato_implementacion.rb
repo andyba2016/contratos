@@ -7,7 +7,7 @@ class ContratoImplementacion < Contrato
 
   def search()
     if 1 == 1
-      @result = Contrato.where({:estado => 1}).order("contratos.id DESC").limit(100)
+      @result = Contrato.where({:estado => 1,:area_id=>params[:area]}).order("contratos.id DESC").limit(100)
     else
       @result = Contrato.where({:area_id => self.area.id}).order("contratos.id DESC").limit(100)
     end

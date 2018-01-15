@@ -171,11 +171,9 @@
                   <input class="btn btn-success" value="Guardar" type="submit">
                 </div>
               </form>-->
-  
+
         <%
-
           if (@object.fecha_hasta.nil?)
-
             @object.fecha_hasta = Time.now.strftime("%Y-%m-%d")
             @object.fecha_desde = Time.now.strftime("%Y-%m-%d")
             @object.area_id = 1

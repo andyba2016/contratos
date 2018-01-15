@@ -3,7 +3,7 @@ class ContratosController < ApplicationController
 
    def index
        @usuario = User.new(JSON.parse(session[:user].to_json))      
-       @object = ContratoImplementacion.new(@usuario)
+       @object = ContratoImplementacion.new(@usuario,params)
        @result = @object.search()
        @lista_areas = Area.where(estado: 1)
        @lista_tipo = {'Locacion de Obra' => 1, 'Locacion de Servicio' => 2}
