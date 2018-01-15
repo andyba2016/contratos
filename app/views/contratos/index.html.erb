@@ -68,13 +68,15 @@
             <tr>
               <th>Contratado</th>
               <th>Autoridad</th>
+              <th>Area</th>
+              <th>Cargo</th>
+              <th>N. Resol.</th>
               <th>Fecha desde</th>
               <th>Fecha hasta</th>
               <th>Acciones</th>
             </tr>
             </thead>
             <tbody>
-
 
             <% @result.each do |r| %>
                 <tr>
@@ -89,12 +91,26 @@
                   </td>
                   <td>
                     <%=
-                      if(r.usuarios_id)
-                        r.usuarios_id
+                      if(r.autoridad_id)
+                        r.autoridad_id
+                        @usuarios.inspect
+                        autoridad = @usuarios.find(r.autoridad_id)
+                        if(autoridad)
+                          autoridad.descripcion
+                          end
                       else
                         'IDENTIFICAR'
                       end
                     %>
+                  </td>
+                  <td>
+                    <%= r.area.descripcion%>
+                  </td>
+                  <td>
+                    <%= r.cargo %>
+                  </td>
+                  <td>
+                    <%= r.numero%>
                   </td>
                   <td>
                     <%= r.fecha_desde%>
@@ -155,8 +171,7 @@
                   <input class="btn btn-success" value="Guardar" type="submit">
                 </div>
               </form>-->
-        <%= @object.inspect %>
-        <%= @usuario.inspect %>
+  
         <%
 
           if (@object.fecha_hasta.nil?)
