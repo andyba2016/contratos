@@ -45,7 +45,7 @@
             <div class="form-group">
               <label for="area">Area:</label>
               <select name="area" class="form-control">
-                <option value="-1">Todas</option>
+                <option value="">Todas</option>
                 <% @lista_areas.each do |attr_name, attr_value| %>
                     <option value="<%= attr_name.id %>"><%= attr_name.descripcion.camelize %></option>
                 <% end %>
