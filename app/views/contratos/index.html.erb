@@ -87,48 +87,48 @@
             <% @result.each do |r| %>
                 <tr>
                   <td>
-                  <%=
-                    if(r.personas)
-                      r.personas.apellido+','+r.personas.nombre
-                    else
-                     'IDENTIFICAR'
-                    end
-                  %>
-                  </td>
-                  <td>
                     <%=
-                      if(r.autoridad_id)
-                        r.autoridad_id
-                        @usuarios.inspect
-                        autoridad = @usuarios.find(r.autoridad_id)
-                        if(autoridad)
-                          autoridad.descripcion
-                          end
+                      if (r.personas)
+                        r.personas.apellido+','+r.personas.nombre
                       else
                         'IDENTIFICAR'
                       end
                     %>
                   </td>
                   <td>
-                    <%= r.area.descripcion%>
+                    <%=
+                      if (r.autoridad_id)
+                        r.autoridad_id
+                        @usuarios.inspect
+                        autoridad = @usuarios.find(r.autoridad_id)
+                        if (autoridad)
+                          autoridad.descripcion
+                        end
+                      else
+                        'IDENTIFICAR'
+                      end
+                    %>
+                  </td>
+                  <td>
+                    <%= r.area.descripcion %>
                   </td>
                   <td>
                     <%= r.cargo %>
                   </td>
                   <td>
-                    <%= r.numero%>
+                    <%= r.numero %>
                   </td>
                   <td>
-                    <%= r.fecha_desde%>
+                    <%= r.fecha_desde %>
                   </td>
-                  <td><%= r.fecha_hasta%>
+                  <td><%= r.fecha_hasta %>
                   </td>
                   <td>
-                    <a><span class="fa fa-file" alt="Ver"/></a>
-                    <a><span class="fa fa-money" style="cursor:pointer;" alt="Pagos"/></a>
-                    <a href="/<%= controller_name %>/update/<%= r.id %>"><span class="fa fa-pencil" alt="Editar"/></a>
-                    <a href="/<%= controller_name %>/delete/<%= r.id %>" class="eliminar"><span class="fa fa-close" style="cursor:pointer;" alt="Eliminar"/></a>
-                    <a><span style='padding-left:15Px;cursor:pointer;' class="fa fa-file" alt="Ver"/></a>
+                    <a><span class="fa fa-eye" style='padding-left:15Px;cursor:pointer;' alt="Ver"/></a>
+                    <a href="/cuotas/<%= r.id %>"><span class="fa fa-money" style='cursor:pointer;padding-right:5Px;padding-left:5Px;cursor:pointer;' alt="Pagos"/></a>
+                    <a href="/<%= controller_name %>/update/<%= r.id %>"><span class="fa fa-pencil" style='padding-left:5Px;cursor:pointer;' alt="Editar"/></a>
+                    <a href="/<%= controller_name %>/delete/<%= r.id %>" class="eliminar"><span class="fa fa-close" style='padding-left:5Px;cursor:pointer;' style="cursor:pointer;" alt="Eliminar"/></a>
+                    <a><span style='padding-left:5Px;cursor:pointer;' class="fa fa-file" alt="Ver"/></a>
 
 
                   </td>
@@ -152,7 +152,22 @@
     <div class="col-md-12 col-sm-12 col-xs-12">
       <div class="x_panel" style="">
         <div class="x_title">
-          <h2>Nuevo</h2>
+
+          <%
+            if not request[:id]
+          %>
+              <h2>Nuevo</h2>
+          <%
+            else
+          %>
+              <h2>Editar</h2>
+          <%
+            end
+
+          %>
+
+
+
           <ul class="nav navbar-right panel_toolbox"></ul>
           <div class="clearfix"></div>
         </div>
@@ -179,7 +194,7 @@
               </form>-->
 
         <%
-          if (@object.fecha_hasta.nil? or @object.fecha_desde.nil? )
+          if (@object.fecha_hasta.nil? or @object.fecha_desde.nil?)
             @object.fecha_hasta = Time.now.strftime("%Y-%m-%d")
             @object.fecha_desde = (Time.now - 5.month).strftime("%Y-%m-%d")
             @object.area_id = 1
@@ -188,7 +203,7 @@
 
         %>
         <form id="demo-form2" method="POST" action="/<%= controller_name %>/save" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
-
+          <input type="hidden" name="id" id="id" value="<%= request[:id]%>">
           <div class="form-group">
             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Tipo de
               contrato<span class="required">*</span>
@@ -269,10 +284,26 @@
             </div>
           </div>
           <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12">Cargo<span class="required">*</span>
+            </label>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <input name="cargo" id="cargo" class="form-control" value="<%= @object.cargo %>"/>
+            </div>
+          </div>
+          <div class="form-group">
             <label class="control-label col-md-3 col-sm-3 col-xs-12">Tarea<span class="required">*</span>
             </label>
             <div class="col-md-6 col-sm-6 col-xs-12">
-              <textarea id="message" name="tarea" id="tarea" required="required" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.." data-parsley-validation-threshold="10"></textarea>
+              <textarea id="message" name="tarea" id="tarea" required="required" class="form-control" name="message">
+                 <%= @object.tarea %>
+              </textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12">N.Res:<span class="required">*</span>
+            </label>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <input name="numero" id="numero" class="form-control" value="<%= @object.numero %>"/>
             </div>
           </div>
 
@@ -280,6 +311,16 @@
           <div class="form-group">
             <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
               <button type="submit" class="btn btn-success">Enviar</button>
+
+              <%
+                if request[:id]
+              %>
+                  <input type="button" onclick="window.location.href='/contratos'" value="Cancelar" class="btn btn-info">
+              <%
+                end
+              %>
+
+
             </div>
           </div>
 

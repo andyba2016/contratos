@@ -6,7 +6,7 @@ class ContratosController < ApplicationController
     @object = ContratoImplementacion.new(@usuario)
     @result = @object.search(params)
     @lista_areas = Area.where(estado: 1)
-    @lista_tipo = {'Locacion de Obra' => 1, 'Locacion de Servicio' => 2}
+    @lista_tipo = {'Locacion de Servicio' => 2}
     @persona = Personas.where(estado: 1)
     @usuarios = User.where(estado: 1)
 
@@ -24,9 +24,9 @@ class ContratosController < ApplicationController
 
   def save
     @usuario = User.new(JSON.parse(session[:user].to_json))
-    @contrato = ContratoImplementacion.new(@usuario)
+    #@contrato = ContratoImplementacion.new(@usuario)
     #@contrato =	ContratoImplementacion.where({id: params[:id]}).first_or_create(:estado=>1,:usuario=>@usuario)
-
+    @contrato =	Contrato.where({id: params[:id]}).first_or_create(:estado=>1)
     #implementar la sobreescritura }, por ej
     #"tipo_id"=>"1", "persona_id"=>"9", "autoridad_id"=>"9", "area_id"=>"3", "fecha_desde_id"=>"23/11/2017", "fecha_hasta_id"=>"23/11/2017",
     @contrato.area_id = params[:area_id]
@@ -41,6 +41,8 @@ class ContratosController < ApplicationController
     puts params.inspect
 
     @contrato.tarea=params[:tarea]
+    @contrato.cargo=params[:cargo]
+    @contrato.numero = params[:numero]
     @contrato.save
     redirect_to :contratos
 
