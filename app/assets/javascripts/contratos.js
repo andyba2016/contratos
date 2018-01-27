@@ -69,7 +69,7 @@ showDropdowns: true
     // set the values
     $('#fecha_desde_id').val(date1);
     $('#fecha_hasta_id').val(date2);
-
+    $('#datetimepicker1').val(date1);
 } );
 
 

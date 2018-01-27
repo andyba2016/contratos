@@ -59,7 +59,13 @@
                 <% end %>
               </select>
             </div>
+            <div class="form-group">
+              <label for="res">N. Resol.:</label>
+              <label></label>
+              <input type="text" width="12" name="resol" id="resol" maxlength="12" class="form-control">
+            </div>
             <div class="form-group pull-right">
+              <input type="hidden" name="busqueda" id="busqueda" value="1"/>
               <button type="submit" class="btn btn-default">Buscar</button>
             </div>
           </form>
@@ -173,9 +179,9 @@
               </form>-->
 
         <%
-          if (@object.fecha_hasta.nil?)
+          if (@object.fecha_hasta.nil? or @object.fecha_desde.nil? )
             @object.fecha_hasta = Time.now.strftime("%Y-%m-%d")
-            @object.fecha_desde = Time.now.strftime("%Y-%m-%d")
+            @object.fecha_desde = (Time.now - 5.month).strftime("%Y-%m-%d")
             @object.area_id = 1
             @object.personas_id = 1
           end

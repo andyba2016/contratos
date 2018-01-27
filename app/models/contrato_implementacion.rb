@@ -9,7 +9,14 @@ class ContratoImplementacion < Contrato
     if params.nil?
       @result = Contrato.where({:area_id => self.area.id}).order("contratos.id DESC").limit(100)
     else
-      @result = Contrato.where("estado = 1 and (area_id="+(params[:area].to_i.to_s)+" or '"+params[:area].to_s+"'='' )").order("contratos.id DESC").limit(100)
+      if params[:busqueda] == "1"
+        params[:fecha_desde] = params[:fecha_desde].to_date.strftime('%d/%m/%Y')
+        params[:fecha_hasta] = params[:fecha_hasta].to_date.strftime('%d/%m/%Y')
+        puts params.inspect
+      end
+      @result = Contrato.where("estado >= 1 and (area_id="+(params[:area].to_i.to_s)+" or '"+params[:area].to_s+"'='' ) and
+      (fecha_desde >='"+params[:fecha_desde]+"' and fecha_hasta <='"+params[:fecha_hasta]+"')
+       and (numero='"+params[:resol]+"' or '"+params[:resol]+"'='')").order("contratos.id DESC").distinct(:numero)
     end
 
   end
