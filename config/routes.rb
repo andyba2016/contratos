@@ -27,6 +27,8 @@ Rails.application.routes.draw do
      get 'personas/update/:id'  => 'personas#index' 
      get 'personas/delete/:id'  => 'personas#delete'
      post 'personas/save'  => 'personas#save'
+
+     get 'cuotas/:id'=>'cuotas#index'
      
      
      get 'log'=>'log#index'

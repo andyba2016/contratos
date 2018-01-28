@@ -1,0 +1,23 @@
+--INSERT INTO public.contratos(
+--	id, personas_id, usuarios_id, fecha_desde, fecha_hasta, area_id, estado, cargo, autoridad_id, numero, articulo, tarea, tipo_contrato_id)
+--	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+    
+   -- select count(numero_documento) as cantidad,numero_documento from personas group by numero_documento order by cantidad desc;
+    
+    
+    select (select personas.id from personas where personas.numero_documento=tabla3."DNI" and estado=1 ) as personas_id, 
+    "Desde","Hasta",
+    (select areas.id from areas where areas.descripcion=tabla3."Secretaría" and estado=1 ) as area,"Cargo",
+    from tabla3 where tabla3."DNI" is not null
+   
+   ;
+   
+   
+   insert into usuarios (nombre,apellido)
+   select distinct xx[1],concat(xx[2],' ',xx[3]) from (select  string_to_array("Contrato Avalado Por",' ') as a from tabla3 where "Contrato Avalado Por" is not null) as dt(xx)
+   
+   update usuarios set estado=1
+    
+ 
+
+-- select distinct "Secretaría" from tabla3

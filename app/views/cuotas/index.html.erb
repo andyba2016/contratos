@@ -1,1 +1,54 @@
-<% @object %>fajspfpdasjp
+<!-- page content -->
+<div class="right_col" role="main">
+  <div class="">
+    <div class="page-title">
+      <div class="title_left">
+        <h3><%= controller_name.camelize %></h3>
+      </div>
+
+    </div>
+    <div class="clearfix"></div>
+    <div class="row">
+      <div class="x_panel" style="min-height:800px;">
+        <div class="x_title">
+          <h2>Coutas del contrato</h2>
+          <ul class="nav navbar-right panel_toolbox">
+          </ul>
+          <div class="clearfix">
+          </div>
+
+        </div>
+        <table class="table table-bordered dataTable  table-stripped" id="tabla">
+          <thead>
+          <tr>
+            <th>Mes</th>
+            <th>Horas mensuales</th>
+            <th>Horas semanales</th>
+            <th>Valor hora</th>
+            <th>Valor cuota</th>
+            <th>En letras</th>
+            <th>Estado</th>
+          </tr>
+          </thead>
+          <tbody>
+          <% @cuotas.each do |cuota| %>
+              <tr>
+                <td><input type="text" class="form-control" disabled value="<%= cuota.mes.to_s %>"></td>
+                <td><input type="text" class="form-control" value="<%= cuota.horas_mensuales.to_s %>"></td>
+                <td><input type="text" class="form-control" value="<%= cuota.horas_semanales.to_s %>"></td>
+                <td><input type="text" class="form-control" value="<%= cuota.valor_hora.to_s %>"></td>
+                <td><input type="text" class="form-control" value="<%= cuota.valor_cuota.to_s %>"></td>
+                <td><input type="text" class="form-control" disabled value="<%= cuota.valor_cuota.to_words %>"></td>
+                <td><select class="form-control"><option>Prespuestada</option><option>Pagada</option></select></td>
+              </tr>
+          <%
+            end
+          %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+

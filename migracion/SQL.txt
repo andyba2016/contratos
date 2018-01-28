@@ -1,0 +1,1 @@
+select distinct "RESOLUCION","DNI","Mail","Cargo","Secretaría","FUNCION","Contrato Avalado Por","Desde","Hasta" from "TableCorbi" 
