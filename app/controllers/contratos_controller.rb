@@ -6,10 +6,10 @@ class ContratosController < ApplicationController
     @usuario = User.new(JSON.parse(session[:user].to_json))
     @object = ContratoImplementacion.new(@usuario)
     @result = @object.search(params)
-    @lista_areas = Area.where(estado: 1)
+    @lista_areas = Area.where("estado = 1 and (id="+@usuario.area.id.to_s+" or '"+@usuario.area.id.to_s+"'='1' )")
     @lista_tipo = {'Locacion de Servicio' => 2}
     @persona = Personas.where(estado: 1).order("nombre ASC").all
-    @usuarios = User.where(estado: 1)
+    @usuarios = User.where("estado = 1 and (area_id="+@usuario.area.id.to_s+" or '"+@usuario.area.id.to_s+"'='1' )")
 
 
     if params[:id]
@@ -33,6 +33,8 @@ class ContratosController < ApplicationController
     @contrato.area_id = params[:area_id]
     #@contrato.tipo_id = params[:tipo_id]
     @contrato.personas_id = params[:persona_id]
+    @user = User.new(JSON.parse(session[:user].to_json))
+    @contrato.usuarios_id = @user.id
     @contrato.autoridad_id = params[:autoridad_id]
     @contrato.fecha_desde = params[:fecha_desde_id]
     @contrato.fecha_hasta = params[:fecha_hasta_id]
