@@ -119,9 +119,9 @@
                     <%= r.numero %>
                   </td>
                   <td>
-                    <%= r.fecha_desde %>
+                    <%= r.fecha_desde.to_date.strftime("%d/%m/%Y") %>
                   </td>
-                  <td><%= r.fecha_hasta %>
+                  <td><%= r.fecha_hasta.to_date.strftime("%d/%m/%Y") %>
                   </td>
                   <td>
                     <a><span class="fa fa-eye" style='padding-left:15Px;cursor:pointer;' alt="Ver"/></a>
@@ -199,6 +199,8 @@
             @object.fecha_desde = (Time.now - 5.month).strftime("%Y-%m-%d")
             @object.area_id = 1
             @object.personas_id = 1
+            @object.horas_semanales = 0
+            @object.valor_hora = 0
           end
 
         %>
@@ -304,6 +306,20 @@
             </label>
             <div class="col-md-6 col-sm-6 col-xs-12">
               <input name="numero" id="numero" class="form-control" value="<%= @object.numero %>"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12">H.Semanales:<span class="required">*</span>
+            </label>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <input name="horas" id="horas" class="form-control" required value="<%= @object.horas_semanales .to_i%>"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12">Valor hora:<span class="required">*</span>
+            </label>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <input name="valor" id="valor" class="form-control" required value="<%= @object.valor_hora.to_f%>"/>
             </div>
           </div>
 

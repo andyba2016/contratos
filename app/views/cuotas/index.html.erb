@@ -11,17 +11,22 @@
     <div class="row">
       <div class="x_panel" style="min-height:800px;">
         <div class="x_title">
-          <h2>Coutas del contrato</h2>
+          <h2>Cuotas del contrato</h2>
           <ul class="nav navbar-right panel_toolbox">
           </ul>
           <div class="clearfix">
           </div>
-
         </div>
+        <% date2 =@contrato.fecha_hasta.to_date
+           date1 = @contrato.fecha_desde.to_date
+           meses =((date2.year * 12 + date2.month) - (date1.year * 12 + date1.month)) + 1
+          if ((meses).to_int > 0)
+        %>
         <table class="table table-bordered dataTable  table-stripped" id="tabla">
           <thead>
           <tr>
-            <th>Mes</th>
+            <th>Cuota</th>
+            <th>Fecha</th>
             <th>Horas mensuales</th>
             <th>Horas semanales</th>
             <th>Valor hora</th>
@@ -31,21 +36,31 @@
           </tr>
           </thead>
           <tbody>
-          <% @cuotas.each do |cuota| %>
+  <% @cuotas.each do |cuota| %>
               <tr>
                 <td><input type="text" class="form-control" disabled value="<%= cuota.mes.to_s %>"></td>
+                <td><input type="text" class="form-control" value="<%= cuota.fecha.to_s %>"></td>
                 <td><input type="text" class="form-control" value="<%= cuota.horas_mensuales.to_s %>"></td>
                 <td><input type="text" class="form-control" value="<%= cuota.horas_semanales.to_s %>"></td>
                 <td><input type="text" class="form-control" value="<%= cuota.valor_hora.to_s %>"></td>
                 <td><input type="text" class="form-control" value="<%= cuota.valor_cuota.to_s %>"></td>
                 <td><input type="text" class="form-control" disabled value="<%= cuota.valor_cuota.to_words %>"></td>
-                <td><select class="form-control"><option>Prespuestada</option><option>Pagada</option></select></td>
+                <td><select class="form-control">
+                  <option>Prespuestada</option>
+                  <option>Pagada</option>
+                </select></td>
               </tr>
           <%
             end
           %>
           </tbody>
         </table>
+
+            <%else%>
+
+              <h1>Periodo mal informado, verifique las fechas del contrato.</h1>
+
+              <% end%>
       </div>
     </div>
   </div>

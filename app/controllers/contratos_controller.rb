@@ -1,5 +1,6 @@
 class ContratosController < ApplicationController
   before_action :require_login
+  include CuotasHelper
 
   def index
     @usuario = User.new(JSON.parse(session[:user].to_json))
@@ -7,7 +8,7 @@ class ContratosController < ApplicationController
     @result = @object.search(params)
     @lista_areas = Area.where(estado: 1)
     @lista_tipo = {'Locacion de Servicio' => 2}
-    @persona = Personas.where(estado: 1)
+    @persona = Personas.where(estado: 1).order("nombre ASC").all
     @usuarios = User.where(estado: 1)
 
 
@@ -43,7 +44,12 @@ class ContratosController < ApplicationController
     @contrato.tarea=params[:tarea]
     @contrato.cargo=params[:cargo]
     @contrato.numero = params[:numero]
+    @contrato.horas_semanales = params[:horas]
+    @contrato.valor_hora = params[:valor]
     @contrato.save
+    # agrego plan de cuotas
+    puts @contrato.id
+    generate(@contrato.id)
     redirect_to :contratos
 
   end

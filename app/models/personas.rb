@@ -1,7 +1,7 @@
 class Personas < ActiveRecord::Base
 
 	def descripcion()
-		self.apellido+", "+self.nombre
+		self.nombre+", "+self.apellido
 	end
 
 end

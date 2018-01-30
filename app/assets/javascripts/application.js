@@ -44,4 +44,6 @@
 
 //= require plainpage
 
+//= require cuotas
+
 
