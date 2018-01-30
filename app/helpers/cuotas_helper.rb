@@ -1,13 +1,13 @@
 module CuotasHelper
 
   def generate(contrato_id)
-    @contrato = Contrato.where("id="+request[:id]).first
-    Cuota.where("contrato_id = "+request[:id]).destroy_all
+    @contrato = Contrato.where("id="+contrato_id.to_s).first
+    Cuota.where("contrato_id = "+contrato_id.to_s).destroy_all
     date2 =@contrato.fecha_hasta.to_date
     date1 = @contrato.fecha_desde.to_date
-    meses =((date2.year * 12 + date2.month) - (date1.year * 12 + date1.month)) + 1
+    meses =((date2.year * 12 + date2.month) - (date1.year * 12 + date1.month))
     if ((meses).to_int > 0)
-      (1..meses).each do |i|
+      (0..meses ).each do |i|
         @cuota = Cuota.new()
         @cuota.mes = i
         @cuota.horas_semanales = @contrato.horas_semanales

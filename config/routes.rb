@@ -29,6 +29,7 @@ Rails.application.routes.draw do
      post 'personas/save'  => 'personas#save'
 
      get 'cuotas/:id'=>'cuotas#index'
+     get 'vista/:id'=>'vista#index'
      
      
      get 'log'=>'log#index'

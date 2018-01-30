@@ -79,6 +79,7 @@
               <th>N. Resol.</th>
               <th>Fecha desde</th>
               <th>Fecha hasta</th>
+              <th>Estado</th>
               <th>Acciones</th>
             </tr>
             </thead>
@@ -124,7 +125,25 @@
                   <td><%= r.fecha_hasta.to_date.strftime("%d/%m/%Y") %>
                   </td>
                   <td>
-                    <a><span class="fa fa-eye" style='padding-left:15Px;cursor:pointer;' alt="Ver"/></a>
+                    <%
+                      estado = ""
+                      color = ""
+                    if(r.estado==1)
+                      estado = "BORRADOR"
+                      color = "label-default"
+                      elsif(r.estado==2)
+                        estado = "PRESENTADO"
+                        color = "label-primary"
+                    elsif(r.estado==3)
+                      estado = "APROBADO"
+                      color = "label-success"
+                    elsif(r.estado==4)
+                      estado = "RECHAZADO"
+                      color = "label-danger"
+                    end
+                  %><span class="label <%=color%>"><%= estado %></span></td>
+                  <td>
+                    <a href="/vista/<%= r.id %>"><span class="fa fa-eye" style='padding-left:15Px;cursor:pointer;' alt="Ver"/></a>
                     <a href="/cuotas/<%= r.id %>"><span class="fa fa-money" style='cursor:pointer;padding-right:5Px;padding-left:5Px;cursor:pointer;' alt="Pagos"/></a>
                     <a href="/<%= controller_name %>/update/<%= r.id %>"><span class="fa fa-pencil" style='padding-left:5Px;cursor:pointer;' alt="Editar"/></a>
                     <a href="/<%= controller_name %>/delete/<%= r.id %>" class="eliminar"><span class="fa fa-close" style='padding-left:5Px;cursor:pointer;' style="cursor:pointer;" alt="Eliminar"/></a>
