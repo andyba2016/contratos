@@ -1,0 +1,227 @@
+<!-- page content -->
+<div class="right_col" role="main">
+  <div class="">
+    <div class="page-title">
+      <div class="title_left">
+        <h3>Detalle del contrato</h3>
+      </div>
+
+    </div>
+    <div class="clearfix"></div>
+    <div class="row">
+      <div class="x_panel" style="min-height:800px;">
+        <div class="x_title">
+          Aprobaci&oacute;n:
+          <div class="clearfix">
+          </div>
+        </div>
+        <br>
+        <div class="form_wizard wizard_horizontal">
+          <ul class="wizard_steps anchor">
+            <li>
+              <a href="#step-1" class="selected" isdone="1" rel="1">
+                <span class="step_no">1</span>
+                <span class="step_descr">
+                                              BORRADOR<br>
+                                              <small></small>
+                                          </span>
+              </a>
+            </li>
+            <li>
+              <% @contrato.estado >= 2? (@val = "selected") : (@val = "disabled")%>
+              <a href="#step-2" class="<%= @val %>" isdone="1" rel="2">
+                <span class="step_no">2</span>
+                <span class="step_descr">
+                                              PRESENTADO<br>
+                                              <small></small>
+                                          </span>
+              </a>
+            </li>
+            <li>
+              <%  @contrato.estado >=3 ? (@val = "selected") : (@val = "disabled")%>
+              <a href="#step-3" class="<%= @val %>"isdone="0" rel="3">
+                <span class="step_no">3</span>
+                <span class="step_descr">
+                                              APROBADO SEC. ADM.<br>
+                                              <small></small>
+                                          </span>
+              </a>
+            </li>
+            <li>
+              <%  @contrato.estado >=4 ? (@val = "selected") : (@val = "disabled")%>
+              <a href="#step-4"  class="<%= @val %>" isdone="0" rel="4">
+                <span class="step_no">4</span>
+                <span class="step_descr">
+                                              APROBADO AREA<br>
+                                              <small></small>
+                                          </span>
+              </a>
+            </li>
+            <li>
+              <%  @contrato.estado >=5 ? (@val = "selected") : (@val = "disabled")%>
+              <a href="#step-5"  class="<%= @val %>" isdone="0" rel="5">
+                <span class="step_no">5</span>
+                <span class="step_descr">
+                                              APROBADO DECANATO<br>
+                                              <small></small>
+                                          </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="x_title">
+          Detalle:
+          <div class="clearfix">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">Nombre:</label>
+          <div class="">
+            <%= @contrato.personas.apellido %>
+          </div>
+          <br>
+          <label class="control-label2">Apellido:</label>
+          <div class="">
+            <%= @contrato.personas.nombre %>
+          </div>
+          <br>
+          <label class="control-label2">Num. Documento:</label>
+          <div class="">
+            <%= @contrato.personas.numero_documento %>
+          </div>
+          <br>
+          <label class="control-label2">Fecha desde:</label>
+          <div class="">
+            <%= @contrato.fecha_desde.to_date.strftime('%d/%m/%Y') %>
+          </div>
+          <br>
+          <label class="control-label2">Fecha hasta:</label>
+          <div class="">
+            <%= @contrato.fecha_hasta.to_date.strftime('%d/%m/%Y') %>
+          </div>
+          <br>
+          <label class="control-label2">Num. Res:</label>
+          <div class="">
+            <%= @contrato.numero %>
+          </div>
+          <br>
+          <label class="control-label2">Cargo:</label>
+          <div class="">
+            <%= @contrato.cargo %>
+          </div>
+          <br>
+          <label class="control-label2">Tarea:</label>
+          <div class="">
+            <%= @contrato.tarea %>
+          </div>
+        </div>
+
+
+
+        <% date2 =@contrato.fecha_hasta.to_date
+           date1 = @contrato.fecha_desde.to_date
+           meses =((date2.year * 12 + date2.month) - (date1.year * 12 + date1.month)) + 1
+           if ((meses).to_int > 0)
+        %>
+            <div class="x_title">
+              Cuotas:
+              <div class="clearfix">
+              </div>
+            </div>
+
+            <table class="table table-bordered dataTable  table-stripped" id="tabla">
+              <thead>
+              <tr>
+                <th>Cuota</th>
+                <th>Fecha</th>
+                <th>Horas mensuales</th>
+                <th>Horas semanales</th>
+                <th>Valor hora</th>
+                <th>Valor cuota</th>
+                <th>En letras</th>
+              </tr>
+              </thead>
+              <tbody>
+              <% @cuotas.each do |cuota| %>
+                  <tr>
+                    <td><%= cuota.mes.to_s %></td>
+                    <td><%= cuota.fecha.to_s %></td>
+                    <td><%= cuota.horas_mensuales.to_s %></td>
+                    <td><%= cuota.horas_semanales.to_s %></td>
+                    <td><%= cuota.valor_hora.to_s %></td>
+                    <td><%= cuota.valor_cuota.to_s %></td>
+                    <td><%= cuota.valor_cuota.to_words %></td>
+                  </tr>
+              <%
+                end
+              %>
+              </tbody>
+            </table>
+
+        <% else %>
+
+            <h1>Periodo mal informado, verifique las fechas del contrato.</h1>
+
+        <% end %>
+        <%
+          usuario = User.new(JSON.parse(session[:user].to_json))
+          if (@contrato.estado == 1 and @contrato.usuarios_id == usuario.id)
+        %>
+
+            <div class="col-lg-12 col-md-3 col-sm-3 col-xs-6 form-group has-feedback">
+              <input class="btn btn-success" value="Presentar" type="submit">
+            </div>
+
+
+        <%
+
+          end
+        %>
+        <%
+          if (@contrato.estado == 2 and (usuario.id == 20 or usuario.id == 21 or usuario.id == 22))
+        %>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group has-feedback">
+              <input class="btn btn-success" value="Aprobar" type="submit">
+              <input class="btn btn-warning" value="Rechazar" type="submit">
+            </div>
+
+        <%
+
+          end
+        %>
+        <br>
+        <%
+          if (@contrato.estado == 3 and @contrato.autoridad_id == usuario.id)
+        %>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group has-feedback">
+              <input class="btn btn-success" value="Aprobar" type="submit">
+              <input class="btn btn-warning" value="Rechazar" type="submit">
+            </div>
+
+        <%
+
+          end
+        %>
+        <%
+          if (@contrato.estado == 4 and usuario.id == 5)
+        %>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group has-feedback">
+              <input class="btn btn-success" value="Aprobar" type="submit">
+              <input class="btn btn-warning" value="Rechazar" type="submit">
+            </div>
+
+        <%
+
+          end
+        %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
