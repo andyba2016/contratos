@@ -183,11 +183,11 @@
           end
         %>
         <%
-          if (@contrato.estado == 2 and (usuario.perfil_id=3))
+          if (@contrato.estado == 2 and usuario.perfil_id==3)
         %>
 
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group has-feedback">
-              <input class="btn btn-success" name="accion" value="Aprobar" type="button">
+              <input class="btn btn-success" name="accion" value="Aprobar" type="submit">
               <input class="btn btn-warning" name="accion" value="Rechazar" type="submit">
             </div>
 
