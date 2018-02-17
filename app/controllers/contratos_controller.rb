@@ -5,11 +5,13 @@ class ContratosController < ApplicationController
   def index
     @usuario = User.new(JSON.parse(session[:user].to_json))
     @object = ContratoImplementacion.new(@usuario)
+    params[:perfil] = @usuario.perfil_id
+    params[:usuario_id] = @usuario.id
     @result = @object.search(params)
     @lista_areas = Area.where("estado = 1 and (id="+@usuario.area.id.to_s+" or '"+@usuario.area.id.to_s+"'='1' )")
     @lista_tipo = {'Locacion de Servicio' => 2}
     @persona = Personas.where(estado: 1).order("nombre ASC").all
-    @usuarios = User.where("estado = 1 and (area_id="+@usuario.area.id.to_s+" or '"+@usuario.area.id.to_s+"'='1' )")
+    @usuarios = User.where("estado = 1 and (area_id="+@usuario.area.id.to_s+" or '"+@usuario.area.id.to_s+"'='1' ) and perfil_id=4")
 
 
     if params[:id]

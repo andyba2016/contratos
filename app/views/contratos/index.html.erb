@@ -72,6 +72,7 @@
           <table class="table table-bordered dataTable  table-stripped" id="tabla">
             <thead>
             <tr>
+              <th>ID</th>
               <th>Contratado</th>
               <th>Autoridad</th>
               <th>Area</th>
@@ -85,8 +86,12 @@
             </thead>
             <tbody>
 
-            <% @result.each do |r| %>
+            <% @result.reorder("id ASC").each do |r| %>
                 <tr>
+                  <td>
+                    <%= r.id
+                    %>
+                  </td>
                   <td>
                     <%=
                       if (r.personas)
@@ -101,7 +106,11 @@
                       if (r.autoridad_id)
                         r.autoridad_id
                         @usuarios.inspect
+                        begin
                         autoridad = @usuarios.find(r.autoridad_id)
+                        rescue
+                        end
+
                         if (autoridad)
                           autoridad.descripcion
                         end
@@ -135,9 +144,15 @@
                         estado = "PRESENTADO"
                         color = "label-primary"
                     elsif(r.estado==3)
-                      estado = "APROBADO"
-                      color = "label-success"
+                      estado = "APROBADO SEC. ADM."
+                      color = "label-info"
                     elsif(r.estado==4)
+                      estado = "APROBADO AREA"
+                      color = "label-warning"
+                    elsif(r.estado==5)
+                      estado = "APROBADO DECANATO"
+                      color = "label-success"
+                    elsif(r.estado==6)
                       estado = "RECHAZADO"
                       color = "label-danger"
                     end
@@ -145,8 +160,13 @@
                   <td>
                     <a href="/vista/<%= r.id %>"><span class="fa fa-eye" style='padding-left:15Px;cursor:pointer;' alt="Ver"/></a>
                     <a href="/cuotas/<%= r.id %>"><span class="fa fa-money" style='cursor:pointer;padding-right:5Px;padding-left:5Px;cursor:pointer;' alt="Pagos"/></a>
+                    <% if r.estado <=2 and (r.usuarios_id == @usuario.id or @usuario.perfil_id=3)%>
                     <a href="/<%= controller_name %>/update/<%= r.id %>"><span class="fa fa-pencil" style='padding-left:5Px;cursor:pointer;' alt="Editar"/></a>
+                    <% end %>
+                    <% if r.estado == 1 and r.usuarios_id == @usuario.id%>
                     <a href="/<%= controller_name %>/delete/<%= r.id %>" class="eliminar"><span class="fa fa-close" style='padding-left:5Px;cursor:pointer;' style="cursor:pointer;" alt="Eliminar"/></a>
+                    <% end %>
+
                     <a><span style='padding-left:5Px;cursor:pointer;' class="fa fa-file" alt="Ver"/></a>
 
 
@@ -167,7 +187,8 @@
   </div>
   <div class="row">
 
-
+    <% if @usuario.perfil_id <= 3
+    %>
     <div class="col-md-12 col-sm-12 col-xs-12">
       <div class="x_panel" style="">
         <div class="x_title">
@@ -362,7 +383,9 @@
         </form>
 
       </div>
+
     </div>
+          <% end %>
   </div>
 </div>
 </div>

@@ -30,6 +30,8 @@ Rails.application.routes.draw do
 
      get 'cuotas/:id'=>'cuotas#index'
      get 'vista/:id'=>'vista#index'
+     post 'vista/:id'=>'vista#index'
+     post 'vista'=>'vista#save'
      
      
      get 'log'=>'log#index'

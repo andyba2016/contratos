@@ -165,13 +165,16 @@
             <h1>Periodo mal informado, verifique las fechas del contrato.</h1>
 
         <% end %>
+        <form action="" method="post">
+          <input type="hidden" name="id" value="<%= @contrato.id%>">
         <%
           usuario = User.new(JSON.parse(session[:user].to_json))
           if (@contrato.estado == 1 and @contrato.usuarios_id == usuario.id)
         %>
 
+
             <div class="col-lg-12 col-md-3 col-sm-3 col-xs-6 form-group has-feedback">
-              <input class="btn btn-success" value="Presentar" type="submit">
+              <input class="btn btn-success" name="accion" value="Presentar" type="submit">
             </div>
 
 
@@ -180,12 +183,12 @@
           end
         %>
         <%
-          if (@contrato.estado == 2 and (usuario.id == 20 or usuario.id == 21 or usuario.id == 22))
+          if (@contrato.estado == 2 and (usuario.perfil_id=3))
         %>
 
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group has-feedback">
-              <input class="btn btn-success" value="Aprobar" type="submit">
-              <input class="btn btn-warning" value="Rechazar" type="submit">
+              <input class="btn btn-success" name="accion" value="Aprobar" type="button">
+              <input class="btn btn-warning" name="accion" value="Rechazar" type="submit">
             </div>
 
         <%
@@ -198,8 +201,8 @@
         %>
 
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group has-feedback">
-              <input class="btn btn-success" value="Aprobar" type="submit">
-              <input class="btn btn-warning" value="Rechazar" type="submit">
+              <input class="btn btn-success" name="accion" value="Aprobar" type="submit">
+              <input class="btn btn-warning" name="accion" value="Rechazar" type="submit">
             </div>
 
         <%
@@ -207,18 +210,19 @@
           end
         %>
         <%
-          if (@contrato.estado == 4 and usuario.id == 5)
+          if (@contrato.estado == 4 and usuario.perfil_id == 5)
         %>
 
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group has-feedback">
-              <input class="btn btn-success" value="Aprobar" type="submit">
-              <input class="btn btn-warning" value="Rechazar" type="submit">
+              <input class="btn btn-success" name="accion" value="Aprobar" type="submit">
+              <input class="btn btn-warning" name="accion" value="Rechazar" type="submit">
             </div>
 
         <%
 
           end
         %>
+        </form>
       </div>
     </div>
   </div>
