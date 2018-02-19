@@ -165,7 +165,7 @@
             <h1>Periodo mal informado, verifique las fechas del contrato.</h1>
 
         <% end %>
-        <form action="" method="post">
+        <form action="" method="post" onsubmit="return confirm('Esta seguro que desea modificar el estado del contrato')">
           <input type="hidden" name="id" value="<%= @contrato.id%>">
         <%
           usuario = User.new(JSON.parse(session[:user].to_json))
