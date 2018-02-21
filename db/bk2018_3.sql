@@ -2855,654 +2855,656 @@ SELECT pg_catalog.setval('areas_id_seq', 15, true);
 --
 
 COPY contratos (id, personas_id, usuarios_id, fecha_desde, fecha_hasta, area_id, estado, cargo, autoridad_id, tarea, tipo_contrato_id, numero, articulo, horas_semanales, valor_hora, created_at, updated_at) FROM stdin;
-192	1	\N	2017-12-21 21:00:00-03	2017-12-21 21:00:00-03	9	1	\N	1	prueba	2	\N	\N	\N	\N	\N	\N
-6554	427	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2598/2017	2598/2017	\N	\N	\N	\N
-6555	342	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2556/2017	2556/2017	\N	\N	\N	\N
-6556	\N	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	\N	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2557/2017	2557/2017	\N	\N	\N	\N
-6557	\N	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	\N	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2601/2017	2601/2017	\N	\N	\N	\N
-6558	\N	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	\N	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2600/2017	2600/2017	\N	\N	\N	\N
-6559	312	12	2017-09-23 00:00:00-03	2017-11-11 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Progr. Lógicos Control. Nivel 1	2	2492/2017	2492/2017	\N	\N	\N	\N
-6770	427	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	1	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2714/2017	2714/2017	\N	\N	\N	\N
-6771	427	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	1	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2715/2017	2715/2017	\N	\N	\N	\N
-6772	340	12	2017-10-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2705/2017	2705/2017	\N	\N	\N	\N
-6773	340	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2706/2017	2706/2017	\N	\N	\N	\N
-6774	427	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	1	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2716/2017	2716/2017	\N	\N	\N	\N
-9862	1	1	2017-08-29 21:00:00-03	2018-01-29 21:00:00-03	9	1		8	                 \r\n              	\N		\N	1	1	2018-01-30 20:24:04.903937	2018-01-30 20:24:04.934665
-6775	427	12	2017-10-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2717/2017	2717/2017	\N	\N	\N	\N
-6776	340	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2707/2017	2707/2017	\N	\N	\N	\N
-6777	340	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2708/2017	2708/2017	\N	\N	\N	\N
-6778	427	12	2017-10-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2718/2017	2718/2017	\N	\N	\N	\N
-6779	427	12	2017-10-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2719/2017	2719/2017	\N	\N	\N	\N
-6780	340	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2709/2017	2709/2017	\N	\N	\N	\N
-6781	340	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2710/2017	2710/2017	\N	\N	\N	\N
-6782	427	12	2017-10-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2720/2017	2720/2017	\N	\N	\N	\N
-6783	427	12	2017-10-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2721/2017	2721/2017	\N	\N	\N	\N
-6784	340	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2711/2017	2711/2017	\N	\N	\N	\N
-6043	399	12	2017-07-01 00:00:00-03	2017-07-18 00:00:00-03	11	1	Profesor	12	Coordinador Curso: Form. Dist. Y Transm. De la energía elect. Edic 7	2	2028/2017	2028/2017	\N	\N	\N	\N
-6044	318	12	2017-07-01 00:00:00-03	2017-07-18 00:00:00-03	11	1	Profesor	12	Coordinación Form. Dist. Y Transm. De la energía elect. Edic 7	2	2069/2017	2069/2017	\N	\N	\N	\N
-6045	396	12	2017-07-01 00:00:00-03	2017-07-18 00:00:00-03	11	1	Profesor	12	Coordinación curso Inst. Elec. Dom. Y Com.	2	2021/2017	2021/2017	\N	\N	\N	\N
-6046	\N	13	2017-07-01 00:00:00-03	2017-09-30 00:00:00-03	14	1	Director	13	Director CIDIV	2	1879/2017	1879/2017	\N	\N	\N	\N
-6049	336	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Tutor	4	Tutor motivacional - TSP	2	1887/2017	1887/2017	\N	\N	\N	\N
-6542	340	12	2017-08-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón	2	2353/2017	2353/2017	\N	\N	\N	\N
-6543	427	12	2017-08-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2352/2017	2352/2017	\N	\N	\N	\N
-6544	340	12	2017-08-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón	2	2355/2017	2355/2017	\N	\N	\N	\N
-6545	427	12	2017-08-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2354/2017	2354/2017	\N	\N	\N	\N
-6546	400	4	2017-08-28 00:00:00-03	2017-10-04 00:00:00-03	10	1	Profesor	4	Profesor del Seminario Administración	2	2398/2017	2398/2017	\N	\N	\N	\N
-6549	384	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia y Sec. Medico	2	2366/2017	2366/2017	\N	\N	\N	\N
-6550	316	12	2017-10-14 00:00:00-03	2017-12-02 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - AutoCad Avanzado (Sab de 9 a 12)	2	2404/2017	2404/2017	\N	\N	\N	\N
-6553	340	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón	2	2599/2017	2599/2017	\N	\N	\N	\N
-6785	340	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2712/2017	2712/2017	\N	\N	\N	\N
-6098	368	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Ayudante Carrera de Grado	2	2485/2017	2485/2017	\N	\N	\N	\N
-6786	427	12	2017-10-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2722/2017	2722/2017	\N	\N	\N	\N
-6787	408	12	2017-10-03 00:00:00-03	2047-10-26 00:00:00-03	11	1	Profesor	12	Profesor - Lean Manufacturing (mar y jue de 18 a 22)	2	2611/2017	2611/2017	\N	\N	\N	\N
-6788	338	18	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	13	1	Jardinero	18	Jardinero	2	2612/2017	2612/2017	\N	\N	\N	\N
-6791	337	18	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	13	1	Jardinero	18	Jardinero	2	2613/2017	2613/2017	\N	\N	\N	\N
-6794	339	18	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	13	1	Jardinero	18	Jardinero	2	2614/2017	2614/2017	\N	\N	\N	\N
-6799	372	4	2017-10-23 00:00:00-03	2017-12-04 00:00:00-03	10	1	Profesor	4	Profesor Seminario "Finanzas y Control"	2	2632/2017	2632/2017	\N	\N	\N	\N
-6800	372	4	2017-10-25 00:00:00-03	2017-12-06 00:00:00-03	10	1	Profesor	4	Profesor Seminario "Creación y Administración de Pymes"	2	2651/2017	2651/2017	\N	\N	\N	\N
-6801	372	4	2017-11-02 00:00:00-03	2017-12-14 00:00:00-03	10	1	Profesor	4	Profesor Seminario "Costos para la Gestión" -Ford-	2	2650/2017	2650/2017	\N	\N	\N	\N
-6802	385	4	2017-10-18 00:00:00-03	2017-11-29 00:00:00-03	10	1	Profesor	4	Profesor seminario "Formulación y Evaluación de Proyectos"	2	2698/2017	2698/2017	\N	\N	\N	\N
-6803	385	4	2017-10-31 00:00:00-03	2017-12-12 00:00:00-03	10	1	Profesor	4	Profesor seminario "Formulación y Evaluación de Proyectos" - Ford-	2	2699/2017	2699/2017	\N	\N	\N	\N
-6804	355	4	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Asistente	4	Asist. Administrativo	2	2700/2017	2700/2017	\N	\N	\N	\N
-4677	279	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Tutor	4	Tutor Motivacional - TSP	2	1052/2017	1052/2017	\N	\N	\N	\N
-6292	282	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSP	2	2127/2017	2127/2017	\N	\N	\N	\N
-6541	\N	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	1	\N	12	Ensayos propiedades y dureza	2	2232/2017	2232/2017	\N	\N	\N	\N
-6807	344	4	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Director	4	Director Tecnicatura TSA	2	2636/2017	2636/2017	\N	\N	\N	\N
-4683	280	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Tutor	4	Tutor Motivacional - TSP	2	1046/2017	1046/2017	\N	\N	\N	\N
-4689	281	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Tutor	4	Tutor Motivacional - TSP	2	1053/2017	1053/2017	\N	\N	\N	\N
-5263	359	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Asistente	12	Asist. Administrativa	2	83/2017	83/2017	\N	\N	\N	\N
-5711	395	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	1	Director	12	Director	2	1661/2017	1661/2017	\N	\N	\N	\N
-5836	322	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	1	Coordinador	12	Coord. Polo Admin.	2	1842/2017	1842/2017	\N	\N	\N	\N
-6206	364	18	2017-07-01 00:00:00-03	2017-08-04 00:00:00-03	10	1	Asistente	18	Asist. Administrativa	2	1885/2017	1885/2017	\N	\N	\N	\N
-6277	354	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	JTP a Cargo	4	Profesor TSP - Computación II-	2	2208/2017	2208/2017	\N	\N	\N	\N
-4723	289	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSSI	2	308/2017	308/2017	\N	\N	\N	\N
-6627	345	4	2017-03-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Director	4	Director Académico -PDP Ford-	2	2478/2017	2478/2017	\N	\N	\N	\N
-4695	282	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Tutor	4	Tutor Motivacional - TSP	2	1047/2017	1047/2017	\N	\N	\N	\N
-4701	283	18	2017-02-01 00:00:00-03	2017-04-30 00:00:00-03	13	1	Soporte Técnico	18	Soporte Técnico SACC	2	216/2017	216/2017	\N	\N	\N	\N
-4704	284	4	2017-02-01 00:00:00-03	2017-04-30 00:00:00-03	10	1	Soporte Técnico	4	Soporte Técnico Recursos Informáticos	2	1320/2017	1320/2017	\N	\N	\N	\N
-4707	285	4	2017-02-01 00:00:00-03	2017-04-30 00:00:00-03	10	1	Referente Técnico	4	Referente Técnico Grupo ESTE	2	293/2017	293/2017	\N	\N	\N	\N
-4710	282	4	2017-02-01 00:00:00-03	2017-04-30 00:00:00-03	10	1	Referente Funcional	4	Referente Funcional Grupo ESTE	2	212/2017	212/2017	\N	\N	\N	\N
-4713	286	12	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	1248/2017	1248/2017	\N	\N	\N	\N
-4715	287	12	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	1319/2017	1319/2017	\N	\N	\N	\N
-4717	288	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSSI	2	959/2017	959/2017	\N	\N	\N	\N
-4729	290	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSSI	2	1843/2017	1843/2017	\N	\N	\N	\N
-4735	291	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSSI	2	307/2017	307/2017	\N	\N	\N	\N
-4741	292	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	312/2017	312/2017	\N	\N	\N	\N
-4743	283	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	309/2017	309/2017	\N	\N	\N	\N
-4745	293	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	313/2017	313/2017	\N	\N	\N	\N
-4747	294	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	314/2017	314/2017	\N	\N	\N	\N
-4749	295	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	310/2017	310/2017	\N	\N	\N	\N
-4751	291	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	311/2017	311/2017	\N	\N	\N	\N
-4753	292	4	2017-05-22 00:00:00-03	2017-07-17 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	1580/2017	1580/2017	\N	\N	\N	\N
-4756	283	4	2017-05-22 00:00:00-03	2017-07-17 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	1581/2017	1581/2017	\N	\N	\N	\N
-4759	295	4	2017-05-22 00:00:00-03	2017-07-17 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	1576/2017	1576/2017	\N	\N	\N	\N
-4762	291	4	2017-05-22 00:00:00-03	2017-07-17 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	1646/2017	1646/2017	\N	\N	\N	\N
-4765	296	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP	2	1415/2017	1415/2017	\N	\N	\N	\N
-4771	292	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP	2	300/2017	300/2017	\N	\N	\N	\N
-4777	288	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP	2	301/2017	301/2017	\N	\N	\N	\N
-4783	297	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP	2	302/2017	302/2017	\N	\N	\N	\N
-4789	298	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP	2	305/2017	305/2017	\N	\N	\N	\N
-4795	290	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP	2	1844/2017	1844/2017	\N	\N	\N	\N
-4801	283	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP	2	303/2017	303/2017	\N	\N	\N	\N
-4807	299	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP	2	299/2017	299/2017	\N	\N	\N	\N
-4813	281	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP	2	304/2017	304/2017	\N	\N	\N	\N
-4819	279	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP	2	297/2017	297/2017	\N	\N	\N	\N
-4824	300	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP	2	298/2017	298/2017	\N	\N	\N	\N
-4830	289	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP	2	306/2017	306/2017	\N	\N	\N	\N
-4835	301	4	2017-02-01 00:00:00-03	2017-03-17 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA - Nivelación	2	122/2017	122/2017	\N	\N	\N	\N
-4837	302	4	2017-02-01 00:00:00-03	2017-03-17 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA - Nivelación	2	208/2017	208/2017	\N	\N	\N	\N
-4839	303	4	2017-02-01 00:00:00-03	2017-03-17 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA - Nivelación	2	207/2017	207/2017	\N	\N	\N	\N
-4842	301	4	2017-02-20 00:00:00-03	2017-03-07 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	968/2017	968/2017	\N	\N	\N	\N
-4843	291	4	2017-02-20 00:00:00-03	2017-03-07 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	967/2017	967/2017	\N	\N	\N	\N
-4844	282	4	2017-02-20 00:00:00-03	2017-03-07 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	966/2017	966/2017	\N	\N	\N	\N
-4845	282	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	1416/2017	1416/2017	\N	\N	\N	\N
-4847	319	12	2017-02-06 00:00:00-03	2017-05-02 00:00:00-03	11	1	Profesor	12	Profesor Polo CIE	2	1050/2017	1050/2017	\N	\N	\N	\N
-4851	304	4	2017-02-20 00:00:00-03	2017-03-07 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	969/2017	969/2017	\N	\N	\N	\N
-4852	305	4	2017-02-20 00:00:00-03	2017-03-07 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	970/2017	970/2017	\N	\N	\N	\N
-4853	306	4	2017-02-20 00:00:00-03	2017-03-07 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	1321/2017	1321/2017	\N	\N	\N	\N
-4858	311	12	2017-04-15 00:00:00-03	2017-08-26 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Soldadura y herrería básico (sab)	2	1232/2017	1232/2017	\N	\N	\N	\N
-4863	311	12	2017-04-05 00:00:00-03	2017-08-16 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Soldadura y herrería básico (mie)	2	1231/2017	1231/2017	\N	\N	\N	\N
-4868	311	12	2017-04-03 00:00:00-03	2017-08-21 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Soldadura y herrería básico (lun)	2	1236/2017	1236/2017	\N	\N	\N	\N
-4873	311	12	2017-04-06 00:00:00-03	2017-10-05 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Soldadura y herrería básico (jue)	2	1235/2017	1235/2017	\N	\N	\N	\N
-4880	311	12	2017-03-20 00:00:00-03	2017-05-15 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Soldadura TIG	2	1233/2017	1233/2017	\N	\N	\N	\N
-4883	311	12	2017-03-14 00:00:00-03	2017-08-29 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Soldadura Int. (mar)	2	1234/2017	1234/2017	\N	\N	\N	\N
-4890	312	12	2017-03-11 00:00:00-03	2017-04-29 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Progr. Lógicos Control. Nivel 1	2	1310/2017	1310/2017	\N	\N	\N	\N
-4892	313	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Inst. Eléct., Aires	2	1493/2017	1493/2017	\N	\N	\N	\N
-4895	314	12	2017-03-14 00:00:00-03	2017-06-09 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Automatiz. Industrial	2	1240/2017	1240/2017	\N	\N	\N	\N
-4899	315	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Rep. PC	2	1314/2017	1314/2017	\N	\N	\N	\N
-4900	300	12	2017-03-07 00:00:00-03	2017-03-28 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Excel Básico	2	1237/2017	1237/2017	\N	\N	\N	\N
-4901	300	12	2017-04-04 00:00:00-03	2017-04-25 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Niv. Básico	2	1238/2017	1238/2017	\N	\N	\N	\N
-4902	300	12	2017-03-09 00:00:00-03	2017-03-30 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Niv. Avanz.	2	1239/2017	1239/2017	\N	\N	\N	\N
-4903	315	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Intr. Redes Infor.	2	1316/2017	1316/2017	\N	\N	\N	\N
-4904	315	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Inst. Cámaras	2	1315/2017	1315/2017	\N	\N	\N	\N
-4905	315	12	2017-03-17 00:00:00-03	2017-09-08 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Ds. Web	2	1311/2017	1311/2017	\N	\N	\N	\N
-4912	316	12	2017-04-03 00:00:00-03	2017-06-12 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - AutoCad Básico	2	1313/2017	1313/2017	\N	\N	\N	\N
-4915	\N	12	2017-02-06 00:00:00-03	2017-05-02 00:00:00-03	11	1	Profesor	12	Profesor Polo CIE	2	1048/2017	1048/2017	\N	\N	\N	\N
-4918	317	12	2017-02-06 00:00:00-03	2017-05-02 00:00:00-03	11	1	Profesor	12	Profesor Polo CIE	2	1051/2017	1051/2017	\N	\N	\N	\N
-4921	318	12	2017-02-06 00:00:00-03	2017-05-02 00:00:00-03	11	1	Profesor	12	Profesor Polo CIE	2	1049/2017	1049/2017	\N	\N	\N	\N
-4929	321	12	2017-03-08 00:00:00-03	2017-05-24 00:00:00-03	11	1	Profesor	12	Profesor Polo Automotriz - Niv. Básico (mier)	2	1318/2017	1318/2017	\N	\N	\N	\N
-4932	321	12	2017-03-06 00:00:00-03	2017-05-29 00:00:00-03	11	1	Profesor	12	Profesor Polo Automotriz - Niv. Básico (lun)	2	1317/2017	1317/2017	\N	\N	\N	\N
-4935	316	12	2017-03-06 00:00:00-03	2017-05-29 00:00:00-03	11	1	Profesor	12	Profesor Polo Automotriz - Mecánica Básica	2	1312/2017	1312/2017	\N	\N	\N	\N
-4943	323	12	2017-04-11 00:00:00-03	2017-08-01 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Marketing, Prom. Y Ventas	2	1250/2017	1250/2017	\N	\N	\N	\N
-4948	324	12	2017-04-22 00:00:00-03	2017-08-05 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Liquidación Sueldos (sab)	2	1309/2017	1309/2017	\N	\N	\N	\N
-4953	325	12	2017-04-20 00:00:00-03	2017-08-10 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Liquidación Sueldos	2	1249/2017	1249/2017	\N	\N	\N	\N
-4958	322	12	2017-04-22 00:00:00-03	2017-10-07 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Asist. Contable PYME (sab)	2	1244/2017	1244/2017	\N	\N	\N	\N
-4966	322	12	2017-04-11 00:00:00-03	2017-08-01 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Asist. Contable PYME (mar y mie)	2	1243/2017	1243/2017	\N	\N	\N	\N
-4971	326	12	2017-04-10 00:00:00-03	2017-08-07 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Asist. Contable PYME (lun)	2	1305/2017	1305/2017	\N	\N	\N	\N
-4975	324	12	2017-04-10 00:00:00-03	2017-08-07 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Asist. Contable PYME (lun y jue)	2	1308/2017	1308/2017	\N	\N	\N	\N
-4980	324	12	2017-04-07 00:00:00-03	2017-08-25 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Analista Impositivo (vie)	2	1307/2017	1307/2017	\N	\N	\N	\N
-4985	326	12	2017-04-12 00:00:00-03	2017-07-26 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Analista Contable	2	1306/2017	1306/2017	\N	\N	\N	\N
-4989	327	12	2017-03-15 00:00:00-03	2017-06-28 00:00:00-03	11	1	Profesor	12	Prof. Idioma Extranjero - Niv. 1	2	1426/2017	1426/2017	\N	\N	\N	\N
-4993	\N	12	2017-03-18 00:00:00-03	2017-07-08 00:00:00-03	11	1	Profesor	12	Prof. Idioma Extranjero - Alemán Niv. 5	2	1242/2017	1242/2017	\N	\N	\N	\N
-4998	\N	12	2017-03-15 00:00:00-03	2017-06-28 00:00:00-03	11	1	Profesor	12	Prof. Idioma Extranjero - Alemán Niv. 2	2	1241/2017	1241/2017	\N	\N	\N	\N
-5002	\N	12	2017-03-14 00:00:00-03	2017-07-04 00:00:00-03	11	1	Profesor	12	Prof. Idioma Extranjero - Alemán Niv. 1	2	1245/2017	1245/2017	\N	\N	\N	\N
-5007	\N	15	2017-02-01 00:00:00-03	2017-07-15 00:00:00-03	9	1	Profesor	15	Prof. Idioma Extranjero	2	210/2017	210/2017	\N	\N	\N	\N
-5015	330	4	2017-03-03 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Prof. Carrera Grado LEM	2	1780/2017	1780/2017	\N	\N	\N	\N
-5020	331	4	2017-02-03 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Prof. Carrera Grado	2	1247/2017	1247/2017	\N	\N	\N	\N
-5026	332	4	2017-02-03 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Prof. Carrera Grado	2	1496/2017	1496/2017	\N	\N	\N	\N
-5032	333	4	2017-02-16 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Prof. Carrera Grado	2	1414/2017	1414/2017	\N	\N	\N	\N
-5039	334	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Prof. Carrera Grado	2	1409/2017	1409/2017	\N	\N	\N	\N
-5045	293	4	2017-05-22 00:00:00-03	2017-07-17 00:00:00-03	10	1	JTP a Cargo	4	JTP a Cargo Tecnicatura TSP- Nivelacion	2	1645/2017	1645/2017	\N	\N	\N	\N
-5051	293	4	2017-02-20 00:00:00-03	2017-03-08 00:00:00-03	10	1	JTP a Cargo	4	JTP a Cargo Tecnicatura TSP	2	957/2017	957/2017	\N	\N	\N	\N
-5052	294	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	JTP a Cargo	4	JTP a Cargo Tecnicatura TSP	2	960/2017	960/2017	\N	\N	\N	\N
-5058	294	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	1	JTP a Cargo	4	JTP a Cargo Tecnicatura TSP	2	321/2017	321/2017	\N	\N	\N	\N
-5063	293	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	1	JTP a Cargo	4	JTP a Cargo Tecnicatura TSP	2	316/2017	316/2017	\N	\N	\N	\N
-5068	336	4	2017-04-21 00:00:00-03	2017-07-31 00:00:00-03	10	1	JTP a Cargo	4	JTP a Cargo Tecnicatura TSP	2	1568/2017	1568/2017	\N	\N	\N	\N
-5072	337	18	2017-02-13 00:00:00-03	2017-07-31 00:00:00-03	13	1	Jardinero	18	Jardinero	2	118/2017	118/2017	\N	\N	\N	\N
-5078	338	18	2017-02-13 00:00:00-03	2017-07-31 00:00:00-03	13	1	Jardinero	18	Jardinero	2	119/2017	119/2017	\N	\N	\N	\N
-5084	339	18	2017-02-13 00:00:00-03	2017-07-31 00:00:00-03	13	1	Jardinero	18	Jardinero	2	120/2017	120/2017	\N	\N	\N	\N
-5090	340	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Inspector	12	Inspección hormigón	2	1070/2017	1070/2017	\N	\N	\N	\N
-5091	340	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Inspector	12	Inspección hormigón	2	1069/2017	1069/2017	\N	\N	\N	\N
-5093	341	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Gestión	12	Gestión de la calidad	2	1412/2017	1412/2017	\N	\N	\N	\N
-5096	341	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Gestión	12	Gestión de la calidad	2	1413/2017	1413/2017	\N	\N	\N	\N
-5099	341	4	2017-01-02 00:00:00-03	2017-07-01 00:00:00-03	10	1	Gestión	4	Gestión de la calidad	2	1472/2017	1472/2017	\N	\N	\N	\N
-5105	340	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Inspector	12	Estudio integridad, resistencia y durabilidad	2	1071/2017	1071/2017	\N	\N	\N	\N
-5106	342	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Jefe Laboratorio	12	Ensayos propiedades y dureza	2	1068/2017	1068/2017	\N	\N	\N	\N
-5109	\N	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	\N	12	Ensayos propiedades y dureza	2	1072/2017	1072/2017	\N	\N	\N	\N
-5112	343	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	1	Director	4	Director Tecnicatura TSP y TSSI	2	215/2017	215/2017	\N	\N	\N	\N
-5114	343	4	2017-04-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Director	4	Director Tecnicatura TSP y TSSI	2	1057/2017	1057/2017	\N	\N	\N	\N
-5118	344	4	2017-02-01 00:00:00-03	2017-04-30 00:00:00-03	10	1	Director	4	Director Tecnicatura TSA	2	209/2017	209/2017	\N	\N	\N	\N
-5121	345	4	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	10	1	Director	4	Director Posgrado MBA	2	211/2017	211/2017	\N	\N	\N	\N
-5124	345	4	2017-04-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Director	4	Director Posgrado MBA	2	1055/2017	1055/2017	\N	\N	\N	\N
-5129	\N	13	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	14	1	Director	13	Director CIDIV	2	17/2017	17/2017	\N	\N	\N	\N
-5132	\N	13	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	14	1	Director	13	Director CIDIV	2	964/2017	964/2017	\N	\N	\N	\N
-5135	346	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Coordinador	4	Coordinador Articulación Esc. Secundaria	2	296/2017	296/2017	\N	\N	\N	\N
-5141	347	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Coordinador	12	Coord. Unidad Vinc. Tec.	2	115/2017	115/2017	\N	\N	\N	\N
-5144	347	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Coordinador	12	Coord. Unidad Vinc. Tec.	2	1230/2017	1230/2017	\N	\N	\N	\N
-5147	300	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Coordinador	12	Coord. Polo Inform.	2	113/2017	113/2017	\N	\N	\N	\N
-5150	300	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Coordinador	12	Coord. Polo Inform. Web-Redes Sociales	2	1066/2017	1066/2017	\N	\N	\N	\N
-5153	322	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Coordinador	12	Coord. Polo Admin.	2	117/2017	117/2017	\N	\N	\N	\N
-5156	322	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Coordinador	12	Coord. Polo Admin.	2	1062/2017	1062/2017	\N	\N	\N	\N
-5159	348	14	2016-12-01 00:00:00-03	2017-03-31 00:00:00-03	15	1	Coordinador	14	Coord. CETEMYM	2	15/2017	15/2017	\N	\N	\N	\N
-5163	\N	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Coordinador	12	Coord. Área Cultura	2	116/2017	116/2017	\N	\N	\N	\N
-5166	349	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Coordinador	12	Coord. Administrativa	2	81/2017	81/2017	\N	\N	\N	\N
-5169	349	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Coordinador	12	Coord. Administrativa	2	1061/2017	1061/2017	\N	\N	\N	\N
-5172	350	18	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	13	1	Controlador	18	Control Admin. Prod. Ppios.	2	16/2017	16/2017	\N	\N	\N	\N
-5183	345	4	2017-03-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Comité	4	Comité Académico MBA	2	1056/2017	1056/2017	\N	\N	\N	\N
-5193	351	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSP - Nivelación	2	961/2017	961/2017	\N	\N	\N	\N
-5195	352	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSP - Nivelación	2	2648/2017	2648/2017	\N	\N	\N	\N
-5197	353	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSP - Nivelación	2	318/2017	318/2017	\N	\N	\N	\N
-5199	282	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSP	2	315/2017	315/2017	\N	\N	\N	\N
-5205	354	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSP	2	958/2017	958/2017	\N	\N	\N	\N
-5211	280	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSP	2	319/2017	319/2017	\N	\N	\N	\N
-5217	281	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSP	2	320/2017	320/2017	\N	\N	\N	\N
-5223	279	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSP	2	317/2017	317/2017	\N	\N	\N	\N
-5227	362	4	2017-01-01 00:00:00-03	2017-06-30 00:00:00-03	10	1	Asistente	4	Asist. Administrativa	2	292/2017	292/2017	\N	\N	\N	\N
-5230	353	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSP	2	962/2017	962/2017	\N	\N	\N	\N
-5235	280	4	2017-04-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSP	2	963/2017	963/2017	\N	\N	\N	\N
-5239	353	4	2017-05-22 00:00:00-03	2017-07-17 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSP	2	1582/2017	1582/2017	\N	\N	\N	\N
-5242	\N	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Auxiliar	12	Auxiliar Edilicio	2	213/2017	213/2017	\N	\N	\N	\N
-5245	\N	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Auxiliar	12	Auxiliar Edilicio	2	1060/2017	1060/2017	\N	\N	\N	\N
-5248	355	4	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	10	1	Asistente	4	Asist. Administrativo	2	68/2017	68/2017	\N	\N	\N	\N
-5251	355	4	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	10	1	Asistente	4	Asist. Administrativo	2	971/2017	971/2017	\N	\N	\N	\N
-5254	356	4	2017-02-01 00:00:00-03	2017-04-30 00:00:00-03	10	1	Asistente	4	Asist. Administrativo	2	214/2017	214/2017	\N	\N	\N	\N
-5257	357	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Asistente	12	Asist. Administrativa	2	69/2017	69/2017	\N	\N	\N	\N
-5260	358	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Asistente	12	Asist. Administrativa	2	82/2017	82/2017	\N	\N	\N	\N
-5266	360	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Asistente	12	Asist. Administrativa	2	84/2017	84/2017	\N	\N	\N	\N
-5269	361	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Asistente	12	Asist. Administrativa	2	121/2017	121/2017	\N	\N	\N	\N
-5277	363	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Asistente	4	Asist. Administrativa	2	294/2017	294/2017	\N	\N	\N	\N
-5283	361	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Asistente	12	Asist. Administrativa	2	1058/2017	1058/2017	\N	\N	\N	\N
-5286	357	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Asistente	12	Asist. Administrativa	2	1059/2017	1059/2017	\N	\N	\N	\N
-5289	358	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Asistente	12	Asist. Administrativa	2	1063/2017	1063/2017	\N	\N	\N	\N
-5292	359	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Asistente	12	Asist. Administrativa	2	1065/2017	1065/2017	\N	\N	\N	\N
-5295	360	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Asistente	12	Asist. Administrativa	2	1067/2017	1067/2017	\N	\N	\N	\N
-5298	364	4	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	10	1	Asistente	4	Asist. Administrativa	2	1054/2017	1054/2017	\N	\N	\N	\N
-5301	365	4	2017-01-01 00:00:00-03	2017-04-30 00:00:00-03	10	1	Administrador	4	Admin. Red y Sitios Web	2	965/2017	965/2017	\N	\N	\N	\N
-5305	301	4	2017-05-08 00:00:00-03	2017-06-10 00:00:00-03	10	1	Profesor	4	Prof. Carrera Grado	2	1500/2017	1500/2017	\N	\N	\N	\N
-5307	304	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	1322/2017	1322/2017	\N	\N	\N	\N
-5324	306	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	1418/2017	1418/2017	\N	\N	\N	\N
-5329	366	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	1417/2017	1417/2017	\N	\N	\N	\N
-5334	291	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	1420/2017	1420/2017	\N	\N	\N	\N
-5339	305	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	1421/2017	1421/2017	\N	\N	\N	\N
-5344	\N	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	1423/2017	1423/2017	\N	\N	\N	\N
-5349	295	4	2017-04-01 00:00:00-03	2017-08-30 00:00:00-03	10	1	Profesor	4	Ayudante Carrera de Grado	2	1497/2017	1497/2017	\N	\N	\N	\N
-5354	368	4	2017-04-01 00:00:00-03	2017-08-31 00:00:00-03	10	1	Profesor	4	Ayudante Carrera de Grado	2	1657/17	1657/17	\N	\N	\N	\N
-5359	296	4	2017-04-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Prof. Carrera Grado	2	1499/2017	1499/2017	\N	\N	\N	\N
-5363	369	4	2017-04-01 00:00:00-03	2017-09-30 00:00:00-03	10	1	Profesor	4	Prof. Carrera Grado	2	1659/2017	1659/2017	\N	\N	\N	\N
-5369	332	4	2017-05-08 00:00:00-03	2017-06-10 00:00:00-03	10	1	Profesor	4	JTP Simple Admisión	2	1498/2017	1498/2017	\N	\N	\N	\N
-5371	370	4	2017-03-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Comité	4	Comité Académico MBA	2	1475/2017	1475/2017	\N	\N	\N	\N
-5406	373	4	2017-03-31 21:00:00-03	2017-06-29 21:00:00-03	10	1	Asistente	4	                                                   Asistente administrativa Dpto. Ing. Automotriz\r\n              \r\n              \r\n              	2	1425/2017	1425/2017	35	73.4399999999999977	\N	2018-01-30 21:22:50.52763
-5381	371	4	2017-05-03 00:00:00-03	2017-05-17 00:00:00-03	10	1	Profesor	4	Profesor Seminario Dirección de Operación	2	1687/2017	1687/2017	\N	\N	\N	\N
-5382	372	4	2017-04-03 00:00:00-03	2017-05-15 00:00:00-03	10	1	Profesor	4	Profesor Seminario Información Financiera	2	1688/2017	1688/2017	\N	\N	\N	\N
-5383	336	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSA	2	1419/2017	1419/2017	\N	\N	\N	\N
-5388	301	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	1422/2017	1422/2017	\N	\N	\N	\N
-5393	307	4	2017-03-20 00:00:00-03	2017-12-15 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	1323/2017	1323/2017	\N	\N	\N	\N
-5403	350	18	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	13	1	Controlador	18	Control Admin. Prod. Ppios.	2	1246/2017	1246/2017	\N	\N	\N	\N
-5409	373	4	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Asistente	4	Asistente administrativa Dpto. Ing. Automotriz	2	1658/2017	1658/2017	\N	\N	\N	\N
-5415	373	4	2017-04-01 00:00:00-03	2017-11-30 00:00:00-03	10	1	Asistente	4	Asistente administrativa	2	1476/2017	1476/2017	\N	\N	\N	\N
-5423	300	12	2017-05-08 00:00:00-03	2017-05-29 00:00:00-03	11	1	Profesor	12	Profesor Polo Informatico - Excel Básico	2	1464/2017	1464/2017	\N	\N	\N	\N
-5424	300	12	2017-05-04 00:00:00-03	2017-06-01 00:00:00-03	11	1	Profesor	12	Profesor Polo Informatico - Excel Avanzado	2	1463/2017	1463/2017	\N	\N	\N	\N
-5426	374	12	2017-05-02 00:00:00-03	2017-06-27 00:00:00-03	11	1	Profesor	12	Profesor Polo Informatico - Robotica Básica	2	2185/2017	2185/2017	\N	\N	\N	\N
-5428	322	12	2017-05-22 00:00:00-03	2017-06-12 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Monot. E Ing. Brutos	2	1465/2017	1465/2017	\N	\N	\N	\N
-5430	324	12	2017-06-19 00:00:00-03	2017-07-10 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Monot. E Ing. Brutos	2	1487/2017	1487/2017	\N	\N	\N	\N
-5432	314	12	2017-05-08 00:00:00-03	2017-07-26 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Automatiz. Industrial	2	1466/2017	1466/2017	\N	\N	\N	\N
-5435	312	12	2017-06-10 00:00:00-03	2017-07-29 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Progr. Lógicos Control. Nivel 1	2	1696/2017	1696/2017	\N	\N	\N	\N
-5437	321	12	2017-05-09 00:00:00-03	2017-08-01 00:00:00-03	11	1	Profesor	12	Profesor Polo Automotriz - Inyección nafta	2	1651/2017	1651/2017	\N	\N	\N	\N
-5441	316	12	2017-05-08 00:00:00-03	2017-07-24 00:00:00-03	11	1	Profesor	12	Profesor Polo Automotriz - Mecánica Básica	2	1467/2017	1467/2017	\N	\N	\N	\N
-5444	375	12	2017-05-16 00:00:00-03	2017-08-10 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Tornería Básica (Lun y Mie de 19 a 22)	2	2408/2017	2408/2017	\N	\N	\N	\N
-5448	375	12	2017-03-22 00:00:00-03	2017-06-14 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Tornería Básica (Lun y Mie de 19 a 22)	2	2407/2017	2407/2017	\N	\N	\N	\N
-5450	375	12	2017-03-22 00:00:00-03	2017-06-14 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Tornería Básica (Lun y Mie de 19 a 22)	2	2407/2047	2407/2047	\N	\N	\N	\N
-5452	376	12	2017-04-11 00:00:00-03	2017-08-08 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Sec. Adm. Informát. (mar y jue)	2	1468/2017	1468/2017	\N	\N	\N	\N
-5457	377	12	2017-02-25 00:00:00-03	2017-11-18 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia (Sab)	2	1462/2017	1462/2017	\N	\N	\N	\N
-5467	340	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón	2	1503/2017	1503/2017	\N	\N	\N	\N
-5468	342	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1505/2017	1505/2017	\N	\N	\N	\N
-5469	378	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	1	Director Gral. LABTEC	12	Dictado curso Incertidumbre de medición	2	1578/2017	1578/2017	\N	\N	\N	\N
-5470	340	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón	2	1501/2017	1501/2017	\N	\N	\N	\N
-5471	340	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón	2	1502/2017	1502/2017	\N	\N	\N	\N
-5472	\N	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	\N	12	Ensayos propiedades y dureza	2	1564/2017	1564/2017	\N	\N	\N	\N
-5474	\N	12	2017-04-01 00:00:00-03	2017-05-01 00:00:00-03	11	1	\N	12	Ensayos propiedades y dureza	2	1563/2017	1563/2017	\N	\N	\N	\N
-5475	340	12	2017-03-01 00:00:00-03	2017-04-30 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón	2	1504/2017	1504/2017	\N	\N	\N	\N
-5477	342	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1565/2017	1565/2017	\N	\N	\N	\N
-5486	379	15	2017-05-10 00:00:00-03	2017-08-07 00:00:00-03	9	1	Profesor	15	Prof. Idioma Castellano	2	1486/2017	1486/2017	\N	\N	\N	\N
-5490	380	4	2017-03-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Comité	4	Comité Académico MBA	2	1653/2017	1653/2017	\N	\N	\N	\N
-5500	282	4	2017-05-02 00:00:00-03	2017-07-31 00:00:00-03	10	1	Referente Funcional	4	Referente Funcional Grupo ESTE	2	1424/2017	1424/2017	\N	\N	\N	\N
-5503	381	4	2017-05-01 00:00:00-03	2017-09-30 00:00:00-03	10	1	Profesor	4	Prof. Carrera Grado	2	1648/2017	1648/2017	\N	\N	\N	\N
-5508	382	4	2017-02-01 00:00:00-03	2017-06-30 00:00:00-03	10	1	Ayudante	4	Prof. Carrera Grado - Ayudante	2	1652/2017	1652/2017	\N	\N	\N	\N
-5513	310	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	1411/2017	1411/2017	\N	\N	\N	\N
-5518	\N	15	2017-04-03 00:00:00-03	2017-08-30 00:00:00-03	9	1	Profesor	15	Prof. Idioma Extranjero-castellano	2	1485/2017	1485/2017	\N	\N	\N	\N
-5523	348	14	2017-04-01 00:00:00-03	2017-07-31 00:00:00-03	15	1	Coordinador	14	Coord. CETEMYM	2	1410/2017	1410/2017	\N	\N	\N	\N
-5527	283	18	2017-05-01 00:00:00-03	2017-07-31 00:00:00-03	13	1	Soporte Técnico	18	Soporte Técnico SACC	2	1324/2017	1324/2017	\N	\N	\N	\N
-5530	377	12	2017-03-18 00:00:00-03	2017-12-16 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia (Sab)	2	1461/2017	1461/2017	\N	\N	\N	\N
-5540	377	12	2017-05-16 00:00:00-03	2018-03-27 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia (Mar)	2	1460/2017	1460/2017	\N	\N	\N	\N
-5550	377	12	2017-05-16 00:00:00-03	2017-10-17 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Secretariado Médico (Mar)	2	1458/2017	1458/2017	\N	\N	\N	\N
-5556	377	12	2017-03-14 00:00:00-03	2017-08-29 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Secretariado Médico (Mar)	2	1459/2017	1459/2017	\N	\N	\N	\N
-5562	383	12	2017-02-25 00:00:00-03	2017-11-18 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia (Sab)	2	1488/2017	1488/2017	\N	\N	\N	\N
-5572	383	12	2017-03-18 00:00:00-03	2017-12-23 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia (Sab)	2	1489/2017	1489/2017	\N	\N	\N	\N
-5582	383	12	2017-05-16 00:00:00-03	2018-03-27 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia (Mar)	2	1490/2017	1490/2017	\N	\N	\N	\N
-5592	383	12	2017-03-14 00:00:00-03	2017-08-29 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Secretariado Médico (Mar)	2	1491/2017	1491/2017	\N	\N	\N	\N
-5598	383	12	2017-05-16 00:00:00-03	2017-10-17 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Secretariado Médico (Mar)	2	1492/2017	1492/2017	\N	\N	\N	\N
-5604	315	12	2017-04-01 00:00:00-03	2017-04-30 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Rep. PC	2	1469/2017	1469/2017	\N	\N	\N	\N
-5605	315	12	2017-04-01 00:00:00-03	2017-04-30 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Intr. Redes Infor.	2	1470/2017	1470/2017	\N	\N	\N	\N
-5606	315	12	2017-04-01 00:00:00-03	2017-04-30 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Inst. Cámaras	2	1471/2017	1471/2017	\N	\N	\N	\N
-5607	286	12	2017-04-01 00:00:00-03	2017-04-30 00:00:00-03	11	1	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	1428/2017	1428/2017	\N	\N	\N	\N
-5608	287	12	2017-04-01 00:00:00-03	2017-04-30 00:00:00-03	11	1	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	1427/2017	1427/2017	\N	\N	\N	\N
-5609	313	12	2017-04-01 00:00:00-03	2017-04-30 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Inst. Eléct., Aires	2	1494/2017	1494/2017	\N	\N	\N	\N
-5610	384	12	2017-02-01 00:00:00-03	2017-04-30 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia	2	1495/2017	1495/2017	\N	\N	\N	\N
-5613	345	4	2017-04-01 00:00:00-03	2017-11-30 00:00:00-03	10	1	Director	4	Director Académico Diplomatura Postventa	2	1478/2017	1478/2017	\N	\N	\N	\N
-5621	385	4	2017-05-01 00:00:00-03	2017-05-30 00:00:00-03	10	1	Profesor	4	Profesor curso Diplomatura Postventa	2	1474/2017	1474/2017	\N	\N	\N	\N
-5622	372	4	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	10	1	Profesor	4	Profesor Diplomatura Postventa	2	1473/2017	1473/2017	\N	\N	\N	\N
-5625	386	12	2017-03-01 00:00:00-03	2017-04-30 00:00:00-03	11	1	Profesor	12	Prof. Polo Automotriz	2	2075/2017	2075/2017	\N	\N	\N	\N
-5627	387	12	2017-02-01 00:00:00-03	2017-04-30 00:00:00-03	11	1	Responsable taller	12	Responsable taller soldadura	2	1650/2017	1650/2017	\N	\N	\N	\N
-5630	388	4	2017-04-01 00:00:00-03	2017-11-30 00:00:00-03	10	1	Administrador	4	Administrador plataforma Web	2	1477/2017	1477/2017	\N	\N	\N	\N
-5638	389	15	2017-03-01 00:00:00-03	2017-11-30 00:00:00-03	9	1	Profesor	15	Prof. De Futbol	2	1572/2017	1572/2017	\N	\N	\N	\N
-5647	390	15	2017-03-01 00:00:00-03	2017-11-30 00:00:00-03	9	1	Profesor	15	Prof. De Futbol	2	1573/2017	1573/2017	\N	\N	\N	\N
-5656	391	15	2017-03-01 00:00:00-03	2017-11-30 00:00:00-03	9	1	Profesor	15	Prof. De Basquet	2	1574/2017	1574/2017	\N	\N	\N	\N
-5665	392	15	2017-03-01 00:00:00-03	2017-11-30 00:00:00-03	9	1	Profesor	15	Prof. De Voley Masculino	2	1571/2017	1571/2017	\N	\N	\N	\N
-5674	393	15	2017-03-01 00:00:00-03	2017-11-30 00:00:00-03	9	1	Profesor	15	Prof. De Voley Femenino	2	1575/2017	1575/2017	\N	\N	\N	\N
-5683	356	4	2017-05-01 00:00:00-03	2017-09-30 00:00:00-03	10	1	Asistente	4	Asist. Administrativo	2	1566/2017	1566/2017	\N	\N	\N	\N
-5688	302	4	2017-06-19 00:00:00-03	2017-11-30 00:00:00-03	10	1	Profesor	4	Ayudante TP 1ra Simple - Nivelación	2	1649/2017	1649/2017	\N	\N	\N	\N
-5694	344	4	2017-05-01 00:00:00-03	2017-09-30 00:00:00-03	10	1	Director	4	Director Tecnicatura TSA	2	1567/2017	1567/2017	\N	\N	\N	\N
-5699	296	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	1569/2017	1569/2017	\N	\N	\N	\N
-5704	305	4	2017-05-02 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	1570/2017	1570/2017	\N	\N	\N	\N
-5707	351	4	2017-05-22 00:00:00-03	2017-07-17 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSP - Nivelación	2	1577/2017	1577/2017	\N	\N	\N	\N
-5710	394	4	2017-05-10 00:00:00-03	2017-06-21 00:00:00-03	10	1	Profesor	4	Profesor seminario Análisis Estratégico	2	1686/2017	1686/2017	\N	\N	\N	\N
-5712	395	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	1	Director	12	Director	2	1663/2017	1663/2017	\N	\N	\N	\N
-5713	395	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	1	Director	12	Director	2	1660/2017	1660/2017	\N	\N	\N	\N
-5714	395	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	1	Director	12	Director	2	1662/2017	1662/2017	\N	\N	\N	\N
-5715	342	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1647/2017	1647/2017	\N	\N	\N	\N
-5716	365	4	2017-05-01 00:00:00-03	2017-08-31 00:00:00-03	10	1	Administrador	4	Admin. Red y Sitios Web	2	1683/2017	1683/2017	\N	\N	\N	\N
-5720	394	4	2017-04-01 00:00:00-03	2017-05-31 00:00:00-03	10	1	Profesor	4	Profesor Diplomatura Postventa	2	1579/2017	1579/2017	\N	\N	\N	\N
-5723	342	12	2017-04-01 00:00:00-03	2017-04-30 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1781/2017	1781/2017	\N	\N	\N	\N
-5724	313	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Inst. Eléct., Aires	2	1766/2017	1766/2017	\N	\N	\N	\N
-5725	315	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Inst. Cámaras	2	1694/2017	1694/2017	\N	\N	\N	\N
-5726	315	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Intr. Redes Infor.	2	1693/2017	1693/2017	\N	\N	\N	\N
-5727	315	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Rep. PC	2	1692/2017	1692/2017	\N	\N	\N	\N
-5728	384	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia	2	1805/2017	1805/2017	\N	\N	\N	\N
-5729	287	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	1	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	1691/2017	1691/2017	\N	\N	\N	\N
-5730	286	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	1	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	1700/2017	1700/2017	\N	\N	\N	\N
-5731	316	12	2017-06-26 00:00:00-03	2017-08-28 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - AutoCad Básico - Lunes de 19 a 22 hs	2	1695/2017	1695/2017	\N	\N	\N	\N
-5734	316	12	2017-06-01 00:00:00-03	2017-08-03 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - AutoCad Básico - Jueves de 15 a 18 hs	2	1697/2017	1697/2017	\N	\N	\N	\N
-5737	396	12	2017-06-14 00:00:00-03	2017-10-25 00:00:00-03	11	1	Profesor	12	Profesor Inst. Elec. Dom. Y Com. (Fundación Tzedaka)-Mie de 9 a 12	2	1802/2017	1802/2017	\N	\N	\N	\N
-5742	396	12	2017-06-13 00:00:00-03	2017-10-31 00:00:00-03	11	1	Profesor	12	Profesor Inst. Elec. Dom. Y Com. (Fundación Tzedaka)-Mar de 16 a 19	2	1804/2017	1804/2017	\N	\N	\N	\N
-5747	396	12	2017-06-13 00:00:00-03	2017-10-31 00:00:00-03	11	1	Profesor	12	Profesor Inst. Elec. Dom. Y Com. (Fundación Tzedaka)-Mar de 9 a 12	2	1803/2017	1803/2017	\N	\N	\N	\N
-5752	396	12	2017-06-05 00:00:00-03	2017-07-18 00:00:00-03	11	1	Profesor	12	Profesor Form. Dist. Y Transm. De la energía elect. Edic 7	2	1778/2017	1778/2017	\N	\N	\N	\N
-5754	397	12	2017-06-05 00:00:00-03	2017-07-18 00:00:00-03	11	1	Ayudante	12	Ayudante Form. Dist. Y Transm. De la energía elect. Edic 7	2	1888/2017	1888/2017	\N	\N	\N	\N
-5756	398	12	2017-06-05 00:00:00-03	2017-07-18 00:00:00-03	11	1	Profesor	12	Ayudante Form. Dist. Y Transm. De la energía elect. Beca 7	2	1772/2017	1772/2017	\N	\N	\N	\N
-5757	317	12	2017-06-05 00:00:00-03	2017-07-18 00:00:00-03	11	1	Profesor	12	Ayudante Form. Dist. Y Transm. De la energía elect. Edic 7	2	1775/2017	1775/2017	\N	\N	\N	\N
-5759	377	12	2017-06-05 00:00:00-03	2017-07-18 00:00:00-03	11	1	Profesor	12	Profesor Form. Dist. Y Transm. De la energía elect. Edic 7	2	1779/2017	1779/2017	\N	\N	\N	\N
-5761	318	12	2017-06-05 00:00:00-03	2017-07-18 00:00:00-03	11	1	Profesor	12	Ayudante Form. Dist. Y Transm. De la energía elect. Edic 7	2	1773/2017	1773/2017	\N	\N	\N	\N
-5763	399	12	2017-06-05 00:00:00-03	2017-07-18 00:00:00-03	11	1	Profesor	12	Profesor Form. Dist. Y Transm. De la energía elect. Edic 7	2	1774/2017	1774/2017	\N	\N	\N	\N
-5765	319	12	2017-06-05 00:00:00-03	2017-07-18 00:00:00-03	11	1	Asistente	12	Asistente curso Form. Dist. Y Transm. De la energía elect. Edic 7	2	1777/2017	1777/2017	\N	\N	\N	\N
-5767	321	12	2017-06-09 00:00:00-03	2017-08-25 00:00:00-03	11	1	Profesor	12	Profesor Polo Automotriz - Carburación y Encendido (vie)	2	1702/2017	1702/2017	\N	\N	\N	\N
-5770	321	12	2017-06-12 00:00:00-03	2017-08-28 00:00:00-03	11	1	Profesor	12	Profesor Polo Automotriz - Mecánica Básica (lun)	2	1701/2017	1701/2017	\N	\N	\N	\N
-5773	316	12	2017-06-12 00:00:00-03	2017-08-28 00:00:00-03	11	1	Profesor	12	Profesor Polo Automotriz - Mecánica Básica (lun)	2	1699/2017	1699/2017	\N	\N	\N	\N
-5776	325	12	2017-06-06 00:00:00-03	2017-09-26 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Liquidación Sueldos (mar)	2	1874/2017	1874/2017	\N	\N	\N	\N
-5780	300	12	2017-06-08 00:00:00-03	2017-06-29 00:00:00-03	11	1	Profesor	12	Profesor Polo Informatico - Excel Avanzado	2	1770/2017	1770/2017	\N	\N	\N	\N
-5781	300	12	2017-06-06 00:00:00-03	2017-07-04 00:00:00-03	11	1	Profesor	12	Profesor Polo Informatico - Excel Básico	2	1769/2017	1769/2017	\N	\N	\N	\N
-5783	332	4	2017-06-19 00:00:00-03	2017-11-30 00:00:00-03	10	1	Profesor	4	Ayudante JTP Simple Admisión	2	1878/2017	1878/2017	\N	\N	\N	\N
-5789	301	4	2017-06-19 00:00:00-03	2017-11-30 00:00:00-03	10	1	Profesor	4	Prof. Carrera Grado	2	1689/2017	1689/2017	\N	\N	\N	\N
-5795	311	12	2017-06-12 00:00:00-03	2017-07-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Soldadura TIG	2	1690/2017	1690/2017	\N	\N	\N	\N
-5797	386	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	1	Profesor	12	Prof. Polo Automotriz	2	2025/2017	2025/2017	\N	\N	\N	\N
-5798	376	12	2017-06-12 00:00:00-03	2017-10-02 00:00:00-03	11	1	Profesor	12	Profesor Curso Organización de Eventos	2	1768/2017	1768/2017	\N	\N	\N	\N
-5803	387	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	1	Responsable taller	12	Responsable taller soldadura	2	1703/2017	1703/2017	\N	\N	\N	\N
-5804	325	12	2017-06-24 00:00:00-03	2017-12-09 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Asist. De Recursos Humanos (sab)	2	1875/2017	1875/2017	\N	\N	\N	\N
-5811	376	12	2017-06-24 00:00:00-03	2017-12-09 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Sec. Adm. Informát. (sáb)	2	1767/2017	1767/2017	\N	\N	\N	\N
-5818	322	12	2017-06-16 00:00:00-03	2017-07-07 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Conciliación Bancaria (vie)	2	1771/2017	1771/2017	\N	\N	\N	\N
-5820	316	12	2017-06-01 00:00:00-03	2017-08-17 00:00:00-03	11	1	Profesor	12	Profesor Polo Automotriz - Conoc. Electricidad de Autom (jue 19 a 22)	2	1698/2017	1698/2017	\N	\N	\N	\N
-5823	284	4	2017-05-01 00:00:00-03	2017-09-30 00:00:00-03	10	1	Soporte Técnico	4	Soporte Técnico Recursos Informáticos	2	1656/2017	1656/2017	\N	\N	\N	\N
-5828	340	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón	2	1783/2017	1783/2017	\N	\N	\N	\N
-5829	340	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón	2	1782/2017	1782/2017	\N	\N	\N	\N
-5830	340	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón	2	1785/2017	1785/2017	\N	\N	\N	\N
-5831	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1793/2017	1793/2017	\N	\N	\N	\N
-5832	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1792/2017	1792/2017	\N	\N	\N	\N
-5833	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1794/2017	1794/2017	\N	\N	\N	\N
-5834	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1795/2017	1795/2017	\N	\N	\N	\N
-5835	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1797/2017	1797/2017	\N	\N	\N	\N
-5837	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1796/2017	1796/2017	\N	\N	\N	\N
-5838	340	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón	2	1784/2017	1784/2017	\N	\N	\N	\N
-5839	400	4	2017-04-27 00:00:00-03	2017-06-26 00:00:00-03	10	1	Profesor	4	Profesor del Seminario Administración	2	1862/2017	1862/2017	\N	\N	\N	\N
-5840	347	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	1	Coordinador	12	Coord. Unidad Vinc. Tec.	2	1848/2017	1848/2017	\N	\N	\N	\N
-5846	361	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	1	Asistente	12	Asist. Administrativa	2	1860/2017	1860/2017	\N	\N	\N	\N
-5852	357	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	1	Asistente	12	Asist. Administrativa	2	1810/2017	1810/2017	\N	\N	\N	\N
-5858	\N	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	1	Auxiliar	12	Auxiliar Edilicio	2	1807/2017	1807/2017	\N	\N	\N	\N
-5864	349	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	1	Coordinador	12	Coord. Administrativa	2	1809/2017	1809/2017	\N	\N	\N	\N
-5870	341	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	1	Gestión	12	Gestión de la calidad	2	1861/2017	1861/2017	\N	\N	\N	\N
-5881	358	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	1	Asistente	12	Asist. Administrativa	2	1808/2017	1808/2017	\N	\N	\N	\N
-5887	335	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	1	Locutor	12	Locutor Mundo UTN	2	1847/2017	1847/2017	\N	\N	\N	\N
-5893	360	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	1	Asistente	12	Asist. Administrativa	2	1859/2017	1859/2017	\N	\N	\N	\N
-5899	300	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	1	Coordinador	12	Coord. Polo Inform. Web-Redes Sociales	2	1811/2017	1811/2017	\N	\N	\N	\N
-5905	359	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Asistente	12	Asist. Administrativa	2	1858/2017	1858/2017	\N	\N	\N	\N
-5911	\N	15	2017-08-06 00:00:00-03	2017-12-22 00:00:00-03	11	1	Profesor	15	Prof. Idioma Alemán	2	1776/2017	1776/2017	\N	\N	\N	\N
-5916	355	4	2017-07-01 00:00:00-03	2017-09-30 00:00:00-03	10	1	Asistente	4	Asist. Administrativo	2	1806/2017	1806/2017	\N	\N	\N	\N
-5919	296	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Prof. Carrera Grado	2	1891/2017	1891/2017	\N	\N	\N	\N
-5924	342	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2071/2017	2071/2017	\N	\N	\N	\N
-5925	378	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Director Gral. LABTEC	12	Dictado curso Incertidumbre de medición	2	2078/2017	2078/2017	\N	\N	\N	\N
-5926	378	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Director Gral. LABTEC	12	Dictado curso Incertidumbre de medición	2	2068/2017	2068/2017	\N	\N	\N	\N
-5927	363	4	2017-08-01 00:00:00-03	2018-02-28 00:00:00-03	10	1	Asistente	4	Asist. Administrativa	2	2034/2017	2034/2017	\N	\N	\N	\N
-5934	346	4	2017-08-04 00:00:00-03	2017-12-31 00:00:00-03	10	1	Director	4	Director LEM	2	2035/2017	2035/2017	\N	\N	\N	\N
-5939	401	4	2017-08-04 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor LEM	2	2224/2017	2224/2017	\N	\N	\N	\N
-5944	330	4	2017-08-04 00:00:00-03	2018-02-28 00:00:00-03	10	1	Profesor	4	Prof. Carrera Grado LEM	2	2227/2017	2227/2017	\N	\N	\N	\N
-5949	332	4	2017-08-04 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor LEM	2	2223/2017	2223/2017	\N	\N	\N	\N
-5954	382	4	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Ayudante	4	Prof. Carrera Grado - Ayudante	2	2031/2017	2031/2017	\N	\N	\N	\N
-5960	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2070/2017	2070/2017	\N	\N	\N	\N
-5961	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2072/2017	2072/2017	\N	\N	\N	\N
-5962	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2074/2017	2074/2017	\N	\N	\N	\N
-5963	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2073/2017	2073/2017	\N	\N	\N	\N
-5964	402	4	2017-05-10 00:00:00-03	2017-06-21 00:00:00-03	10	1	Profesor	4	Prof. Carrera Posgrado - Seminario	2	2019/2017	2019/2017	\N	\N	\N	\N
-5979	372	4	2017-06-01 00:00:00-03	2017-07-13 00:00:00-03	10	1	Profesor	4	Profesor Seminario Información Financiera	2	2020/2017	2020/2017	\N	\N	\N	\N
-5980	405	4	2017-05-24 00:00:00-03	2017-07-05 00:00:00-03	10	1	Profesor	4	Prof. Carrera Posgrado	2	1893/2017	1893/2017	\N	\N	\N	\N
-5981	406	4	2017-03-03 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor LEM	2	2463/2017	2463/2017	\N	\N	\N	\N
-5985	362	4	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Asistente	4	Asist. Administrativa	2	1845/2017	1845/2017	\N	\N	\N	\N
-5991	399	12	2017-04-21 00:00:00-03	2017-07-07 00:00:00-03	11	1	Profesor	12	Profesor curso Seguridad e Higiene (vie de 18 a 21 hs)	2	1855/2017	1855/2017	\N	\N	\N	\N
-5995	407	4	2017-05-22 00:00:00-03	2017-06-12 00:00:00-03	10	1	Profesor	4	Profesor carrera posgrado - Seminario	2	2196/2017	2196/2017	\N	\N	\N	\N
-5996	316	12	2017-07-11 00:00:00-03	2017-09-26 00:00:00-03	11	1	Profesor	12	Profesor Polo Automotriz - Reparación y Mantenimiento de Motor	2	1849/2017	1849/2017	\N	\N	\N	\N
-5999	376	12	2017-07-07 00:00:00-03	2017-07-28 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Asist. Adm. Contable Pyme (vie)	2	2024/2017	2024/2017	\N	\N	\N	\N
-6000	322	12	2017-08-04 00:00:00-03	2017-12-22 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Asist. Contable PYME (vie)	2	1856/2017	1856/2017	\N	\N	\N	\N
-6004	315	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Rep. PC	2	2037/2017	2037/2017	\N	\N	\N	\N
-6006	376	12	2017-07-13 00:00:00-03	2017-11-02 00:00:00-03	11	1	Profesor	12	Profesor Polo Adminis - Sec. Adm. Informát. (mar y jue de 9 a 12)	2	1846/2017	1846/2017	\N	\N	\N	\N
-6011	323	12	2017-07-15 00:00:00-03	2017-11-04 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Marketing, Prom. Y Ventas	2	1857/2017	1857/2017	\N	\N	\N	\N
-6016	387	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Responsable taller	12	Responsable taller soldadura	2	2027/2017	2027/2017	\N	\N	\N	\N
-6017	386	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Profesor	12	Prof. Polo Automotriz	2	2026/2017	2026/2017	\N	\N	\N	\N
-6018	286	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	1854/2017	1854/2017	\N	\N	\N	\N
-6019	287	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	1853/2017	1853/2017	\N	\N	\N	\N
-6020	384	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia y Sec. Medico	2	2023/2017	2023/2017	\N	\N	\N	\N
-6021	315	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Rep. PC	2	1851/2017	1851/2017	\N	\N	\N	\N
-6022	315	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Intr. Redes Infor.	2	1852/2017	1852/2017	\N	\N	\N	\N
-6023	315	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Inst. Cámaras	2	1850/2017	1850/2017	\N	\N	\N	\N
-6024	313	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Inst. Eléct., Aires	2	2399/2017	2399/2017	\N	\N	\N	\N
-6025	408	12	2017-06-13 00:00:00-03	2017-06-28 00:00:00-03	11	1	Profesor	12	Profesor - Lean Manufacturing	2	1892/2017	1892/2017	\N	\N	\N	\N
-6026	409	4	2017-06-01 00:00:00-03	2017-07-30 00:00:00-03	10	1	Profesor	4	Profesor Diplomatura Postventa	2	2225/2017	2225/2017	\N	\N	\N	\N
-6028	394	4	2017-06-01 00:00:00-03	2017-07-30 00:00:00-03	10	1	Profesor	4	Profesor Diplomatura Postventa - Tutor y Campus Virtual	2	2033/2017	2033/2017	\N	\N	\N	\N
-6030	411	4	2017-03-03 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor LEM	2	1801/2017	1801/2017	\N	\N	\N	\N
-6032	334	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Prof. Carrera Grado	2	2032/2017	2032/2017	\N	\N	\N	\N
-6037	412	4	2017-04-03 00:00:00-03	2017-05-15 00:00:00-03	10	1	Profesor	4	Profesor Seminario "Gestión del Conocimiento" (Vola Luhrs)	2	1882/2017	1882/2017	\N	\N	\N	\N
-6038	413	4	2017-06-19 00:00:00-03	2017-07-03 00:00:00-03	10	1	Profesor	4	Profesor materia "Método Cuantitativo"	2	2462/2017	2462/2017	\N	\N	\N	\N
-6039	396	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Profesor	12	Profesor Inst. Elec. Dom. Y Com. (Fundación Tzedaka)	2	2022/2017	2022/2017	\N	\N	\N	\N
-6040	300	12	2017-07-06 00:00:00-03	2017-07-27 00:00:00-03	11	1	Profesor	12	Profesor Polo Informatico - Excel Avanzado	2	1890/2017	1890/2017	\N	\N	\N	\N
-6041	300	12	2017-07-18 00:00:00-03	2017-08-08 00:00:00-03	11	1	Profesor	12	Profesor Polo Informatico - Excel Básico	2	1889/2017	1889/2017	\N	\N	\N	\N
-6054	282	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Tutor	4	Tutor Motivacional - TSP	2	1884/2017	1884/2017	\N	\N	\N	\N
-6059	281	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Tutor	4	Tutor Motivacional - TSP	2	1883/2017	1883/2017	\N	\N	\N	\N
-6064	280	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Tutor	4	Tutor Motivacional - TSP	2	2030/2017	2030/2017	\N	\N	\N	\N
-6069	279	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Tutor	4	Tutor Motivacional - TSP	2	1886/2017	1886/2017	\N	\N	\N	\N
-6074	414	4	2017-06-06 00:00:00-03	2017-07-06 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	2029/2017	2029/2017	\N	\N	\N	\N
-6076	386	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Profesor	12	Prof. Polo Automotriz	2	2077/2017	2077/2017	\N	\N	\N	\N
-6077	313	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Inst. Eléct., Aires	2	2226/2017	2226/2017	\N	\N	\N	\N
-6078	315	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Inst. Cámaras	2	2038/2017	2038/2017	\N	\N	\N	\N
-6079	315	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Intr. Redes Infor.	2	2036/2017	2036/2017	\N	\N	\N	\N
-6080	387	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Responsable taller	12	Responsable taller soldadura	2	2136/2017	2136/2017	\N	\N	\N	\N
-6081	384	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia y Sec. Medico	2	2135/2017	2135/2017	\N	\N	\N	\N
-6082	286	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	2128/2017	2128/2017	\N	\N	\N	\N
-6083	287	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	2137/2017	2137/2017	\N	\N	\N	\N
-6084	295	4	2017-09-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Ayudante Carrera de Grado	2	2064/2017	2064/2017	\N	\N	\N	\N
-6088	360	12	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	11	1	Asistente	12	Asist. Administrativa - Días Sabado	2	2079/2017	2079/2017	\N	\N	\N	\N
-6093	357	12	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	11	1	Asistente	12	Asist. Administrativa - Días Sabado	2	2080/2017	2080/2017	\N	\N	\N	\N
-6102	350	18	2017-07-01 00:00:00-03	2017-09-30 00:00:00-03	13	1	Controlador	18	Control Admin. Prod. Ppios.	2	1881/2017	1881/2017	\N	\N	\N	\N
-6105	340	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón	2	2067/2017	2067/2017	\N	\N	\N	\N
-6106	340	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón	2	2066/2017	2066/2017	\N	\N	\N	\N
-6107	340	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón	2	2065/2017	2065/2017	\N	\N	\N	\N
-6108	412	4	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Profesor Seminario "Plan de Marketing" y "Marketing Digital"	2	2081/2017	2081/2017	\N	\N	\N	\N
-6110	412	4	2017-08-01 00:00:00-03	2017-09-21 00:00:00-03	10	1	Profesor	4	Profesor Seminario "Administración" -Ford-	2	2701/2017	2701/2017	\N	\N	\N	\N
-6111	311	12	2017-08-15 00:00:00-03	2017-10-03 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Soldadura TIG	2	2146/2017	2146/2017	\N	\N	\N	\N
-6114	316	12	2017-08-16 00:00:00-03	2017-11-01 00:00:00-03	11	1	Profesor	12	Profesor Polo Automotriz - Ajuste de Motor	2	2076/2017	2076/2017	\N	\N	\N	\N
-6122	316	12	2017-08-28 00:00:00-03	2017-11-27 00:00:00-03	11	1	Profesor	12	Profesor Polo Automotriz - Mecánica Básica (lun de 15 a 18)	2	2181/2017	2181/2017	\N	\N	\N	\N
-6129	321	12	2017-08-09 00:00:00-03	2017-10-25 00:00:00-03	11	1	Profesor	12	Profesor Polo Automotriz - Mecánica Básica (MIE DE 19 A 22)	2	2130/2017	2130/2017	\N	\N	\N	\N
-6135	321	12	2017-08-15 00:00:00-03	2017-10-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Automotriz - Inyección nafta func. Y comp. (mar 19 a 22)	2	2131/2017	2131/2017	\N	\N	\N	\N
-6142	322	12	2017-08-28 00:00:00-03	2017-12-28 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Asist. Contable PYME (lu y jue)	2	2182/2017	2182/2017	\N	\N	\N	\N
-6152	324	12	2017-08-31 00:00:00-03	2017-12-21 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Asist. Adm. Contable PYME (lun y jue)	2	2184/2017	2184/2017	\N	\N	\N	\N
-6174	327	12	2017-08-09 00:00:00-03	2017-11-22 00:00:00-03	11	1	Profesor	12	Prof. Idioma Extranjero - Portugués 2	2	2364/2017	2364/2017	\N	\N	\N	\N
-6178	\N	12	2017-08-08 00:00:00-03	2017-11-21 00:00:00-03	11	1	Profesor	12	Prof. Idioma Extranjero - Alemán Niv. 2 (mar 18 a 21)	2	2132/2017	2132/2017	\N	\N	\N	\N
-6182	\N	12	2017-08-09 00:00:00-03	2017-11-22 00:00:00-03	11	1	Profesor	12	Prof. Idioma Extranjero - Alemán Niv. 3 (mier 18 a 21)	2	2133/2017	2133/2017	\N	\N	\N	\N
-6186	\N	12	2017-08-12 00:00:00-03	2017-12-02 00:00:00-03	11	1	Profesor	12	Prof. Idioma Extranjero - Alemán Niv. 6 (sab 09 a 12)	2	2134/2017	2134/2017	\N	\N	\N	\N
-6191	311	12	2017-09-05 00:00:00-03	2017-10-24 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Soldadura Int. (mar)	2	2228/2017	2228/2017	\N	\N	\N	\N
-6193	416	12	2017-01-01 00:00:00-03	2017-12-31 00:00:00-03	11	1	Web Master	12	Web Master, Diseño y programación, proyectos ERP y CRM	2	2183/2017	2183/2017	\N	\N	\N	\N
-6205	403	4	2017-06-28 00:00:00-03	2017-08-16 00:00:00-03	10	1	Profesor	4	Prof. Carrera Posgrado - Seminario Negociación	2	2481/2017	2481/2017	\N	\N	\N	\N
-6207	348	14	2017-08-01 00:00:00-03	2017-11-30 00:00:00-03	15	1	Coordinador	14	Coord. CETEMYM	2	2138/2017	2138/2017	\N	\N	\N	\N
-6211	345	4	2017-07-01 00:00:00-03	2017-08-31 00:00:00-03	10	1	Profesor	4	Profesor "Gestión de las Personas" PDP Ford	2	2153/2017	2153/2017	\N	\N	\N	\N
-6212	345	4	2017-07-01 00:00:00-03	2017-08-31 00:00:00-03	10	1	Profesor	4	Profesor "Gestión de las Personas"	2	2154/2017	2154/2017	\N	\N	\N	\N
-6213	417	4	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	10	1	Profesor	4	Profesor Diplomatura Postventa	2	2475/2017	2475/2017	\N	\N	\N	\N
-6214	343	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Director	4	Director Tecnicatura TSP y TSSI	2	2123/2017	2123/2017	\N	\N	\N	\N
-6219	340	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón	2	2129/2017	2129/2017	\N	\N	\N	\N
-6220	418	12	2017-04-01 00:00:00-03	2017-04-30 00:00:00-03	11	1	Diseño	12	Diseño y publicidad en la Revista VC Pasión	2	2195/2017	2195/2017	\N	\N	\N	\N
-6221	419	4	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	10	1	Profesor	4	Profesor Diplomatura Postventa	2	2392/2017	2392/2017	\N	\N	\N	\N
-6223	291	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSSI	2	2126/2017	2126/2017	\N	\N	\N	\N
-6228	300	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP	2	2188/2017	2188/2017	\N	\N	\N	\N
-6233	283	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP	2	2218/2017	2218/2017	\N	\N	\N	\N
-6238	289	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP	2	2187/2017	2187/2017	\N	\N	\N	\N
-6243	280	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSP -Laboratorio de Computación I-	2	2190/2017	2190/2017	\N	\N	\N	\N
-6248	280	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSP -Sist. De Procesamiento de Datos-	2	2191/2017	2191/2017	\N	\N	\N	\N
-6253	388	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Administrador	4	Ayudante Tecnicatura TSP -Laboratorio Computación II-	2	2159/2017	2159/2017	\N	\N	\N	\N
-6255	354	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	JTP a Cargo	4	Profesor TSP - Computación I-	2	2207/2017	2207/2017	\N	\N	\N	\N
-6259	420	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP - Ingles Tec. Avanzado II-	2	2150/2017	2150/2017	\N	\N	\N	\N
-6262	288	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSSI	2	2158/2017	2158/2017	\N	\N	\N	\N
-6267	288	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP - Metodología en Sistemas I	2	2156/2017	2156/2017	\N	\N	\N	\N
-6272	288	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSSI - Metodologia sistemas III	2	2157/2017	2157/2017	\N	\N	\N	\N
-6282	420	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP - Ingles II	2	2151/2017	2151/2017	\N	\N	\N	\N
-6285	420	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP - Ingles I	2	2152/2017	2152/2017	\N	\N	\N	\N
-6297	296	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP	2	2220/2017	2220/2017	\N	\N	\N	\N
-6302	294	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	JTP a Cargo	4	JTP a Cargo Tecnicatura TSP -Dis. Y Adm. De base de Datos-	2	2356/2017	2356/2017	\N	\N	\N	\N
-6307	294	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	JTP a Cargo	4	JTP a Cargo Tecnicatura TSP -Programación I-	2	2209/2017	2209/2017	\N	\N	\N	\N
-6312	297	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Docente adjunto Legislación - TSP - Turno Mañana	2	2205/2017	2205/2017	\N	\N	\N	\N
-6317	297	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Docente adjunto Legislación - TSP - Turno Noche	2	2206/2017	2206/2017	\N	\N	\N	\N
-6321	302	4	2017-09-12 00:00:00-03	2017-11-09 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA - Nivelación	2	2221/2017	2221/2017	\N	\N	\N	\N
-6323	292	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP - JTP a cargo	2	2198/2017	2198/2017	\N	\N	\N	\N
-6328	292	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Docente adjunto- Tecnicatura TSP	2	2199/2017	2199/2017	\N	\N	\N	\N
-6333	292	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP -JTP Auxiliar-	2	2200/2017	2200/2017	\N	\N	\N	\N
-6338	293	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	JTP a Cargo	4	JTP a Cargo Tecnicatura TSP	2	2125/2017	2125/2017	\N	\N	\N	\N
-6343	298	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP -Elementos de Inv. Operativa-	2	2201/2017	2201/2017	\N	\N	\N	\N
-6348	298	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP -Estadistica-	2	2203/2017	2203/2017	\N	\N	\N	\N
-6353	298	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP -Matemática-	2	2202/2017	2202/2017	\N	\N	\N	\N
-6358	336	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Auxiliar JTP	4	Profesor Tecnicatura TSP -JTP Auxiliar-	2	2122/2017	2122/2017	\N	\N	\N	\N
-6363	279	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP -Computación II-	2	2189/2017	2189/2017	\N	\N	\N	\N
-6365	431	19	2017-03-01 00:00:00-03	2017-12-31 00:00:00-03	12	1	Medico	19	Medico	2	2391/2017	2391/2017	\N	\N	\N	\N
-6369	353	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSP	2	2155/2017	2155/2017	\N	\N	\N	\N
-6374	281	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Docente Adjunto TSP -Lab Computación IV	2	2192/2017	2192/2017	\N	\N	\N	\N
-6379	281	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Ayudante	4	Docente auxiliar JTP - TSP -Programación III	2	2194/2017	2194/2017	\N	\N	\N	\N
-6384	281	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Ayudante	4	Docente auxiliar JTP - TSP -Lab Computación IV	2	2193/2017	2193/2017	\N	\N	\N	\N
-6389	299	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP	2	2219/2017	2219/2017	\N	\N	\N	\N
-6453	339	18	2017-08-01 00:00:00-03	2017-09-30 00:00:00-03	13	1	Jardinero	18	Jardinero	2	2084/2017	2084/2017	\N	\N	\N	\N
-6399	305	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	2162/2017	2162/2017	\N	\N	\N	\N
-6404	336	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSA	2	2161/2017	2161/2017	\N	\N	\N	\N
-6409	296	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	2160/2017	2160/2017	\N	\N	\N	\N
-6414	380	4	2017-05-22 00:00:00-03	2017-06-19 00:00:00-03	10	1	Profesor	4	Profesor "Seminario Integrador"	2	2551/2017	2551/2017	\N	\N	\N	\N
-6415	422	4	2017-08-03 00:00:00-03	2017-12-20 00:00:00-03	10	1	Ayudante	4	Auxiliar JTP Tecnicatura TSP	2	2186/2017	2186/2017	\N	\N	\N	\N
-6420	301	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	2165/2017	2165/2017	\N	\N	\N	\N
-6425	304	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	2180/2017	2180/2017	\N	\N	\N	\N
-6430	291	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	2164/2017	2164/2017	\N	\N	\N	\N
-6436	282	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	2163/2017	2163/2017	\N	\N	\N	\N
-6441	384	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia y Sec. Medico	2	2149/2017	2149/2017	\N	\N	\N	\N
-6442	282	4	2017-08-01 00:00:00-03	2017-10-31 00:00:00-03	10	1	Referente Funcional	4	Referente Funcional Grupo ESTE	2	2197/2017	2197/2017	\N	\N	\N	\N
-6445	372	4	2017-07-12 00:00:00-03	2017-08-30 00:00:00-03	10	1	Profesor	4	Profesor Seminario "Costos para la Gestón"	2	2461/2017	2461/2017	\N	\N	\N	\N
-6446	311	12	2017-09-09 00:00:00-03	2017-10-28 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Soldadura TIG	2	2147/2017	2147/2017	\N	\N	\N	\N
-6448	300	12	2017-09-04 00:00:00-03	2017-09-25 00:00:00-03	11	1	Profesor	12	Profesor Polo Informatico - Excel Básico	2	2148/2017	2148/2017	\N	\N	\N	\N
-6449	338	18	2017-08-01 00:00:00-03	2017-09-30 00:00:00-03	13	1	Jardinero	18	Jardinero	2	2082/2017	2082/2017	\N	\N	\N	\N
-6451	337	18	2017-08-01 00:00:00-03	2017-09-30 00:00:00-03	13	1	Jardinero	18	Jardinero	2	2083/2017	2083/2017	\N	\N	\N	\N
-6455	283	18	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	13	1	Soporte Técnico	18	Soporte Técnico SACC	2	2121/2017	2121/2017	\N	\N	\N	\N
-6460	305	4	2017-09-12 00:00:00-03	2017-11-10 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura INGRESO TSA -	2	2140/2017	2140/2017	\N	\N	\N	\N
-6463	346	4	2017-08-04 00:00:00-03	2017-12-31 00:00:00-03	10	1	Coordinador	4	Coordinador Articulación Esc. Secundaria	2	2124/2017	2124/2017	\N	\N	\N	\N
-6468	279	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP -Programación II-	2	2204/2017	2204/2017	\N	\N	\N	\N
-6474	301	4	2017-09-12 00:00:00-03	2017-11-09 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	2222/2017	2222/2017	\N	\N	\N	\N
-6478	381	4	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Prof. Carrera Grado	2	2371/2017	2371/2017	\N	\N	\N	\N
-6481	423	4	2017-04-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Docente JTP a cargo -Redes- TSSI	2	2393/2017	2393/2017	\N	\N	\N	\N
-6485	423	4	2017-06-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Profesor	4	Docente JTP a cargo -Introducción a la Programación- Ingreso TSP	2	2394/2017	2394/2017	\N	\N	\N	\N
-6487	336	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Auxiliar JTP	4	Profesor Tecnicatura TSP -JTP Auxiliar- Met. En sistemas I	2	2389/2017	2389/2017	\N	\N	\N	\N
-6492	322	12	2017-08-30 00:00:00-03	2017-12-13 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Analista Contable (mie 19 a 22)	2	2237/2017	2237/2017	\N	\N	\N	\N
-6497	424	12	2017-02-01 00:00:00-03	2017-12-31 00:00:00-03	11	1	Locutor	12	Locutor Mundo UTN	2	2370/2017	2370/2017	\N	\N	\N	\N
-6508	315	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Intr. Redes Infor.	2	2357/2017	2357/2017	\N	\N	\N	\N
-6509	315	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Instalación Cámaras de Seguridad.	2	2358/2017	2358/2017	\N	\N	\N	\N
-6510	315	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Reparación PC y Notebook	2	2359/2017	2359/2017	\N	\N	\N	\N
-6511	287	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	1	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	2361/2017	2361/2017	\N	\N	\N	\N
-6512	386	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	1	Profesor	12	Prof. Polo Automotriz	2	2363/2017	2363/2017	\N	\N	\N	\N
-6513	313	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Inst. Eléct., Aires	2	2362/2017	2362/2017	\N	\N	\N	\N
-6514	384	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia y Sec. Medico	2	2367/2017	2367/2017	\N	\N	\N	\N
-6515	387	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	1	Responsable taller	12	Responsable taller soldadura	2	2235/2017	2235/2017	\N	\N	\N	\N
-6516	286	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	1	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	2360/2017	2360/2017	\N	\N	\N	\N
-6517	316	12	2017-09-06 00:00:00-03	2017-11-22 00:00:00-03	11	1	Profesor	12	Profesor Polo Automotriz - Reparación y Mantenimiento de Motor	2	2234/2017	2234/2017	\N	\N	\N	\N
-6520	316	12	2017-09-07 00:00:00-03	2017-11-23 00:00:00-03	11	1	Profesor	12	Profesor Polo Automotriz - Conoc. Electricidad de Autom (jue 19 a 22)	2	2233/2017	2233/2017	\N	\N	\N	\N
-6523	425	12	2017-09-05 00:00:00-03	2017-10-12 00:00:00-03	11	1	Profesor	12	Profesor in Company -curso Soldadura General- (mar y jue de 8 a 12)	2	2369/2017	2369/2017	\N	\N	\N	\N
-6524	426	12	2017-09-05 00:00:00-03	2017-10-12 00:00:00-03	11	1	Profesor	12	Profesor in Company -curso Soldadura General- (mar y jue de 8 a 12)	2	2495/2017	2495/2017	\N	\N	\N	\N
-6525	324	12	2017-09-09 00:00:00-03	2017-12-23 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Liquidación Sueldos (sab)	2	2368/2017	2368/2017	\N	\N	\N	\N
-6529	300	12	2017-08-07 00:00:00-03	2017-09-04 00:00:00-03	11	1	Profesor	12	Profesor Polo Informatico - Excel Básico y Avanzado para VW	2	2397/2017	2397/2017	\N	\N	\N	\N
-6531	314	12	2017-09-12 00:00:00-03	2017-11-30 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Automatiz. Industrial	2	2400/2017	2400/2017	\N	\N	\N	\N
-6534	321	12	2017-07-06 00:00:00-03	2017-09-21 00:00:00-03	11	1	Profesor	12	Profesor Polo Automotriz - Inst. Eléctricas del Automovil (jue 19 a 22)	2	2236/2017	2236/2017	\N	\N	\N	\N
-6537	342	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2365/2017	2365/2017	\N	\N	\N	\N
-6538	342	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2229/2017	2229/2017	\N	\N	\N	\N
-6539	342	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2230/2017	2230/2017	\N	\N	\N	\N
-6540	342	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2231/2017	2231/2017	\N	\N	\N	\N
-6562	302	4	2017-09-15 00:00:00-03	2017-11-30 00:00:00-03	10	1	Profesor	4	Ayudante TP 1ra Simple - Introd. A la Universidad	2	2464/2017	2464/2017	\N	\N	\N	\N
-6565	372	4	2017-09-04 00:00:00-03	2017-10-11 00:00:00-03	10	1	Profesor	4	Profesor Seminario Información Financiera	2	2479/2017	2479/2017	\N	\N	\N	\N
-6566	385	4	2017-09-04 00:00:00-03	2017-10-16 00:00:00-03	10	1	Profesor	4	Profesor seminario "Formulación y Evaluación de Proyectos"	2	2617/2017	2617/2017	\N	\N	\N	\N
-6568	369	4	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Docente JTP Simple -Matemática Nivel I-	2	2638/2017	2638/2017	\N	\N	\N	\N
-6571	322	12	2017-09-19 00:00:00-03	2017-10-10 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Monot. E Ing. Brutos	2	2402/2017	2402/2017	\N	\N	\N	\N
-6573	324	12	2017-10-17 00:00:00-03	2017-11-07 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Monot. E Ing. Brutos	2	2403/2017	2403/2017	\N	\N	\N	\N
-6575	386	12	2017-09-04 00:00:00-03	2017-11-27 00:00:00-03	11	1	Profesor	12	Profesor curso Elec. Nivel I y Mant. Express In Company (Toyota)	2	2401/2017	2401/2017	\N	\N	\N	\N
-6578	\N	13	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	14	1	Director	13	Director CIDIV	2	2395/2017	2395/2017	\N	\N	\N	\N
-6581	375	12	2017-05-16 00:00:00-03	2017-08-10 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Tornería Avanzada (Mar y Jue de 15 a 18)	2	2459/2017	2459/2017	\N	\N	\N	\N
-6585	317	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	1	Profesor	12	Ayudante Form. Dist. Y Transm. De la energía elect. Edic 8	2	2405/2017	2405/2017	\N	\N	\N	\N
-6587	398	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	1	Profesor	12	Ayudante Form. Dist. Y Transm. De la energía elect. Edic 8	2	2465/2017	2465/2017	\N	\N	\N	\N
-6589	318	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	1	Profesor	12	Profesor Form. Dist. Y Transm. De la energía elect. Edic 8	2	2493/2017	2493/2017	\N	\N	\N	\N
-6592	350	18	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	13	1	Controlador	18	Control Admin. Prod. Ppios.	2	2390/2017	2390/2017	\N	\N	\N	\N
-6595	429	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	1	Ayudante	12	Ayudante Form. Dist. Y Transm. De la energía elect. Edic 8	2	2496/2017	2496/2017	\N	\N	\N	\N
-6598	399	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	1	Profesor	12	Profesor Curso: Form. Dist. Y Transm. De la energía elect. Edic 8	2	2483/2017	2483/2017	\N	\N	\N	\N
-6647	293	4	2017-10-02 00:00:00-03	2017-12-20 00:00:00-03	10	1	JTP a Cargo	4	Docente adjunto Tecnicatura TSP- Nivelacion	2	2470/2017	2470/2017	\N	\N	\N	\N
-6601	399	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	1	Profesor	12	Ayudante Curso: Form. Dist. Y Transm. De la energía elect. Edic 8	2	2482/2017	2482/2017	\N	\N	\N	\N
-6604	396	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	1	Profesor	12	Profesor Form. Dist. Y Transm. De la energía elect. Edic 8	2	2491/2017	2491/2017	\N	\N	\N	\N
-6607	396	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	1	Profesor	12	Ayudante de Docente Form. Dist. Y Transm. De la energía elect. Edic 8	2	2490/2017	2490/2017	\N	\N	\N	\N
-6611	399	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	1	Profesor	12	Coordinador Curso: Form. Dist. Y Transm. De la energía elect. Edic 8	2	 2484/2017	 2484/2017	\N	\N	\N	\N
-6612	399	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	1	Profesor	12	Ayudante Curso: Form. Dist. Y Transm. De la energía elect. Edic 8	2	2489/2017	2489/2017	\N	\N	\N	\N
-6610	1	12	2017-08-29 21:00:00-03	2018-01-29 21:00:00-03	9	1	Profesor	8	                                                                                     Profesor Form. Dist. Y Transm. De la energía elect. Edic 8\r\n              \r\n              \r\n              \r\n              \r\n              	2	2486/2017	2486/2017	1	1	\N	\N
-6613	318	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	1	Profesor	12	Coordinación Form. Dist. Y Transm. De la energía elect. Edic 8	2	2494/2017	2494/2017	\N	\N	\N	\N
-6614	396	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	1	Profesor	12	Coordinación Form. Dist. Y Transm. De la energía elect. Edic 8	2	2487/2017	2487/2017	\N	\N	\N	\N
-6615	396	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	1	Profesor	12	Coordinación (Ayudante)Form. Dist. Y Transm. De la energía elect. Edic 8	2	2488/2017	2488/2017	\N	\N	\N	\N
-6616	319	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	1	Asistente	12	Asistente curso Form. Dist. Y Transm. De la energía elect. Edic 8	2	2460/2017	2460/2017	\N	\N	\N	\N
-6619	403	4	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	10	1	Profesor	4	Profesor Diplomatura Postventa -Seminario Negociación, resol.	2	2396/2017	2396/2017	\N	\N	\N	\N
-6620	419	4	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	10	1	Profesor	4	Profesor Diplomatura Postventa - Seminario -Defensa al consumidor-	2	2725/2017	2725/2017	\N	\N	\N	\N
-6637	419	4	2017-07-01 00:00:00-03	2017-08-31 00:00:00-03	10	1	Profesor	4	Profesor Seminario -Legislación Empresarial- PDP Ford	2	2610/2017	2610/2017	\N	\N	\N	\N
-6639	283	4	2017-10-02 00:00:00-03	2017-12-20 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	2466/2017	2466/2017	\N	\N	\N	\N
-6641	294	4	2017-10-02 00:00:00-03	2017-12-20 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	2467/2017	2467/2017	\N	\N	\N	\N
-6643	352	4	2017-10-02 00:00:00-03	2017-12-20 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSP - Nivelación	2	2472/2017	2472/2017	\N	\N	\N	\N
-6645	291	4	2017-10-02 00:00:00-03	2017-12-20 00:00:00-03	10	1	Profesor	4	Docente adjunto Tecnicatura TSP - Nivelación	2	2468/2017	2468/2017	\N	\N	\N	\N
-6649	353	4	2017-10-02 00:00:00-03	2017-12-20 00:00:00-03	10	1	Ayudante	4	Docente auxiliar JTP Tecnicatura TSP - Nivelación	2	2471/2017	2471/2017	\N	\N	\N	\N
-6651	295	4	2017-10-02 00:00:00-03	2017-12-20 00:00:00-03	10	1	Profesor	4	Docente adjunto Tecnicatura TSP - Nivelación	2	2799/2017	2799/2017	\N	\N	\N	\N
-6653	292	4	2017-10-02 00:00:00-03	2017-12-20 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	2469/2017	2469/2017	\N	\N	\N	\N
-6667	384	12	2017-08-31 21:00:00-03	2017-09-29 21:00:00-03	11	1	Profesor	12	                                  Profesor Polo Administrativo - Auxiliar de Farmacia y Sec. Medico\r\n              \r\n              	2	2542/2017	2542/2017	0	0	\N	\N
-6665	432	4	2017-09-06 00:00:00-03	2017-10-18 00:00:00-03	10	1	Profesor	4	Profesor seminario -Metodología de la investigación	2	2550/2017	2550/2017	\N	\N	\N	\N
-6666	386	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Profesor	12	Prof. Polo Automotriz	2	2547/2017	2547/2017	\N	\N	\N	\N
-6668	384	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia y Sec. Medico	2	2543/2017	2543/2017	\N	\N	\N	\N
-6669	315	12	2017-09-01 00:00:00-03	2017-08-31 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Intr. Redes Infor.	2	2498/2017	2498/2017	\N	\N	\N	\N
-6670	315	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Instalación Cámaras de Seguridad.	2	2499/2017	2499/2017	\N	\N	\N	\N
-6671	287	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	2538/2017	2538/2017	\N	\N	\N	\N
-6672	315	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - Reparación PC y Notebook	2	2500/2017	2500/2017	\N	\N	\N	\N
-6673	433	12	2017-03-01 00:00:00-03	2017-08-31 00:00:00-03	11	1	Profesor	12	Responsable bibioteca J. J. Castelli	2	2553/2017	2553/2017	\N	\N	\N	\N
-6679	433	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Profesor	12	Responsable bibioteca J. J. Castelli	2	2554/2017	2554/2017	\N	\N	\N	\N
-6680	286	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	2544/2017	2544/2017	\N	\N	\N	\N
-6681	313	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Inst. Eléct., Aires	2	2539/2017	2539/2017	\N	\N	\N	\N
-6682	387	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Responsable taller	12	Responsable taller soldadura	2	2501/2017	2501/2017	\N	\N	\N	\N
-6683	316	12	2017-10-02 00:00:00-03	2017-12-18 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - AutoCad Básico - Lunes de 19 a 22 hs	2	2540/2017	2540/2017	\N	\N	\N	\N
-6686	316	12	2017-10-05 00:00:00-03	2017-12-07 00:00:00-03	11	1	Profesor	12	Profesor Polo Informático - AutoCad Básico - Jueves de 15 a 18 hs	2	2541/2017	2541/2017	\N	\N	\N	\N
-6689	408	12	2017-10-03 00:00:00-03	2017-10-12 00:00:00-03	11	1	Profesor	12	Profesor - Lean Manufacturing	2	2548/2017	2548/2017	\N	\N	\N	\N
-6690	300	12	2017-10-12 00:00:00-03	2017-11-02 00:00:00-03	11	1	Profesor	12	Profesor Polo Informatico - Excel Avanzado (jue de 15 a 18)	2	2546/2017	2546/2017	\N	\N	\N	\N
-6692	300	12	2017-10-09 00:00:00-03	2017-11-06 00:00:00-03	11	1	Profesor	12	Profesor Polo Informatico - Excel Básico (lun de 15 a 18)	2	2545/2017	2545/2017	\N	\N	\N	\N
-6697	333	4	2017-08-04 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor LEM	2	2406/2017	2406/2017	\N	\N	\N	\N
-6701	414	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	2473/2017	2473/2017	\N	\N	\N	\N
-6706	310	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	2474/2017	2474/2017	\N	\N	\N	\N
-6711	301	4	2017-10-16 00:00:00-03	2017-11-11 00:00:00-03	10	1	Profesor	4	Ayudante TP 2da Simple -Matematica Nivel I	2	2552/2017	2552/2017	\N	\N	\N	\N
-6713	\N	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	\N	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2602/2017	2602/2017	\N	\N	\N	\N
-6714	342	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2605/2017	2605/2017	\N	\N	\N	\N
-6715	342	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2603/2017	2603/2017	\N	\N	\N	\N
-6716	\N	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	\N	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2606/2017	2606/2017	\N	\N	\N	\N
-6717	374	12	2017-10-24 00:00:00-03	2017-12-05 00:00:00-03	11	1	Profesor	12	Profesor Polo Informatico - Robotica Básica	2	2555/2017	2555/2017	\N	\N	\N	\N
-6720	434	12	2017-10-10 00:00:00-03	2017-11-28 00:00:00-03	11	1	Profesor	12	Profesor curso Torno CNC -2 ejes- (mar de 19 a 22)	2	2616/2017	2616/2017	\N	\N	\N	\N
-6722	435	\N	2017-09-06 00:00:00-03	2017-10-18 00:00:00-03	10	1	Profesor	\N	Profesor materia "Marketing Estratégico"	2	2647/2017	2647/2017	\N	\N	\N	\N
-6723	342	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2608/2017	2608/2017	\N	\N	\N	\N
-6724	342	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2604/2017	2604/2017	\N	\N	\N	\N
-6726	437	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	1	Profesor	4	Profesor Tecnicatura TSA	2	2549/2017	2549/2017	\N	\N	\N	\N
-6732	439	12	2017-01-01 00:00:00-03	2017-07-31 00:00:00-03	11	1	Diseño y Publicidad	12	Diseño y publicidad en: Pacheco Dig, Rincon Dig y Don Torcuato.com.ar	2	2702/2017	2702/2017	\N	\N	\N	\N
-6739	432	4	2017-04-26 00:00:00-03	2017-08-09 00:00:00-03	10	1	Profesor	4	Profesor materia "Metodología de la Investigación"	2	2615/2017	2615/2017	\N	\N	\N	\N
-6740	434	12	2017-08-01 00:00:00-03	2017-09-19 00:00:00-03	11	1	Profesor	12	Profesor curso Torno CNC -2 ejes- (mar de 19 a 22)	2	2609/2017	2609/2017	\N	\N	\N	\N
-6744	440	12	2017-10-23 00:00:00-03	2017-12-18 00:00:00-03	11	1	Profesor	12	Profesor Polo Oficios - Progr. Lógicos Control. Nivel 2 (lun de 19 a 22)	2	2646/2017	2646/2017	\N	\N	\N	\N
-6747	439	12	2017-02-01 00:00:00-03	2017-12-31 00:00:00-03	11	1	Diseño y Publicidad	12	Diseño y publicidad en " Guia Encuentro"	2	2633/2017	2633/2017	\N	\N	\N	\N
-6758	340	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón	2	2644/2017	2644/2017	\N	\N	\N	\N
-6759	342	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2641/2017	2641/2017	\N	\N	\N	\N
-6760	\N	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	\N	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2639/2017	2639/2017	\N	\N	\N	\N
-6761	342	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2642/2017	2642/2017	\N	\N	\N	\N
-6762	\N	12	2017-10-01 00:00:00-03	2017-10-31 00:00:00-03	11	1	\N	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2640/2017	2640/2017	\N	\N	\N	\N
-6763	340	12	2017-10-01 00:00:00-03	2017-10-31 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón	2	2645/2017	2645/2017	\N	\N	\N	\N
-6764	342	12	2017-10-01 00:00:00-03	2017-10-31 00:00:00-03	11	1	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2643/2017	2643/2017	\N	\N	\N	\N
-6767	427	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	1	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2713/2017	2713/2017	\N	\N	\N	\N
-6768	340	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2703/2017	2703/2017	\N	\N	\N	\N
-6769	340	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	1	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2704/2017	2704/2017	\N	\N	\N	\N
-6826	1	1	2017-08-29 21:00:00-03	2018-01-29 21:00:00-03	9	1	Profesor	8	                                                   Prof. de Defensa de Proyecto Final/Jorn. Outdoor -Dip. Post Venta VW-\r\n              \r\n              \r\n              	2	2803/2017	2803/2017	0	\N	\N	2018-01-30 19:27:51.030885
-6821	1	1	2017-08-29 21:00:00-03	2018-01-29 21:00:00-03	9	1	Profesor	8	                 Profesor "Comportamiento Organizacional"\r\n              	2	2800/2017	2800/2017	0	\N	\N	2018-01-30 19:30:45.29857
-6811	352	4	2017-05-22 00:00:00-03	2017-07-17 00:00:00-03	10	1	Ayudante	4	Ayudante Tecnicatura TSP - Nivelación	2	2649/2017	2649/2017	\N	\N	\N	\N
-6815	341	4	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Gestión	4	Gestión de la calidad	2	2801/2017	2801/2017	\N	\N	\N	\N
-6820	345	1	2017-10-15 21:00:00-03	2017-11-26 21:00:00-03	10	1	Profesor	4	                 Profesor "Gestión de Personas"\r\n              	2	2724/2017	2724/2017	1	100	\N	2018-01-30 20:24:53.694131
-6822	356	4	2017-09-30 21:00:00-03	2017-12-30 21:00:00-03	10	1	Asistente	4	                 Asist. Administrativo\r\n              	2	2788/2017	2788/2017	0	0	\N	2018-01-30 20:33:42.271867
-6825	372	4	2017-11-01 00:00:00-03	2017-11-30 00:00:00-03	10	1	Profesor	4	Profesor de Defensa de Proyecto Final -Diplomatura Post Venta VW-	2	2805/2017	2805/2017	\N	\N	\N	\N
-6828	380	4	2017-11-01 00:00:00-03	2017-11-30 00:00:00-03	10	1	Profesor	4	Profesor de Defensa de Proyecto Final -Diplomatura Post Venta VW-	2	2804/2017	2804/2017	\N	\N	\N	\N
-6829	406	4	2017-12-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor LEM -Finales Diciembre-	2	2797/2017	2797/2017	\N	\N	\N	\N
-6830	331	4	2017-12-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor LEM -Finales Diciembre-	2	2798/2017	2798/2017	\N	\N	\N	\N
-6831	411	4	2017-12-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Profesor	4	Profesor LEM -Finales Diciembre-	2	2796/2017	2796/2017	\N	\N	\N	\N
-6835	284	4	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	10	1	Soporte Técnico	4	Soporte Técnico Recursos Informáticos -TSA-	2	2789/2017	2789/2017	\N	\N	\N	\N
-6840	443	17	2017-11-06 00:00:00-03	2017-04-30 00:00:00-03	11	1	Inspector	17	Inspector durmientes -Convenio ADIF-	2	2790/2017	2790/2017	\N	\N	\N	\N
-6846	444	17	2017-11-06 00:00:00-03	2017-04-30 00:00:00-03	11	1	Inspector	17	Inspector durmientes -Convenio ADIF-	2	2791/2017	2791/2017	\N	\N	\N	\N
-6852	427	17	2017-11-06 00:00:00-03	2017-04-30 00:00:00-03	11	1	Inspector	17	Inspector durmientes -Convenio ADIF-	2	2792/2017	2792/2017	\N	\N	\N	\N
-6858	445	17	2017-11-06 00:00:00-03	2017-04-30 00:00:00-03	11	1	Responsable de calidad	17	Responsable de calidad laboratorio de hormigon -durmientes-	2	2793/2017	2793/2017	\N	\N	\N	\N
-6864	446	17	2017-11-06 00:00:00-03	2017-04-30 00:00:00-03	11	1	Inspector	17	Inspector durmientes -Convenio ADIF-	2	2794/2017	2794/2017	\N	\N	\N	\N
-6870	447	17	2017-11-06 00:00:00-03	2017-04-30 00:00:00-03	11	1	Inspector	17	Inspector durmientes -Convenio ADIF-	2	2795/2017	2795/2017	\N	\N	\N	\N
-6882	355	4	2018-01-01 00:00:00-03	2018-03-31 00:00:00-03	10	1	Asistente	4	Asist. Administrativo	2	2802/2017	2802/2017	\N	\N	\N	\N
-4669	335	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	1	Locutor	12	Locutor Mundo UTN	2	114/2017	114/2017	\N	\N	\N	\N
-4670	335	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	1	Locutor	12	Locutor Mundo UTN	2	1064/2017	1064/2017	\N	\N	\N	\N
-4674	346	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	1	Director	4	Director LEM	2	295/2017	295/2017	\N	\N	\N	\N
+9863	391	2	2017-09-16 21:00:00-03	2018-02-16 21:00:00-03	9	5	Prueba	16	                 \r\n     Prueba         	\N	1111	\N	0	0	2018-02-17 15:09:12.490542	2018-02-17 18:15:12.799075
+192	1	\N	2017-12-21 21:00:00-03	2017-12-21 21:00:00-03	9	5	\N	1	prueba	2	\N	\N	\N	\N	\N	\N
+6554	427	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2598/2017	2598/2017	\N	\N	\N	\N
+6555	342	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2556/2017	2556/2017	\N	\N	\N	\N
+6556	\N	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	\N	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2557/2017	2557/2017	\N	\N	\N	\N
+6557	\N	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	\N	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2601/2017	2601/2017	\N	\N	\N	\N
+6558	\N	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	\N	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2600/2017	2600/2017	\N	\N	\N	\N
+6559	312	12	2017-09-23 00:00:00-03	2017-11-11 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Progr. Lógicos Control. Nivel 1	2	2492/2017	2492/2017	\N	\N	\N	\N
+6770	427	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	5	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2714/2017	2714/2017	\N	\N	\N	\N
+6771	427	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	5	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2715/2017	2715/2017	\N	\N	\N	\N
+6772	340	12	2017-10-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2705/2017	2705/2017	\N	\N	\N	\N
+6781	340	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2710/2017	2710/2017	\N	\N	\N	\N
+6782	427	12	2017-10-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2720/2017	2720/2017	\N	\N	\N	\N
+6783	427	12	2017-10-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2721/2017	2721/2017	\N	\N	\N	\N
+6784	340	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2711/2017	2711/2017	\N	\N	\N	\N
+6043	399	12	2017-07-01 00:00:00-03	2017-07-18 00:00:00-03	11	5	Profesor	12	Coordinador Curso: Form. Dist. Y Transm. De la energía elect. Edic 7	2	2028/2017	2028/2017	\N	\N	\N	\N
+6044	318	12	2017-07-01 00:00:00-03	2017-07-18 00:00:00-03	11	5	Profesor	12	Coordinación Form. Dist. Y Transm. De la energía elect. Edic 7	2	2069/2017	2069/2017	\N	\N	\N	\N
+6045	396	12	2017-07-01 00:00:00-03	2017-07-18 00:00:00-03	11	5	Profesor	12	Coordinación curso Inst. Elec. Dom. Y Com.	2	2021/2017	2021/2017	\N	\N	\N	\N
+6046	\N	13	2017-07-01 00:00:00-03	2017-09-30 00:00:00-03	14	5	Director	13	Director CIDIV	2	1879/2017	1879/2017	\N	\N	\N	\N
+6049	336	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Tutor	4	Tutor motivacional - TSP	2	1887/2017	1887/2017	\N	\N	\N	\N
+6542	340	12	2017-08-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón	2	2353/2017	2353/2017	\N	\N	\N	\N
+6543	427	12	2017-08-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2352/2017	2352/2017	\N	\N	\N	\N
+6544	340	12	2017-08-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón	2	2355/2017	2355/2017	\N	\N	\N	\N
+6545	427	12	2017-08-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2354/2017	2354/2017	\N	\N	\N	\N
+9864	281	2	2017-09-16 21:00:00-03	2018-02-16 21:00:00-03	9	5	Supervisor junior	16	                 \r\n              Supervisar juniarmente	\N		\N	5	500	2018-02-17 18:20:36.804726	2018-02-20 23:58:42.972411
+6546	400	4	2017-08-28 00:00:00-03	2017-10-04 00:00:00-03	10	5	Profesor	4	Profesor del Seminario Administración	2	2398/2017	2398/2017	\N	\N	\N	\N
+6549	384	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia y Sec. Medico	2	2366/2017	2366/2017	\N	\N	\N	\N
+6550	316	12	2017-10-14 00:00:00-03	2017-12-02 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - AutoCad Avanzado (Sab de 9 a 12)	2	2404/2017	2404/2017	\N	\N	\N	\N
+6553	340	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón	2	2599/2017	2599/2017	\N	\N	\N	\N
+6773	340	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2706/2017	2706/2017	\N	\N	\N	\N
+6774	427	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	5	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2716/2017	2716/2017	\N	\N	\N	\N
+9862	1	1	2017-08-29 21:00:00-03	2018-01-29 21:00:00-03	9	5		8	                 \r\n              	\N		\N	1	1	2018-01-30 20:24:04.903937	2018-01-30 20:24:04.934665
+6775	427	12	2017-10-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2717/2017	2717/2017	\N	\N	\N	\N
+6776	340	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2707/2017	2707/2017	\N	\N	\N	\N
+6777	340	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2708/2017	2708/2017	\N	\N	\N	\N
+6778	427	12	2017-10-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2718/2017	2718/2017	\N	\N	\N	\N
+6779	427	12	2017-10-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2719/2017	2719/2017	\N	\N	\N	\N
+6780	340	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2709/2017	2709/2017	\N	\N	\N	\N
+4935	316	12	2017-03-06 00:00:00-03	2017-05-29 00:00:00-03	11	5	Profesor	12	Profesor Polo Automotriz - Mecánica Básica	2	1312/2017	1312/2017	\N	\N	\N	\N
+5471	340	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón	2	1502/2017	1502/2017	\N	\N	\N	\N
+5472	\N	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	\N	12	Ensayos propiedades y dureza	2	1564/2017	1564/2017	\N	\N	\N	\N
+5474	\N	12	2017-04-01 00:00:00-03	2017-05-01 00:00:00-03	11	5	\N	12	Ensayos propiedades y dureza	2	1563/2017	1563/2017	\N	\N	\N	\N
+6785	340	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2712/2017	2712/2017	\N	\N	\N	\N
+6098	368	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Ayudante Carrera de Grado	2	2485/2017	2485/2017	\N	\N	\N	\N
+6786	427	12	2017-10-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2722/2017	2722/2017	\N	\N	\N	\N
+6787	408	12	2017-10-03 00:00:00-03	2047-10-26 00:00:00-03	11	5	Profesor	12	Profesor - Lean Manufacturing (mar y jue de 18 a 22)	2	2611/2017	2611/2017	\N	\N	\N	\N
+6788	338	18	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	13	5	Jardinero	18	Jardinero	2	2612/2017	2612/2017	\N	\N	\N	\N
+6791	337	18	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	13	5	Jardinero	18	Jardinero	2	2613/2017	2613/2017	\N	\N	\N	\N
+6794	339	18	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	13	5	Jardinero	18	Jardinero	2	2614/2017	2614/2017	\N	\N	\N	\N
+6799	372	4	2017-10-23 00:00:00-03	2017-12-04 00:00:00-03	10	5	Profesor	4	Profesor Seminario "Finanzas y Control"	2	2632/2017	2632/2017	\N	\N	\N	\N
+6800	372	4	2017-10-25 00:00:00-03	2017-12-06 00:00:00-03	10	5	Profesor	4	Profesor Seminario "Creación y Administración de Pymes"	2	2651/2017	2651/2017	\N	\N	\N	\N
+6801	372	4	2017-11-02 00:00:00-03	2017-12-14 00:00:00-03	10	5	Profesor	4	Profesor Seminario "Costos para la Gestión" -Ford-	2	2650/2017	2650/2017	\N	\N	\N	\N
+6802	385	4	2017-10-18 00:00:00-03	2017-11-29 00:00:00-03	10	5	Profesor	4	Profesor seminario "Formulación y Evaluación de Proyectos"	2	2698/2017	2698/2017	\N	\N	\N	\N
+6803	385	4	2017-10-31 00:00:00-03	2017-12-12 00:00:00-03	10	5	Profesor	4	Profesor seminario "Formulación y Evaluación de Proyectos" - Ford-	2	2699/2017	2699/2017	\N	\N	\N	\N
+6804	355	4	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Asistente	4	Asist. Administrativo	2	2700/2017	2700/2017	\N	\N	\N	\N
+5475	340	12	2017-03-01 00:00:00-03	2017-04-30 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón	2	1504/2017	1504/2017	\N	\N	\N	\N
+5712	395	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	5	Director	12	Director	2	1663/2017	1663/2017	\N	\N	\N	\N
+5713	395	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	5	Director	12	Director	2	1660/2017	1660/2017	\N	\N	\N	\N
+5714	395	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	5	Director	12	Director	2	1662/2017	1662/2017	\N	\N	\N	\N
+5715	342	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1647/2017	1647/2017	\N	\N	\N	\N
+5716	365	4	2017-05-01 00:00:00-03	2017-08-31 00:00:00-03	10	5	Administrador	4	Admin. Red y Sitios Web	2	1683/2017	1683/2017	\N	\N	\N	\N
+5720	394	4	2017-04-01 00:00:00-03	2017-05-31 00:00:00-03	10	5	Profesor	4	Profesor Diplomatura Postventa	2	1579/2017	1579/2017	\N	\N	\N	\N
+5723	342	12	2017-04-01 00:00:00-03	2017-04-30 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1781/2017	1781/2017	\N	\N	\N	\N
+5724	313	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Inst. Eléct., Aires	2	1766/2017	1766/2017	\N	\N	\N	\N
+5725	315	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Inst. Cámaras	2	1694/2017	1694/2017	\N	\N	\N	\N
+5726	315	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Intr. Redes Infor.	2	1693/2017	1693/2017	\N	\N	\N	\N
+4677	279	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Tutor	4	Tutor Motivacional - TSP	2	1052/2017	1052/2017	\N	\N	\N	\N
+5727	315	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Rep. PC	2	1692/2017	1692/2017	\N	\N	\N	\N
+5728	384	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia	2	1805/2017	1805/2017	\N	\N	\N	\N
+5729	287	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	5	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	1691/2017	1691/2017	\N	\N	\N	\N
+5730	286	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	5	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	1700/2017	1700/2017	\N	\N	\N	\N
+5731	316	12	2017-06-26 00:00:00-03	2017-08-28 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - AutoCad Básico - Lunes de 19 a 22 hs	2	1695/2017	1695/2017	\N	\N	\N	\N
+5767	321	12	2017-06-09 00:00:00-03	2017-08-25 00:00:00-03	11	5	Profesor	12	Profesor Polo Automotriz - Carburación y Encendido (vie)	2	1702/2017	1702/2017	\N	\N	\N	\N
+5770	321	12	2017-06-12 00:00:00-03	2017-08-28 00:00:00-03	11	5	Profesor	12	Profesor Polo Automotriz - Mecánica Básica (lun)	2	1701/2017	1701/2017	\N	\N	\N	\N
+5773	316	12	2017-06-12 00:00:00-03	2017-08-28 00:00:00-03	11	5	Profesor	12	Profesor Polo Automotriz - Mecánica Básica (lun)	2	1699/2017	1699/2017	\N	\N	\N	\N
+5776	325	12	2017-06-06 00:00:00-03	2017-09-26 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Liquidación Sueldos (mar)	2	1874/2017	1874/2017	\N	\N	\N	\N
+5858	\N	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	5	Auxiliar	12	Auxiliar Edilicio	2	1807/2017	1807/2017	\N	\N	\N	\N
+5864	349	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	5	Coordinador	12	Coord. Administrativa	2	1809/2017	1809/2017	\N	\N	\N	\N
+5870	341	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	5	Gestión	12	Gestión de la calidad	2	1861/2017	1861/2017	\N	\N	\N	\N
+5881	358	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	5	Asistente	12	Asist. Administrativa	2	1808/2017	1808/2017	\N	\N	\N	\N
+6000	322	12	2017-08-04 00:00:00-03	2017-12-22 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Asist. Contable PYME (vie)	2	1856/2017	1856/2017	\N	\N	\N	\N
+6018	286	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	1854/2017	1854/2017	\N	\N	\N	\N
+6019	287	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	1853/2017	1853/2017	\N	\N	\N	\N
+6020	384	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia y Sec. Medico	2	2023/2017	2023/2017	\N	\N	\N	\N
+6021	315	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Rep. PC	2	1851/2017	1851/2017	\N	\N	\N	\N
+6022	315	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Intr. Redes Infor.	2	1852/2017	1852/2017	\N	\N	\N	\N
+6023	315	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Inst. Cámaras	2	1850/2017	1850/2017	\N	\N	\N	\N
+6024	313	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Inst. Eléct., Aires	2	2399/2017	2399/2017	\N	\N	\N	\N
+6025	408	12	2017-06-13 00:00:00-03	2017-06-28 00:00:00-03	11	5	Profesor	12	Profesor - Lean Manufacturing	2	1892/2017	1892/2017	\N	\N	\N	\N
+6026	409	4	2017-06-01 00:00:00-03	2017-07-30 00:00:00-03	10	5	Profesor	4	Profesor Diplomatura Postventa	2	2225/2017	2225/2017	\N	\N	\N	\N
+6028	394	4	2017-06-01 00:00:00-03	2017-07-30 00:00:00-03	10	5	Profesor	4	Profesor Diplomatura Postventa - Tutor y Campus Virtual	2	2033/2017	2033/2017	\N	\N	\N	\N
+6032	334	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Prof. Carrera Grado	2	2032/2017	2032/2017	\N	\N	\N	\N
+6037	412	4	2017-04-03 00:00:00-03	2017-05-15 00:00:00-03	10	5	Profesor	4	Profesor Seminario "Gestión del Conocimiento" (Vola Luhrs)	2	1882/2017	1882/2017	\N	\N	\N	\N
+6038	413	4	2017-06-19 00:00:00-03	2017-07-03 00:00:00-03	10	5	Profesor	4	Profesor materia "Método Cuantitativo"	2	2462/2017	2462/2017	\N	\N	\N	\N
+6039	396	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Profesor	12	Profesor Inst. Elec. Dom. Y Com. (Fundación Tzedaka)	2	2022/2017	2022/2017	\N	\N	\N	\N
+6040	300	12	2017-07-06 00:00:00-03	2017-07-27 00:00:00-03	11	5	Profesor	12	Profesor Polo Informatico - Excel Avanzado	2	1890/2017	1890/2017	\N	\N	\N	\N
+6041	300	12	2017-07-18 00:00:00-03	2017-08-08 00:00:00-03	11	5	Profesor	12	Profesor Polo Informatico - Excel Básico	2	1889/2017	1889/2017	\N	\N	\N	\N
+6102	350	18	2017-07-01 00:00:00-03	2017-09-30 00:00:00-03	13	5	Controlador	18	Control Admin. Prod. Ppios.	2	1881/2017	1881/2017	\N	\N	\N	\N
+6105	340	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón	2	2067/2017	2067/2017	\N	\N	\N	\N
+6538	342	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2229/2017	2229/2017	\N	\N	\N	\N
+6539	342	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2230/2017	2230/2017	\N	\N	\N	\N
+6540	342	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2231/2017	2231/2017	\N	\N	\N	\N
+6587	398	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	5	Profesor	12	Ayudante Form. Dist. Y Transm. De la energía elect. Edic 8	2	2465/2017	2465/2017	\N	\N	\N	\N
+6589	318	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	5	Profesor	12	Profesor Form. Dist. Y Transm. De la energía elect. Edic 8	2	2493/2017	2493/2017	\N	\N	\N	\N
+6595	429	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	5	Ayudante	12	Ayudante Form. Dist. Y Transm. De la energía elect. Edic 8	2	2496/2017	2496/2017	\N	\N	\N	\N
+6598	399	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	5	Profesor	12	Profesor Curso: Form. Dist. Y Transm. De la energía elect. Edic 8	2	2483/2017	2483/2017	\N	\N	\N	\N
+6647	293	4	2017-10-02 00:00:00-03	2017-12-20 00:00:00-03	10	5	JTP a Cargo	4	Docente adjunto Tecnicatura TSP- Nivelacion	2	2470/2017	2470/2017	\N	\N	\N	\N
+6601	399	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	5	Profesor	12	Ayudante Curso: Form. Dist. Y Transm. De la energía elect. Edic 8	2	2482/2017	2482/2017	\N	\N	\N	\N
+6604	396	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	5	Profesor	12	Profesor Form. Dist. Y Transm. De la energía elect. Edic 8	2	2491/2017	2491/2017	\N	\N	\N	\N
+6615	396	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	5	Profesor	12	Coordinación (Ayudante)Form. Dist. Y Transm. De la energía elect. Edic 8	2	2488/2017	2488/2017	\N	\N	\N	\N
+6616	319	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	5	Asistente	12	Asistente curso Form. Dist. Y Transm. De la energía elect. Edic 8	2	2460/2017	2460/2017	\N	\N	\N	\N
+6619	403	4	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	10	5	Profesor	4	Profesor Diplomatura Postventa -Seminario Negociación, resol.	2	2396/2017	2396/2017	\N	\N	\N	\N
+6620	419	4	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	10	5	Profesor	4	Profesor Diplomatura Postventa - Seminario -Defensa al consumidor-	2	2725/2017	2725/2017	\N	\N	\N	\N
+6637	419	4	2017-07-01 00:00:00-03	2017-08-31 00:00:00-03	10	5	Profesor	4	Profesor Seminario -Legislación Empresarial- PDP Ford	2	2610/2017	2610/2017	\N	\N	\N	\N
+6639	283	4	2017-10-02 00:00:00-03	2017-12-20 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	2466/2017	2466/2017	\N	\N	\N	\N
+6641	294	4	2017-10-02 00:00:00-03	2017-12-20 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	2467/2017	2467/2017	\N	\N	\N	\N
+6643	352	4	2017-10-02 00:00:00-03	2017-12-20 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSP - Nivelación	2	2472/2017	2472/2017	\N	\N	\N	\N
+6645	291	4	2017-10-02 00:00:00-03	2017-12-20 00:00:00-03	10	5	Profesor	4	Docente adjunto Tecnicatura TSP - Nivelación	2	2468/2017	2468/2017	\N	\N	\N	\N
+6649	353	4	2017-10-02 00:00:00-03	2017-12-20 00:00:00-03	10	5	Ayudante	4	Docente auxiliar JTP Tecnicatura TSP - Nivelación	2	2471/2017	2471/2017	\N	\N	\N	\N
+6651	295	4	2017-10-02 00:00:00-03	2017-12-20 00:00:00-03	10	5	Profesor	4	Docente adjunto Tecnicatura TSP - Nivelación	2	2799/2017	2799/2017	\N	\N	\N	\N
+6653	292	4	2017-10-02 00:00:00-03	2017-12-20 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	2469/2017	2469/2017	\N	\N	\N	\N
+6670	315	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Instalación Cámaras de Seguridad.	2	2499/2017	2499/2017	\N	\N	\N	\N
+6671	287	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	2538/2017	2538/2017	\N	\N	\N	\N
+6672	315	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Reparación PC y Notebook	2	2500/2017	2500/2017	\N	\N	\N	\N
+6673	433	12	2017-03-01 00:00:00-03	2017-08-31 00:00:00-03	11	5	Profesor	12	Responsable bibioteca J. J. Castelli	2	2553/2017	2553/2017	\N	\N	\N	\N
+6679	433	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Profesor	12	Responsable bibioteca J. J. Castelli	2	2554/2017	2554/2017	\N	\N	\N	\N
+6680	286	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	2544/2017	2544/2017	\N	\N	\N	\N
+6681	313	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Inst. Eléct., Aires	2	2539/2017	2539/2017	\N	\N	\N	\N
+6682	387	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Responsable taller	12	Responsable taller soldadura	2	2501/2017	2501/2017	\N	\N	\N	\N
+6683	316	12	2017-10-02 00:00:00-03	2017-12-18 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - AutoCad Básico - Lunes de 19 a 22 hs	2	2540/2017	2540/2017	\N	\N	\N	\N
+6686	316	12	2017-10-05 00:00:00-03	2017-12-07 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - AutoCad Básico - Jueves de 15 a 18 hs	2	2541/2017	2541/2017	\N	\N	\N	\N
+6689	408	12	2017-10-03 00:00:00-03	2017-10-12 00:00:00-03	11	5	Profesor	12	Profesor - Lean Manufacturing	2	2548/2017	2548/2017	\N	\N	\N	\N
+6690	300	12	2017-10-12 00:00:00-03	2017-11-02 00:00:00-03	11	5	Profesor	12	Profesor Polo Informatico - Excel Avanzado (jue de 15 a 18)	2	2546/2017	2546/2017	\N	\N	\N	\N
+6692	300	12	2017-10-09 00:00:00-03	2017-11-06 00:00:00-03	11	5	Profesor	12	Profesor Polo Informatico - Excel Básico (lun de 15 a 18)	2	2545/2017	2545/2017	\N	\N	\N	\N
+6697	333	4	2017-08-04 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor LEM	2	2406/2017	2406/2017	\N	\N	\N	\N
+6701	414	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	2473/2017	2473/2017	\N	\N	\N	\N
+6706	310	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	2474/2017	2474/2017	\N	\N	\N	\N
+6747	439	12	2017-02-01 00:00:00-03	2017-12-31 00:00:00-03	11	5	Diseño y Publicidad	12	Diseño y publicidad en " Guia Encuentro"	2	2633/2017	2633/2017	\N	\N	\N	\N
+6292	282	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSP	2	2127/2017	2127/2017	\N	\N	\N	\N
+6541	\N	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	5	\N	12	Ensayos propiedades y dureza	2	2232/2017	2232/2017	\N	\N	\N	\N
+6807	344	4	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Director	4	Director Tecnicatura TSA	2	2636/2017	2636/2017	\N	\N	\N	\N
+4683	280	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Tutor	4	Tutor Motivacional - TSP	2	1046/2017	1046/2017	\N	\N	\N	\N
+4689	281	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Tutor	4	Tutor Motivacional - TSP	2	1053/2017	1053/2017	\N	\N	\N	\N
+5263	359	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Asistente	12	Asist. Administrativa	2	83/2017	83/2017	\N	\N	\N	\N
+5711	395	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	5	Director	12	Director	2	1661/2017	1661/2017	\N	\N	\N	\N
+5836	322	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	5	Coordinador	12	Coord. Polo Admin.	2	1842/2017	1842/2017	\N	\N	\N	\N
+6206	364	18	2017-07-01 00:00:00-03	2017-08-04 00:00:00-03	10	5	Asistente	18	Asist. Administrativa	2	1885/2017	1885/2017	\N	\N	\N	\N
+6277	354	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	JTP a Cargo	4	Profesor TSP - Computación II-	2	2208/2017	2208/2017	\N	\N	\N	\N
+4723	289	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSSI	2	308/2017	308/2017	\N	\N	\N	\N
+6627	345	4	2017-03-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Director	4	Director Académico -PDP Ford-	2	2478/2017	2478/2017	\N	\N	\N	\N
+4695	282	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Tutor	4	Tutor Motivacional - TSP	2	1047/2017	1047/2017	\N	\N	\N	\N
+4701	283	18	2017-02-01 00:00:00-03	2017-04-30 00:00:00-03	13	5	Soporte Técnico	18	Soporte Técnico SACC	2	216/2017	216/2017	\N	\N	\N	\N
+4704	284	4	2017-02-01 00:00:00-03	2017-04-30 00:00:00-03	10	5	Soporte Técnico	4	Soporte Técnico Recursos Informáticos	2	1320/2017	1320/2017	\N	\N	\N	\N
+4707	285	4	2017-02-01 00:00:00-03	2017-04-30 00:00:00-03	10	5	Referente Técnico	4	Referente Técnico Grupo ESTE	2	293/2017	293/2017	\N	\N	\N	\N
+4710	282	4	2017-02-01 00:00:00-03	2017-04-30 00:00:00-03	10	5	Referente Funcional	4	Referente Funcional Grupo ESTE	2	212/2017	212/2017	\N	\N	\N	\N
+4713	286	12	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	1248/2017	1248/2017	\N	\N	\N	\N
+4715	287	12	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	1319/2017	1319/2017	\N	\N	\N	\N
+4717	288	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSSI	2	959/2017	959/2017	\N	\N	\N	\N
+4729	290	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSSI	2	1843/2017	1843/2017	\N	\N	\N	\N
+4735	291	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSSI	2	307/2017	307/2017	\N	\N	\N	\N
+4741	292	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	312/2017	312/2017	\N	\N	\N	\N
+4743	283	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	309/2017	309/2017	\N	\N	\N	\N
+4745	293	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	313/2017	313/2017	\N	\N	\N	\N
+4747	294	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	314/2017	314/2017	\N	\N	\N	\N
+4749	295	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	310/2017	310/2017	\N	\N	\N	\N
+4751	291	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	311/2017	311/2017	\N	\N	\N	\N
+4753	292	4	2017-05-22 00:00:00-03	2017-07-17 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	1580/2017	1580/2017	\N	\N	\N	\N
+4756	283	4	2017-05-22 00:00:00-03	2017-07-17 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	1581/2017	1581/2017	\N	\N	\N	\N
+4759	295	4	2017-05-22 00:00:00-03	2017-07-17 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	1576/2017	1576/2017	\N	\N	\N	\N
+4762	291	4	2017-05-22 00:00:00-03	2017-07-17 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP - Nivelación	2	1646/2017	1646/2017	\N	\N	\N	\N
+4765	296	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP	2	1415/2017	1415/2017	\N	\N	\N	\N
+4771	292	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP	2	300/2017	300/2017	\N	\N	\N	\N
+4777	288	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP	2	301/2017	301/2017	\N	\N	\N	\N
+4783	297	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP	2	302/2017	302/2017	\N	\N	\N	\N
+4789	298	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP	2	305/2017	305/2017	\N	\N	\N	\N
+4795	290	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP	2	1844/2017	1844/2017	\N	\N	\N	\N
+4801	283	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP	2	303/2017	303/2017	\N	\N	\N	\N
+4807	299	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP	2	299/2017	299/2017	\N	\N	\N	\N
+4813	281	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP	2	304/2017	304/2017	\N	\N	\N	\N
+4819	279	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP	2	297/2017	297/2017	\N	\N	\N	\N
+4824	300	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP	2	298/2017	298/2017	\N	\N	\N	\N
+4830	289	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP	2	306/2017	306/2017	\N	\N	\N	\N
+4835	301	4	2017-02-01 00:00:00-03	2017-03-17 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA - Nivelación	2	122/2017	122/2017	\N	\N	\N	\N
+4837	302	4	2017-02-01 00:00:00-03	2017-03-17 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA - Nivelación	2	208/2017	208/2017	\N	\N	\N	\N
+4839	303	4	2017-02-01 00:00:00-03	2017-03-17 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA - Nivelación	2	207/2017	207/2017	\N	\N	\N	\N
+4842	301	4	2017-02-20 00:00:00-03	2017-03-07 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	968/2017	968/2017	\N	\N	\N	\N
+4843	291	4	2017-02-20 00:00:00-03	2017-03-07 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	967/2017	967/2017	\N	\N	\N	\N
+4844	282	4	2017-02-20 00:00:00-03	2017-03-07 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	966/2017	966/2017	\N	\N	\N	\N
+4845	282	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	1416/2017	1416/2017	\N	\N	\N	\N
+4847	319	12	2017-02-06 00:00:00-03	2017-05-02 00:00:00-03	11	5	Profesor	12	Profesor Polo CIE	2	1050/2017	1050/2017	\N	\N	\N	\N
+4851	304	4	2017-02-20 00:00:00-03	2017-03-07 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	969/2017	969/2017	\N	\N	\N	\N
+4852	305	4	2017-02-20 00:00:00-03	2017-03-07 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	970/2017	970/2017	\N	\N	\N	\N
+4853	306	4	2017-02-20 00:00:00-03	2017-03-07 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	1321/2017	1321/2017	\N	\N	\N	\N
+4858	311	12	2017-04-15 00:00:00-03	2017-08-26 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Soldadura y herrería básico (sab)	2	1232/2017	1232/2017	\N	\N	\N	\N
+4863	311	12	2017-04-05 00:00:00-03	2017-08-16 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Soldadura y herrería básico (mie)	2	1231/2017	1231/2017	\N	\N	\N	\N
+4868	311	12	2017-04-03 00:00:00-03	2017-08-21 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Soldadura y herrería básico (lun)	2	1236/2017	1236/2017	\N	\N	\N	\N
+4873	311	12	2017-04-06 00:00:00-03	2017-10-05 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Soldadura y herrería básico (jue)	2	1235/2017	1235/2017	\N	\N	\N	\N
+4880	311	12	2017-03-20 00:00:00-03	2017-05-15 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Soldadura TIG	2	1233/2017	1233/2017	\N	\N	\N	\N
+4883	311	12	2017-03-14 00:00:00-03	2017-08-29 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Soldadura Int. (mar)	2	1234/2017	1234/2017	\N	\N	\N	\N
+4890	312	12	2017-03-11 00:00:00-03	2017-04-29 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Progr. Lógicos Control. Nivel 1	2	1310/2017	1310/2017	\N	\N	\N	\N
+4892	313	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Inst. Eléct., Aires	2	1493/2017	1493/2017	\N	\N	\N	\N
+4895	314	12	2017-03-14 00:00:00-03	2017-06-09 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Automatiz. Industrial	2	1240/2017	1240/2017	\N	\N	\N	\N
+4899	315	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Rep. PC	2	1314/2017	1314/2017	\N	\N	\N	\N
+4900	300	12	2017-03-07 00:00:00-03	2017-03-28 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Excel Básico	2	1237/2017	1237/2017	\N	\N	\N	\N
+4901	300	12	2017-04-04 00:00:00-03	2017-04-25 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Niv. Básico	2	1238/2017	1238/2017	\N	\N	\N	\N
+4902	300	12	2017-03-09 00:00:00-03	2017-03-30 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Niv. Avanz.	2	1239/2017	1239/2017	\N	\N	\N	\N
+4903	315	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Intr. Redes Infor.	2	1316/2017	1316/2017	\N	\N	\N	\N
+4904	315	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Inst. Cámaras	2	1315/2017	1315/2017	\N	\N	\N	\N
+4905	315	12	2017-03-17 00:00:00-03	2017-09-08 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Ds. Web	2	1311/2017	1311/2017	\N	\N	\N	\N
+4912	316	12	2017-04-03 00:00:00-03	2017-06-12 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - AutoCad Básico	2	1313/2017	1313/2017	\N	\N	\N	\N
+4915	\N	12	2017-02-06 00:00:00-03	2017-05-02 00:00:00-03	11	5	Profesor	12	Profesor Polo CIE	2	1048/2017	1048/2017	\N	\N	\N	\N
+4918	317	12	2017-02-06 00:00:00-03	2017-05-02 00:00:00-03	11	5	Profesor	12	Profesor Polo CIE	2	1051/2017	1051/2017	\N	\N	\N	\N
+4921	318	12	2017-02-06 00:00:00-03	2017-05-02 00:00:00-03	11	5	Profesor	12	Profesor Polo CIE	2	1049/2017	1049/2017	\N	\N	\N	\N
+4929	321	12	2017-03-08 00:00:00-03	2017-05-24 00:00:00-03	11	5	Profesor	12	Profesor Polo Automotriz - Niv. Básico (mier)	2	1318/2017	1318/2017	\N	\N	\N	\N
+4932	321	12	2017-03-06 00:00:00-03	2017-05-29 00:00:00-03	11	5	Profesor	12	Profesor Polo Automotriz - Niv. Básico (lun)	2	1317/2017	1317/2017	\N	\N	\N	\N
+4943	323	12	2017-04-11 00:00:00-03	2017-08-01 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Marketing, Prom. Y Ventas	2	1250/2017	1250/2017	\N	\N	\N	\N
+4948	324	12	2017-04-22 00:00:00-03	2017-08-05 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Liquidación Sueldos (sab)	2	1309/2017	1309/2017	\N	\N	\N	\N
+4953	325	12	2017-04-20 00:00:00-03	2017-08-10 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Liquidación Sueldos	2	1249/2017	1249/2017	\N	\N	\N	\N
+4958	322	12	2017-04-22 00:00:00-03	2017-10-07 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Asist. Contable PYME (sab)	2	1244/2017	1244/2017	\N	\N	\N	\N
+4966	322	12	2017-04-11 00:00:00-03	2017-08-01 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Asist. Contable PYME (mar y mie)	2	1243/2017	1243/2017	\N	\N	\N	\N
+4971	326	12	2017-04-10 00:00:00-03	2017-08-07 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Asist. Contable PYME (lun)	2	1305/2017	1305/2017	\N	\N	\N	\N
+4975	324	12	2017-04-10 00:00:00-03	2017-08-07 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Asist. Contable PYME (lun y jue)	2	1308/2017	1308/2017	\N	\N	\N	\N
+4980	324	12	2017-04-07 00:00:00-03	2017-08-25 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Analista Impositivo (vie)	2	1307/2017	1307/2017	\N	\N	\N	\N
+4985	326	12	2017-04-12 00:00:00-03	2017-07-26 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Analista Contable	2	1306/2017	1306/2017	\N	\N	\N	\N
+4989	327	12	2017-03-15 00:00:00-03	2017-06-28 00:00:00-03	11	5	Profesor	12	Prof. Idioma Extranjero - Niv. 1	2	1426/2017	1426/2017	\N	\N	\N	\N
+4993	\N	12	2017-03-18 00:00:00-03	2017-07-08 00:00:00-03	11	5	Profesor	12	Prof. Idioma Extranjero - Alemán Niv. 5	2	1242/2017	1242/2017	\N	\N	\N	\N
+4998	\N	12	2017-03-15 00:00:00-03	2017-06-28 00:00:00-03	11	5	Profesor	12	Prof. Idioma Extranjero - Alemán Niv. 2	2	1241/2017	1241/2017	\N	\N	\N	\N
+5002	\N	12	2017-03-14 00:00:00-03	2017-07-04 00:00:00-03	11	5	Profesor	12	Prof. Idioma Extranjero - Alemán Niv. 1	2	1245/2017	1245/2017	\N	\N	\N	\N
+5007	\N	15	2017-02-01 00:00:00-03	2017-07-15 00:00:00-03	9	5	Profesor	15	Prof. Idioma Extranjero	2	210/2017	210/2017	\N	\N	\N	\N
+5015	330	4	2017-03-03 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Prof. Carrera Grado LEM	2	1780/2017	1780/2017	\N	\N	\N	\N
+5020	331	4	2017-02-03 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Prof. Carrera Grado	2	1247/2017	1247/2017	\N	\N	\N	\N
+5026	332	4	2017-02-03 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Prof. Carrera Grado	2	1496/2017	1496/2017	\N	\N	\N	\N
+5032	333	4	2017-02-16 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Prof. Carrera Grado	2	1414/2017	1414/2017	\N	\N	\N	\N
+5039	334	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Prof. Carrera Grado	2	1409/2017	1409/2017	\N	\N	\N	\N
+5045	293	4	2017-05-22 00:00:00-03	2017-07-17 00:00:00-03	10	5	JTP a Cargo	4	JTP a Cargo Tecnicatura TSP- Nivelacion	2	1645/2017	1645/2017	\N	\N	\N	\N
+5051	293	4	2017-02-20 00:00:00-03	2017-03-08 00:00:00-03	10	5	JTP a Cargo	4	JTP a Cargo Tecnicatura TSP	2	957/2017	957/2017	\N	\N	\N	\N
+5052	294	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	JTP a Cargo	4	JTP a Cargo Tecnicatura TSP	2	960/2017	960/2017	\N	\N	\N	\N
+5058	294	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	5	JTP a Cargo	4	JTP a Cargo Tecnicatura TSP	2	321/2017	321/2017	\N	\N	\N	\N
+5063	293	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	5	JTP a Cargo	4	JTP a Cargo Tecnicatura TSP	2	316/2017	316/2017	\N	\N	\N	\N
+5068	336	4	2017-04-21 00:00:00-03	2017-07-31 00:00:00-03	10	5	JTP a Cargo	4	JTP a Cargo Tecnicatura TSP	2	1568/2017	1568/2017	\N	\N	\N	\N
+5072	337	18	2017-02-13 00:00:00-03	2017-07-31 00:00:00-03	13	5	Jardinero	18	Jardinero	2	118/2017	118/2017	\N	\N	\N	\N
+5078	338	18	2017-02-13 00:00:00-03	2017-07-31 00:00:00-03	13	5	Jardinero	18	Jardinero	2	119/2017	119/2017	\N	\N	\N	\N
+5084	339	18	2017-02-13 00:00:00-03	2017-07-31 00:00:00-03	13	5	Jardinero	18	Jardinero	2	120/2017	120/2017	\N	\N	\N	\N
+5090	340	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Inspector	12	Inspección hormigón	2	1070/2017	1070/2017	\N	\N	\N	\N
+5091	340	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Inspector	12	Inspección hormigón	2	1069/2017	1069/2017	\N	\N	\N	\N
+5093	341	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Gestión	12	Gestión de la calidad	2	1412/2017	1412/2017	\N	\N	\N	\N
+5096	341	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Gestión	12	Gestión de la calidad	2	1413/2017	1413/2017	\N	\N	\N	\N
+5099	341	4	2017-01-02 00:00:00-03	2017-07-01 00:00:00-03	10	5	Gestión	4	Gestión de la calidad	2	1472/2017	1472/2017	\N	\N	\N	\N
+5105	340	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Inspector	12	Estudio integridad, resistencia y durabilidad	2	1071/2017	1071/2017	\N	\N	\N	\N
+5106	342	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Jefe Laboratorio	12	Ensayos propiedades y dureza	2	1068/2017	1068/2017	\N	\N	\N	\N
+5109	\N	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	\N	12	Ensayos propiedades y dureza	2	1072/2017	1072/2017	\N	\N	\N	\N
+5112	343	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	5	Director	4	Director Tecnicatura TSP y TSSI	2	215/2017	215/2017	\N	\N	\N	\N
+5114	343	4	2017-04-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Director	4	Director Tecnicatura TSP y TSSI	2	1057/2017	1057/2017	\N	\N	\N	\N
+5118	344	4	2017-02-01 00:00:00-03	2017-04-30 00:00:00-03	10	5	Director	4	Director Tecnicatura TSA	2	209/2017	209/2017	\N	\N	\N	\N
+5121	345	4	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	10	5	Director	4	Director Posgrado MBA	2	211/2017	211/2017	\N	\N	\N	\N
+5124	345	4	2017-04-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Director	4	Director Posgrado MBA	2	1055/2017	1055/2017	\N	\N	\N	\N
+5129	\N	13	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	14	5	Director	13	Director CIDIV	2	17/2017	17/2017	\N	\N	\N	\N
+5132	\N	13	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	14	5	Director	13	Director CIDIV	2	964/2017	964/2017	\N	\N	\N	\N
+5135	346	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Coordinador	4	Coordinador Articulación Esc. Secundaria	2	296/2017	296/2017	\N	\N	\N	\N
+5141	347	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Coordinador	12	Coord. Unidad Vinc. Tec.	2	115/2017	115/2017	\N	\N	\N	\N
+5144	347	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Coordinador	12	Coord. Unidad Vinc. Tec.	2	1230/2017	1230/2017	\N	\N	\N	\N
+5147	300	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Coordinador	12	Coord. Polo Inform.	2	113/2017	113/2017	\N	\N	\N	\N
+5150	300	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Coordinador	12	Coord. Polo Inform. Web-Redes Sociales	2	1066/2017	1066/2017	\N	\N	\N	\N
+5153	322	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Coordinador	12	Coord. Polo Admin.	2	117/2017	117/2017	\N	\N	\N	\N
+5156	322	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Coordinador	12	Coord. Polo Admin.	2	1062/2017	1062/2017	\N	\N	\N	\N
+5159	348	14	2016-12-01 00:00:00-03	2017-03-31 00:00:00-03	15	5	Coordinador	14	Coord. CETEMYM	2	15/2017	15/2017	\N	\N	\N	\N
+5163	\N	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Coordinador	12	Coord. Área Cultura	2	116/2017	116/2017	\N	\N	\N	\N
+5166	349	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Coordinador	12	Coord. Administrativa	2	81/2017	81/2017	\N	\N	\N	\N
+5169	349	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Coordinador	12	Coord. Administrativa	2	1061/2017	1061/2017	\N	\N	\N	\N
+5172	350	18	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	13	5	Controlador	18	Control Admin. Prod. Ppios.	2	16/2017	16/2017	\N	\N	\N	\N
+5183	345	4	2017-03-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Comité	4	Comité Académico MBA	2	1056/2017	1056/2017	\N	\N	\N	\N
+5193	351	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSP - Nivelación	2	961/2017	961/2017	\N	\N	\N	\N
+5195	352	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSP - Nivelación	2	2648/2017	2648/2017	\N	\N	\N	\N
+5197	353	4	2017-02-01 00:00:00-03	2017-03-31 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSP - Nivelación	2	318/2017	318/2017	\N	\N	\N	\N
+5199	282	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSP	2	315/2017	315/2017	\N	\N	\N	\N
+5205	354	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSP	2	958/2017	958/2017	\N	\N	\N	\N
+5211	280	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSP	2	319/2017	319/2017	\N	\N	\N	\N
+5217	281	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSP	2	320/2017	320/2017	\N	\N	\N	\N
+5223	279	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSP	2	317/2017	317/2017	\N	\N	\N	\N
+5227	362	4	2017-01-01 00:00:00-03	2017-06-30 00:00:00-03	10	5	Asistente	4	Asist. Administrativa	2	292/2017	292/2017	\N	\N	\N	\N
+5230	353	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSP	2	962/2017	962/2017	\N	\N	\N	\N
+5235	280	4	2017-04-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSP	2	963/2017	963/2017	\N	\N	\N	\N
+5239	353	4	2017-05-22 00:00:00-03	2017-07-17 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSP	2	1582/2017	1582/2017	\N	\N	\N	\N
+5242	\N	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Auxiliar	12	Auxiliar Edilicio	2	213/2017	213/2017	\N	\N	\N	\N
+5245	\N	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Auxiliar	12	Auxiliar Edilicio	2	1060/2017	1060/2017	\N	\N	\N	\N
+5248	355	4	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	10	5	Asistente	4	Asist. Administrativo	2	68/2017	68/2017	\N	\N	\N	\N
+5251	355	4	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	10	5	Asistente	4	Asist. Administrativo	2	971/2017	971/2017	\N	\N	\N	\N
+5254	356	4	2017-02-01 00:00:00-03	2017-04-30 00:00:00-03	10	5	Asistente	4	Asist. Administrativo	2	214/2017	214/2017	\N	\N	\N	\N
+5257	357	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Asistente	12	Asist. Administrativa	2	69/2017	69/2017	\N	\N	\N	\N
+5260	358	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Asistente	12	Asist. Administrativa	2	82/2017	82/2017	\N	\N	\N	\N
+5266	360	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Asistente	12	Asist. Administrativa	2	84/2017	84/2017	\N	\N	\N	\N
+5269	361	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Asistente	12	Asist. Administrativa	2	121/2017	121/2017	\N	\N	\N	\N
+5277	363	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Asistente	4	Asist. Administrativa	2	294/2017	294/2017	\N	\N	\N	\N
+5283	361	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Asistente	12	Asist. Administrativa	2	1058/2017	1058/2017	\N	\N	\N	\N
+5286	357	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Asistente	12	Asist. Administrativa	2	1059/2017	1059/2017	\N	\N	\N	\N
+5289	358	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Asistente	12	Asist. Administrativa	2	1063/2017	1063/2017	\N	\N	\N	\N
+5292	359	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Asistente	12	Asist. Administrativa	2	1065/2017	1065/2017	\N	\N	\N	\N
+5295	360	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Asistente	12	Asist. Administrativa	2	1067/2017	1067/2017	\N	\N	\N	\N
+5298	364	4	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	10	5	Asistente	4	Asist. Administrativa	2	1054/2017	1054/2017	\N	\N	\N	\N
+5301	365	4	2017-01-01 00:00:00-03	2017-04-30 00:00:00-03	10	5	Administrador	4	Admin. Red y Sitios Web	2	965/2017	965/2017	\N	\N	\N	\N
+5305	301	4	2017-05-08 00:00:00-03	2017-06-10 00:00:00-03	10	5	Profesor	4	Prof. Carrera Grado	2	1500/2017	1500/2017	\N	\N	\N	\N
+5307	304	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	1322/2017	1322/2017	\N	\N	\N	\N
+5324	306	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	1418/2017	1418/2017	\N	\N	\N	\N
+5329	366	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	1417/2017	1417/2017	\N	\N	\N	\N
+5334	291	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	1420/2017	1420/2017	\N	\N	\N	\N
+5339	305	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	1421/2017	1421/2017	\N	\N	\N	\N
+5344	\N	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	1423/2017	1423/2017	\N	\N	\N	\N
+5349	295	4	2017-04-01 00:00:00-03	2017-08-30 00:00:00-03	10	5	Profesor	4	Ayudante Carrera de Grado	2	1497/2017	1497/2017	\N	\N	\N	\N
+5354	368	4	2017-04-01 00:00:00-03	2017-08-31 00:00:00-03	10	5	Profesor	4	Ayudante Carrera de Grado	2	1657/17	1657/17	\N	\N	\N	\N
+5359	296	4	2017-04-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Prof. Carrera Grado	2	1499/2017	1499/2017	\N	\N	\N	\N
+5363	369	4	2017-04-01 00:00:00-03	2017-09-30 00:00:00-03	10	5	Profesor	4	Prof. Carrera Grado	2	1659/2017	1659/2017	\N	\N	\N	\N
+5369	332	4	2017-05-08 00:00:00-03	2017-06-10 00:00:00-03	10	5	Profesor	4	JTP Simple Admisión	2	1498/2017	1498/2017	\N	\N	\N	\N
+5371	370	4	2017-03-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Comité	4	Comité Académico MBA	2	1475/2017	1475/2017	\N	\N	\N	\N
+5406	373	4	2017-03-31 21:00:00-03	2017-06-29 21:00:00-03	10	5	Asistente	4	                                                   Asistente administrativa Dpto. Ing. Automotriz\r\n              \r\n              \r\n              	2	1425/2017	1425/2017	35	73.4399999999999977	\N	2018-01-30 21:22:50.52763
+5381	371	4	2017-05-03 00:00:00-03	2017-05-17 00:00:00-03	10	5	Profesor	4	Profesor Seminario Dirección de Operación	2	1687/2017	1687/2017	\N	\N	\N	\N
+5382	372	4	2017-04-03 00:00:00-03	2017-05-15 00:00:00-03	10	5	Profesor	4	Profesor Seminario Información Financiera	2	1688/2017	1688/2017	\N	\N	\N	\N
+5383	336	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSA	2	1419/2017	1419/2017	\N	\N	\N	\N
+5388	301	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	1422/2017	1422/2017	\N	\N	\N	\N
+5393	307	4	2017-03-20 00:00:00-03	2017-12-15 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	1323/2017	1323/2017	\N	\N	\N	\N
+5403	350	18	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	13	5	Controlador	18	Control Admin. Prod. Ppios.	2	1246/2017	1246/2017	\N	\N	\N	\N
+5409	373	4	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Asistente	4	Asistente administrativa Dpto. Ing. Automotriz	2	1658/2017	1658/2017	\N	\N	\N	\N
+5415	373	4	2017-04-01 00:00:00-03	2017-11-30 00:00:00-03	10	5	Asistente	4	Asistente administrativa	2	1476/2017	1476/2017	\N	\N	\N	\N
+5423	300	12	2017-05-08 00:00:00-03	2017-05-29 00:00:00-03	11	5	Profesor	12	Profesor Polo Informatico - Excel Básico	2	1464/2017	1464/2017	\N	\N	\N	\N
+5424	300	12	2017-05-04 00:00:00-03	2017-06-01 00:00:00-03	11	5	Profesor	12	Profesor Polo Informatico - Excel Avanzado	2	1463/2017	1463/2017	\N	\N	\N	\N
+5426	374	12	2017-05-02 00:00:00-03	2017-06-27 00:00:00-03	11	5	Profesor	12	Profesor Polo Informatico - Robotica Básica	2	2185/2017	2185/2017	\N	\N	\N	\N
+5428	322	12	2017-05-22 00:00:00-03	2017-06-12 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Monot. E Ing. Brutos	2	1465/2017	1465/2017	\N	\N	\N	\N
+5430	324	12	2017-06-19 00:00:00-03	2017-07-10 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Monot. E Ing. Brutos	2	1487/2017	1487/2017	\N	\N	\N	\N
+5432	314	12	2017-05-08 00:00:00-03	2017-07-26 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Automatiz. Industrial	2	1466/2017	1466/2017	\N	\N	\N	\N
+5435	312	12	2017-06-10 00:00:00-03	2017-07-29 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Progr. Lógicos Control. Nivel 1	2	1696/2017	1696/2017	\N	\N	\N	\N
+5437	321	12	2017-05-09 00:00:00-03	2017-08-01 00:00:00-03	11	5	Profesor	12	Profesor Polo Automotriz - Inyección nafta	2	1651/2017	1651/2017	\N	\N	\N	\N
+5441	316	12	2017-05-08 00:00:00-03	2017-07-24 00:00:00-03	11	5	Profesor	12	Profesor Polo Automotriz - Mecánica Básica	2	1467/2017	1467/2017	\N	\N	\N	\N
+5444	375	12	2017-05-16 00:00:00-03	2017-08-10 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Tornería Básica (Lun y Mie de 19 a 22)	2	2408/2017	2408/2017	\N	\N	\N	\N
+5448	375	12	2017-03-22 00:00:00-03	2017-06-14 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Tornería Básica (Lun y Mie de 19 a 22)	2	2407/2017	2407/2017	\N	\N	\N	\N
+5450	375	12	2017-03-22 00:00:00-03	2017-06-14 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Tornería Básica (Lun y Mie de 19 a 22)	2	2407/2047	2407/2047	\N	\N	\N	\N
+5452	376	12	2017-04-11 00:00:00-03	2017-08-08 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Sec. Adm. Informát. (mar y jue)	2	1468/2017	1468/2017	\N	\N	\N	\N
+5457	377	12	2017-02-25 00:00:00-03	2017-11-18 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia (Sab)	2	1462/2017	1462/2017	\N	\N	\N	\N
+5467	340	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón	2	1503/2017	1503/2017	\N	\N	\N	\N
+5468	342	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1505/2017	1505/2017	\N	\N	\N	\N
+5469	378	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	5	Director Gral. LABTEC	12	Dictado curso Incertidumbre de medición	2	1578/2017	1578/2017	\N	\N	\N	\N
+5470	340	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón	2	1501/2017	1501/2017	\N	\N	\N	\N
+5477	342	12	2017-03-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1565/2017	1565/2017	\N	\N	\N	\N
+5486	379	15	2017-05-10 00:00:00-03	2017-08-07 00:00:00-03	9	5	Profesor	15	Prof. Idioma Castellano	2	1486/2017	1486/2017	\N	\N	\N	\N
+5490	380	4	2017-03-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Comité	4	Comité Académico MBA	2	1653/2017	1653/2017	\N	\N	\N	\N
+5500	282	4	2017-05-02 00:00:00-03	2017-07-31 00:00:00-03	10	5	Referente Funcional	4	Referente Funcional Grupo ESTE	2	1424/2017	1424/2017	\N	\N	\N	\N
+5503	381	4	2017-05-01 00:00:00-03	2017-09-30 00:00:00-03	10	5	Profesor	4	Prof. Carrera Grado	2	1648/2017	1648/2017	\N	\N	\N	\N
+5508	382	4	2017-02-01 00:00:00-03	2017-06-30 00:00:00-03	10	5	Ayudante	4	Prof. Carrera Grado - Ayudante	2	1652/2017	1652/2017	\N	\N	\N	\N
+5513	310	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	1411/2017	1411/2017	\N	\N	\N	\N
+5518	\N	15	2017-04-03 00:00:00-03	2017-08-30 00:00:00-03	9	5	Profesor	15	Prof. Idioma Extranjero-castellano	2	1485/2017	1485/2017	\N	\N	\N	\N
+5523	348	14	2017-04-01 00:00:00-03	2017-07-31 00:00:00-03	15	5	Coordinador	14	Coord. CETEMYM	2	1410/2017	1410/2017	\N	\N	\N	\N
+5527	283	18	2017-05-01 00:00:00-03	2017-07-31 00:00:00-03	13	5	Soporte Técnico	18	Soporte Técnico SACC	2	1324/2017	1324/2017	\N	\N	\N	\N
+5530	377	12	2017-03-18 00:00:00-03	2017-12-16 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia (Sab)	2	1461/2017	1461/2017	\N	\N	\N	\N
+5540	377	12	2017-05-16 00:00:00-03	2018-03-27 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia (Mar)	2	1460/2017	1460/2017	\N	\N	\N	\N
+5550	377	12	2017-05-16 00:00:00-03	2017-10-17 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Secretariado Médico (Mar)	2	1458/2017	1458/2017	\N	\N	\N	\N
+5556	377	12	2017-03-14 00:00:00-03	2017-08-29 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Secretariado Médico (Mar)	2	1459/2017	1459/2017	\N	\N	\N	\N
+5562	383	12	2017-02-25 00:00:00-03	2017-11-18 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia (Sab)	2	1488/2017	1488/2017	\N	\N	\N	\N
+5572	383	12	2017-03-18 00:00:00-03	2017-12-23 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia (Sab)	2	1489/2017	1489/2017	\N	\N	\N	\N
+5582	383	12	2017-05-16 00:00:00-03	2018-03-27 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia (Mar)	2	1490/2017	1490/2017	\N	\N	\N	\N
+5592	383	12	2017-03-14 00:00:00-03	2017-08-29 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Secretariado Médico (Mar)	2	1491/2017	1491/2017	\N	\N	\N	\N
+5598	383	12	2017-05-16 00:00:00-03	2017-10-17 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Secretariado Médico (Mar)	2	1492/2017	1492/2017	\N	\N	\N	\N
+5604	315	12	2017-04-01 00:00:00-03	2017-04-30 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Rep. PC	2	1469/2017	1469/2017	\N	\N	\N	\N
+5605	315	12	2017-04-01 00:00:00-03	2017-04-30 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Intr. Redes Infor.	2	1470/2017	1470/2017	\N	\N	\N	\N
+5606	315	12	2017-04-01 00:00:00-03	2017-04-30 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Inst. Cámaras	2	1471/2017	1471/2017	\N	\N	\N	\N
+5607	286	12	2017-04-01 00:00:00-03	2017-04-30 00:00:00-03	11	5	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	1428/2017	1428/2017	\N	\N	\N	\N
+5608	287	12	2017-04-01 00:00:00-03	2017-04-30 00:00:00-03	11	5	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	1427/2017	1427/2017	\N	\N	\N	\N
+5609	313	12	2017-04-01 00:00:00-03	2017-04-30 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Inst. Eléct., Aires	2	1494/2017	1494/2017	\N	\N	\N	\N
+5610	384	12	2017-02-01 00:00:00-03	2017-04-30 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia	2	1495/2017	1495/2017	\N	\N	\N	\N
+5613	345	4	2017-04-01 00:00:00-03	2017-11-30 00:00:00-03	10	5	Director	4	Director Académico Diplomatura Postventa	2	1478/2017	1478/2017	\N	\N	\N	\N
+5621	385	4	2017-05-01 00:00:00-03	2017-05-30 00:00:00-03	10	5	Profesor	4	Profesor curso Diplomatura Postventa	2	1474/2017	1474/2017	\N	\N	\N	\N
+5622	372	4	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	10	5	Profesor	4	Profesor Diplomatura Postventa	2	1473/2017	1473/2017	\N	\N	\N	\N
+5625	386	12	2017-03-01 00:00:00-03	2017-04-30 00:00:00-03	11	5	Profesor	12	Prof. Polo Automotriz	2	2075/2017	2075/2017	\N	\N	\N	\N
+5627	387	12	2017-02-01 00:00:00-03	2017-04-30 00:00:00-03	11	5	Responsable taller	12	Responsable taller soldadura	2	1650/2017	1650/2017	\N	\N	\N	\N
+5630	388	4	2017-04-01 00:00:00-03	2017-11-30 00:00:00-03	10	5	Administrador	4	Administrador plataforma Web	2	1477/2017	1477/2017	\N	\N	\N	\N
+5638	389	15	2017-03-01 00:00:00-03	2017-11-30 00:00:00-03	9	5	Profesor	15	Prof. De Futbol	2	1572/2017	1572/2017	\N	\N	\N	\N
+5647	390	15	2017-03-01 00:00:00-03	2017-11-30 00:00:00-03	9	5	Profesor	15	Prof. De Futbol	2	1573/2017	1573/2017	\N	\N	\N	\N
+5656	391	15	2017-03-01 00:00:00-03	2017-11-30 00:00:00-03	9	5	Profesor	15	Prof. De Basquet	2	1574/2017	1574/2017	\N	\N	\N	\N
+5665	392	15	2017-03-01 00:00:00-03	2017-11-30 00:00:00-03	9	5	Profesor	15	Prof. De Voley Masculino	2	1571/2017	1571/2017	\N	\N	\N	\N
+5674	393	15	2017-03-01 00:00:00-03	2017-11-30 00:00:00-03	9	5	Profesor	15	Prof. De Voley Femenino	2	1575/2017	1575/2017	\N	\N	\N	\N
+5683	356	4	2017-05-01 00:00:00-03	2017-09-30 00:00:00-03	10	5	Asistente	4	Asist. Administrativo	2	1566/2017	1566/2017	\N	\N	\N	\N
+5688	302	4	2017-06-19 00:00:00-03	2017-11-30 00:00:00-03	10	5	Profesor	4	Ayudante TP 1ra Simple - Nivelación	2	1649/2017	1649/2017	\N	\N	\N	\N
+5694	344	4	2017-05-01 00:00:00-03	2017-09-30 00:00:00-03	10	5	Director	4	Director Tecnicatura TSA	2	1567/2017	1567/2017	\N	\N	\N	\N
+5699	296	4	2017-03-20 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	1569/2017	1569/2017	\N	\N	\N	\N
+5704	305	4	2017-05-02 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	1570/2017	1570/2017	\N	\N	\N	\N
+5707	351	4	2017-05-22 00:00:00-03	2017-07-17 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSP - Nivelación	2	1577/2017	1577/2017	\N	\N	\N	\N
+5710	394	4	2017-05-10 00:00:00-03	2017-06-21 00:00:00-03	10	5	Profesor	4	Profesor seminario Análisis Estratégico	2	1686/2017	1686/2017	\N	\N	\N	\N
+5734	316	12	2017-06-01 00:00:00-03	2017-08-03 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - AutoCad Básico - Jueves de 15 a 18 hs	2	1697/2017	1697/2017	\N	\N	\N	\N
+5737	396	12	2017-06-14 00:00:00-03	2017-10-25 00:00:00-03	11	5	Profesor	12	Profesor Inst. Elec. Dom. Y Com. (Fundación Tzedaka)-Mie de 9 a 12	2	1802/2017	1802/2017	\N	\N	\N	\N
+5742	396	12	2017-06-13 00:00:00-03	2017-10-31 00:00:00-03	11	5	Profesor	12	Profesor Inst. Elec. Dom. Y Com. (Fundación Tzedaka)-Mar de 16 a 19	2	1804/2017	1804/2017	\N	\N	\N	\N
+5747	396	12	2017-06-13 00:00:00-03	2017-10-31 00:00:00-03	11	5	Profesor	12	Profesor Inst. Elec. Dom. Y Com. (Fundación Tzedaka)-Mar de 9 a 12	2	1803/2017	1803/2017	\N	\N	\N	\N
+5752	396	12	2017-06-05 00:00:00-03	2017-07-18 00:00:00-03	11	5	Profesor	12	Profesor Form. Dist. Y Transm. De la energía elect. Edic 7	2	1778/2017	1778/2017	\N	\N	\N	\N
+5754	397	12	2017-06-05 00:00:00-03	2017-07-18 00:00:00-03	11	5	Ayudante	12	Ayudante Form. Dist. Y Transm. De la energía elect. Edic 7	2	1888/2017	1888/2017	\N	\N	\N	\N
+5756	398	12	2017-06-05 00:00:00-03	2017-07-18 00:00:00-03	11	5	Profesor	12	Ayudante Form. Dist. Y Transm. De la energía elect. Beca 7	2	1772/2017	1772/2017	\N	\N	\N	\N
+5757	317	12	2017-06-05 00:00:00-03	2017-07-18 00:00:00-03	11	5	Profesor	12	Ayudante Form. Dist. Y Transm. De la energía elect. Edic 7	2	1775/2017	1775/2017	\N	\N	\N	\N
+5759	377	12	2017-06-05 00:00:00-03	2017-07-18 00:00:00-03	11	5	Profesor	12	Profesor Form. Dist. Y Transm. De la energía elect. Edic 7	2	1779/2017	1779/2017	\N	\N	\N	\N
+5761	318	12	2017-06-05 00:00:00-03	2017-07-18 00:00:00-03	11	5	Profesor	12	Ayudante Form. Dist. Y Transm. De la energía elect. Edic 7	2	1773/2017	1773/2017	\N	\N	\N	\N
+5763	399	12	2017-06-05 00:00:00-03	2017-07-18 00:00:00-03	11	5	Profesor	12	Profesor Form. Dist. Y Transm. De la energía elect. Edic 7	2	1774/2017	1774/2017	\N	\N	\N	\N
+5765	319	12	2017-06-05 00:00:00-03	2017-07-18 00:00:00-03	11	5	Asistente	12	Asistente curso Form. Dist. Y Transm. De la energía elect. Edic 7	2	1777/2017	1777/2017	\N	\N	\N	\N
+5780	300	12	2017-06-08 00:00:00-03	2017-06-29 00:00:00-03	11	5	Profesor	12	Profesor Polo Informatico - Excel Avanzado	2	1770/2017	1770/2017	\N	\N	\N	\N
+5781	300	12	2017-06-06 00:00:00-03	2017-07-04 00:00:00-03	11	5	Profesor	12	Profesor Polo Informatico - Excel Básico	2	1769/2017	1769/2017	\N	\N	\N	\N
+5783	332	4	2017-06-19 00:00:00-03	2017-11-30 00:00:00-03	10	5	Profesor	4	Ayudante JTP Simple Admisión	2	1878/2017	1878/2017	\N	\N	\N	\N
+5789	301	4	2017-06-19 00:00:00-03	2017-11-30 00:00:00-03	10	5	Profesor	4	Prof. Carrera Grado	2	1689/2017	1689/2017	\N	\N	\N	\N
+5795	311	12	2017-06-12 00:00:00-03	2017-07-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Soldadura TIG	2	1690/2017	1690/2017	\N	\N	\N	\N
+5797	386	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	5	Profesor	12	Prof. Polo Automotriz	2	2025/2017	2025/2017	\N	\N	\N	\N
+5798	376	12	2017-06-12 00:00:00-03	2017-10-02 00:00:00-03	11	5	Profesor	12	Profesor Curso Organización de Eventos	2	1768/2017	1768/2017	\N	\N	\N	\N
+5803	387	12	2017-05-01 00:00:00-03	2017-05-31 00:00:00-03	11	5	Responsable taller	12	Responsable taller soldadura	2	1703/2017	1703/2017	\N	\N	\N	\N
+5804	325	12	2017-06-24 00:00:00-03	2017-12-09 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Asist. De Recursos Humanos (sab)	2	1875/2017	1875/2017	\N	\N	\N	\N
+5811	376	12	2017-06-24 00:00:00-03	2017-12-09 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Sec. Adm. Informát. (sáb)	2	1767/2017	1767/2017	\N	\N	\N	\N
+5818	322	12	2017-06-16 00:00:00-03	2017-07-07 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Conciliación Bancaria (vie)	2	1771/2017	1771/2017	\N	\N	\N	\N
+5820	316	12	2017-06-01 00:00:00-03	2017-08-17 00:00:00-03	11	5	Profesor	12	Profesor Polo Automotriz - Conoc. Electricidad de Autom (jue 19 a 22)	2	1698/2017	1698/2017	\N	\N	\N	\N
+5823	284	4	2017-05-01 00:00:00-03	2017-09-30 00:00:00-03	10	5	Soporte Técnico	4	Soporte Técnico Recursos Informáticos	2	1656/2017	1656/2017	\N	\N	\N	\N
+5828	340	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón	2	1783/2017	1783/2017	\N	\N	\N	\N
+5829	340	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón	2	1782/2017	1782/2017	\N	\N	\N	\N
+5830	340	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón	2	1785/2017	1785/2017	\N	\N	\N	\N
+5831	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1793/2017	1793/2017	\N	\N	\N	\N
+5832	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1792/2017	1792/2017	\N	\N	\N	\N
+5833	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1794/2017	1794/2017	\N	\N	\N	\N
+5834	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1795/2017	1795/2017	\N	\N	\N	\N
+5835	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1797/2017	1797/2017	\N	\N	\N	\N
+5837	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	1796/2017	1796/2017	\N	\N	\N	\N
+5838	340	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón	2	1784/2017	1784/2017	\N	\N	\N	\N
+5839	400	4	2017-04-27 00:00:00-03	2017-06-26 00:00:00-03	10	5	Profesor	4	Profesor del Seminario Administración	2	1862/2017	1862/2017	\N	\N	\N	\N
+5840	347	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	5	Coordinador	12	Coord. Unidad Vinc. Tec.	2	1848/2017	1848/2017	\N	\N	\N	\N
+5846	361	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	5	Asistente	12	Asist. Administrativa	2	1860/2017	1860/2017	\N	\N	\N	\N
+5852	357	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	5	Asistente	12	Asist. Administrativa	2	1810/2017	1810/2017	\N	\N	\N	\N
+5887	335	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	5	Locutor	12	Locutor Mundo UTN	2	1847/2017	1847/2017	\N	\N	\N	\N
+5893	360	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	5	Asistente	12	Asist. Administrativa	2	1859/2017	1859/2017	\N	\N	\N	\N
+5899	300	12	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	11	5	Coordinador	12	Coord. Polo Inform. Web-Redes Sociales	2	1811/2017	1811/2017	\N	\N	\N	\N
+5905	359	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Asistente	12	Asist. Administrativa	2	1858/2017	1858/2017	\N	\N	\N	\N
+5911	\N	15	2017-08-06 00:00:00-03	2017-12-22 00:00:00-03	11	5	Profesor	15	Prof. Idioma Alemán	2	1776/2017	1776/2017	\N	\N	\N	\N
+5916	355	4	2017-07-01 00:00:00-03	2017-09-30 00:00:00-03	10	5	Asistente	4	Asist. Administrativo	2	1806/2017	1806/2017	\N	\N	\N	\N
+5919	296	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Prof. Carrera Grado	2	1891/2017	1891/2017	\N	\N	\N	\N
+5924	342	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2071/2017	2071/2017	\N	\N	\N	\N
+5925	378	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Director Gral. LABTEC	12	Dictado curso Incertidumbre de medición	2	2078/2017	2078/2017	\N	\N	\N	\N
+5926	378	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Director Gral. LABTEC	12	Dictado curso Incertidumbre de medición	2	2068/2017	2068/2017	\N	\N	\N	\N
+5927	363	4	2017-08-01 00:00:00-03	2018-02-28 00:00:00-03	10	5	Asistente	4	Asist. Administrativa	2	2034/2017	2034/2017	\N	\N	\N	\N
+5934	346	4	2017-08-04 00:00:00-03	2017-12-31 00:00:00-03	10	5	Director	4	Director LEM	2	2035/2017	2035/2017	\N	\N	\N	\N
+5939	401	4	2017-08-04 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor LEM	2	2224/2017	2224/2017	\N	\N	\N	\N
+5944	330	4	2017-08-04 00:00:00-03	2018-02-28 00:00:00-03	10	5	Profesor	4	Prof. Carrera Grado LEM	2	2227/2017	2227/2017	\N	\N	\N	\N
+5949	332	4	2017-08-04 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor LEM	2	2223/2017	2223/2017	\N	\N	\N	\N
+5954	382	4	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Ayudante	4	Prof. Carrera Grado - Ayudante	2	2031/2017	2031/2017	\N	\N	\N	\N
+5960	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2070/2017	2070/2017	\N	\N	\N	\N
+5961	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2072/2017	2072/2017	\N	\N	\N	\N
+5962	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2074/2017	2074/2017	\N	\N	\N	\N
+5963	342	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2073/2017	2073/2017	\N	\N	\N	\N
+5964	402	4	2017-05-10 00:00:00-03	2017-06-21 00:00:00-03	10	5	Profesor	4	Prof. Carrera Posgrado - Seminario	2	2019/2017	2019/2017	\N	\N	\N	\N
+5979	372	4	2017-06-01 00:00:00-03	2017-07-13 00:00:00-03	10	5	Profesor	4	Profesor Seminario Información Financiera	2	2020/2017	2020/2017	\N	\N	\N	\N
+5980	405	4	2017-05-24 00:00:00-03	2017-07-05 00:00:00-03	10	5	Profesor	4	Prof. Carrera Posgrado	2	1893/2017	1893/2017	\N	\N	\N	\N
+5981	406	4	2017-03-03 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor LEM	2	2463/2017	2463/2017	\N	\N	\N	\N
+5985	362	4	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Asistente	4	Asist. Administrativa	2	1845/2017	1845/2017	\N	\N	\N	\N
+5991	399	12	2017-04-21 00:00:00-03	2017-07-07 00:00:00-03	11	5	Profesor	12	Profesor curso Seguridad e Higiene (vie de 18 a 21 hs)	2	1855/2017	1855/2017	\N	\N	\N	\N
+5995	407	4	2017-05-22 00:00:00-03	2017-06-12 00:00:00-03	10	5	Profesor	4	Profesor carrera posgrado - Seminario	2	2196/2017	2196/2017	\N	\N	\N	\N
+5996	316	12	2017-07-11 00:00:00-03	2017-09-26 00:00:00-03	11	5	Profesor	12	Profesor Polo Automotriz - Reparación y Mantenimiento de Motor	2	1849/2017	1849/2017	\N	\N	\N	\N
+5999	376	12	2017-07-07 00:00:00-03	2017-07-28 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Asist. Adm. Contable Pyme (vie)	2	2024/2017	2024/2017	\N	\N	\N	\N
+6004	315	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Rep. PC	2	2037/2017	2037/2017	\N	\N	\N	\N
+6006	376	12	2017-07-13 00:00:00-03	2017-11-02 00:00:00-03	11	5	Profesor	12	Profesor Polo Adminis - Sec. Adm. Informát. (mar y jue de 9 a 12)	2	1846/2017	1846/2017	\N	\N	\N	\N
+6011	323	12	2017-07-15 00:00:00-03	2017-11-04 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Marketing, Prom. Y Ventas	2	1857/2017	1857/2017	\N	\N	\N	\N
+6016	387	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Responsable taller	12	Responsable taller soldadura	2	2027/2017	2027/2017	\N	\N	\N	\N
+6017	386	12	2017-06-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Profesor	12	Prof. Polo Automotriz	2	2026/2017	2026/2017	\N	\N	\N	\N
+6030	411	4	2017-03-03 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor LEM	2	1801/2017	1801/2017	\N	\N	\N	\N
+6054	282	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Tutor	4	Tutor Motivacional - TSP	2	1884/2017	1884/2017	\N	\N	\N	\N
+6059	281	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Tutor	4	Tutor Motivacional - TSP	2	1883/2017	1883/2017	\N	\N	\N	\N
+6064	280	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Tutor	4	Tutor Motivacional - TSP	2	2030/2017	2030/2017	\N	\N	\N	\N
+6069	279	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Tutor	4	Tutor Motivacional - TSP	2	1886/2017	1886/2017	\N	\N	\N	\N
+6074	414	4	2017-06-06 00:00:00-03	2017-07-06 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	2029/2017	2029/2017	\N	\N	\N	\N
+6076	386	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Profesor	12	Prof. Polo Automotriz	2	2077/2017	2077/2017	\N	\N	\N	\N
+6077	313	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Inst. Eléct., Aires	2	2226/2017	2226/2017	\N	\N	\N	\N
+6078	315	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Inst. Cámaras	2	2038/2017	2038/2017	\N	\N	\N	\N
+6079	315	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Intr. Redes Infor.	2	2036/2017	2036/2017	\N	\N	\N	\N
+6080	387	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Responsable taller	12	Responsable taller soldadura	2	2136/2017	2136/2017	\N	\N	\N	\N
+6081	384	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia y Sec. Medico	2	2135/2017	2135/2017	\N	\N	\N	\N
+6082	286	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	2128/2017	2128/2017	\N	\N	\N	\N
+6083	287	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	2137/2017	2137/2017	\N	\N	\N	\N
+6084	295	4	2017-09-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Ayudante Carrera de Grado	2	2064/2017	2064/2017	\N	\N	\N	\N
+6088	360	12	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	11	5	Asistente	12	Asist. Administrativa - Días Sabado	2	2079/2017	2079/2017	\N	\N	\N	\N
+6093	357	12	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	11	5	Asistente	12	Asist. Administrativa - Días Sabado	2	2080/2017	2080/2017	\N	\N	\N	\N
+6106	340	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón	2	2066/2017	2066/2017	\N	\N	\N	\N
+6107	340	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón	2	2065/2017	2065/2017	\N	\N	\N	\N
+6108	412	4	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Profesor Seminario "Plan de Marketing" y "Marketing Digital"	2	2081/2017	2081/2017	\N	\N	\N	\N
+6110	412	4	2017-08-01 00:00:00-03	2017-09-21 00:00:00-03	10	5	Profesor	4	Profesor Seminario "Administración" -Ford-	2	2701/2017	2701/2017	\N	\N	\N	\N
+6111	311	12	2017-08-15 00:00:00-03	2017-10-03 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Soldadura TIG	2	2146/2017	2146/2017	\N	\N	\N	\N
+6114	316	12	2017-08-16 00:00:00-03	2017-11-01 00:00:00-03	11	5	Profesor	12	Profesor Polo Automotriz - Ajuste de Motor	2	2076/2017	2076/2017	\N	\N	\N	\N
+6122	316	12	2017-08-28 00:00:00-03	2017-11-27 00:00:00-03	11	5	Profesor	12	Profesor Polo Automotriz - Mecánica Básica (lun de 15 a 18)	2	2181/2017	2181/2017	\N	\N	\N	\N
+6129	321	12	2017-08-09 00:00:00-03	2017-10-25 00:00:00-03	11	5	Profesor	12	Profesor Polo Automotriz - Mecánica Básica (MIE DE 19 A 22)	2	2130/2017	2130/2017	\N	\N	\N	\N
+6135	321	12	2017-08-15 00:00:00-03	2017-10-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Automotriz - Inyección nafta func. Y comp. (mar 19 a 22)	2	2131/2017	2131/2017	\N	\N	\N	\N
+6142	322	12	2017-08-28 00:00:00-03	2017-12-28 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Asist. Contable PYME (lu y jue)	2	2182/2017	2182/2017	\N	\N	\N	\N
+6152	324	12	2017-08-31 00:00:00-03	2017-12-21 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Asist. Adm. Contable PYME (lun y jue)	2	2184/2017	2184/2017	\N	\N	\N	\N
+6174	327	12	2017-08-09 00:00:00-03	2017-11-22 00:00:00-03	11	5	Profesor	12	Prof. Idioma Extranjero - Portugués 2	2	2364/2017	2364/2017	\N	\N	\N	\N
+6178	\N	12	2017-08-08 00:00:00-03	2017-11-21 00:00:00-03	11	5	Profesor	12	Prof. Idioma Extranjero - Alemán Niv. 2 (mar 18 a 21)	2	2132/2017	2132/2017	\N	\N	\N	\N
+6182	\N	12	2017-08-09 00:00:00-03	2017-11-22 00:00:00-03	11	5	Profesor	12	Prof. Idioma Extranjero - Alemán Niv. 3 (mier 18 a 21)	2	2133/2017	2133/2017	\N	\N	\N	\N
+6186	\N	12	2017-08-12 00:00:00-03	2017-12-02 00:00:00-03	11	5	Profesor	12	Prof. Idioma Extranjero - Alemán Niv. 6 (sab 09 a 12)	2	2134/2017	2134/2017	\N	\N	\N	\N
+6191	311	12	2017-09-05 00:00:00-03	2017-10-24 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Soldadura Int. (mar)	2	2228/2017	2228/2017	\N	\N	\N	\N
+6193	416	12	2017-01-01 00:00:00-03	2017-12-31 00:00:00-03	11	5	Web Master	12	Web Master, Diseño y programación, proyectos ERP y CRM	2	2183/2017	2183/2017	\N	\N	\N	\N
+6205	403	4	2017-06-28 00:00:00-03	2017-08-16 00:00:00-03	10	5	Profesor	4	Prof. Carrera Posgrado - Seminario Negociación	2	2481/2017	2481/2017	\N	\N	\N	\N
+6207	348	14	2017-08-01 00:00:00-03	2017-11-30 00:00:00-03	15	5	Coordinador	14	Coord. CETEMYM	2	2138/2017	2138/2017	\N	\N	\N	\N
+6211	345	4	2017-07-01 00:00:00-03	2017-08-31 00:00:00-03	10	5	Profesor	4	Profesor "Gestión de las Personas" PDP Ford	2	2153/2017	2153/2017	\N	\N	\N	\N
+6212	345	4	2017-07-01 00:00:00-03	2017-08-31 00:00:00-03	10	5	Profesor	4	Profesor "Gestión de las Personas"	2	2154/2017	2154/2017	\N	\N	\N	\N
+6213	417	4	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	10	5	Profesor	4	Profesor Diplomatura Postventa	2	2475/2017	2475/2017	\N	\N	\N	\N
+6214	343	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Director	4	Director Tecnicatura TSP y TSSI	2	2123/2017	2123/2017	\N	\N	\N	\N
+6219	340	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón	2	2129/2017	2129/2017	\N	\N	\N	\N
+6220	418	12	2017-04-01 00:00:00-03	2017-04-30 00:00:00-03	11	5	Diseño	12	Diseño y publicidad en la Revista VC Pasión	2	2195/2017	2195/2017	\N	\N	\N	\N
+6221	419	4	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	10	5	Profesor	4	Profesor Diplomatura Postventa	2	2392/2017	2392/2017	\N	\N	\N	\N
+6223	291	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSSI	2	2126/2017	2126/2017	\N	\N	\N	\N
+6228	300	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP	2	2188/2017	2188/2017	\N	\N	\N	\N
+6233	283	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP	2	2218/2017	2218/2017	\N	\N	\N	\N
+6238	289	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP	2	2187/2017	2187/2017	\N	\N	\N	\N
+6243	280	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSP -Laboratorio de Computación I-	2	2190/2017	2190/2017	\N	\N	\N	\N
+6248	280	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSP -Sist. De Procesamiento de Datos-	2	2191/2017	2191/2017	\N	\N	\N	\N
+6253	388	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Administrador	4	Ayudante Tecnicatura TSP -Laboratorio Computación II-	2	2159/2017	2159/2017	\N	\N	\N	\N
+6255	354	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	JTP a Cargo	4	Profesor TSP - Computación I-	2	2207/2017	2207/2017	\N	\N	\N	\N
+6259	420	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP - Ingles Tec. Avanzado II-	2	2150/2017	2150/2017	\N	\N	\N	\N
+6262	288	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSSI	2	2158/2017	2158/2017	\N	\N	\N	\N
+6267	288	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP - Metodología en Sistemas I	2	2156/2017	2156/2017	\N	\N	\N	\N
+6272	288	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSSI - Metodologia sistemas III	2	2157/2017	2157/2017	\N	\N	\N	\N
+6282	420	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP - Ingles II	2	2151/2017	2151/2017	\N	\N	\N	\N
+6285	420	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP - Ingles I	2	2152/2017	2152/2017	\N	\N	\N	\N
+6297	296	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP	2	2220/2017	2220/2017	\N	\N	\N	\N
+6302	294	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	JTP a Cargo	4	JTP a Cargo Tecnicatura TSP -Dis. Y Adm. De base de Datos-	2	2356/2017	2356/2017	\N	\N	\N	\N
+6307	294	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	JTP a Cargo	4	JTP a Cargo Tecnicatura TSP -Programación I-	2	2209/2017	2209/2017	\N	\N	\N	\N
+6312	297	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Docente adjunto Legislación - TSP - Turno Mañana	2	2205/2017	2205/2017	\N	\N	\N	\N
+6317	297	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Docente adjunto Legislación - TSP - Turno Noche	2	2206/2017	2206/2017	\N	\N	\N	\N
+6321	302	4	2017-09-12 00:00:00-03	2017-11-09 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA - Nivelación	2	2221/2017	2221/2017	\N	\N	\N	\N
+6323	292	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP - JTP a cargo	2	2198/2017	2198/2017	\N	\N	\N	\N
+6328	292	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Docente adjunto- Tecnicatura TSP	2	2199/2017	2199/2017	\N	\N	\N	\N
+6333	292	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP -JTP Auxiliar-	2	2200/2017	2200/2017	\N	\N	\N	\N
+6338	293	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	JTP a Cargo	4	JTP a Cargo Tecnicatura TSP	2	2125/2017	2125/2017	\N	\N	\N	\N
+6343	298	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP -Elementos de Inv. Operativa-	2	2201/2017	2201/2017	\N	\N	\N	\N
+6348	298	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP -Estadistica-	2	2203/2017	2203/2017	\N	\N	\N	\N
+6353	298	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP -Matemática-	2	2202/2017	2202/2017	\N	\N	\N	\N
+6358	336	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Auxiliar JTP	4	Profesor Tecnicatura TSP -JTP Auxiliar-	2	2122/2017	2122/2017	\N	\N	\N	\N
+6363	279	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP -Computación II-	2	2189/2017	2189/2017	\N	\N	\N	\N
+6365	431	19	2017-03-01 00:00:00-03	2017-12-31 00:00:00-03	12	5	Medico	19	Medico	2	2391/2017	2391/2017	\N	\N	\N	\N
+6369	353	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSP	2	2155/2017	2155/2017	\N	\N	\N	\N
+6374	281	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Docente Adjunto TSP -Lab Computación IV	2	2192/2017	2192/2017	\N	\N	\N	\N
+6379	281	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Ayudante	4	Docente auxiliar JTP - TSP -Programación III	2	2194/2017	2194/2017	\N	\N	\N	\N
+6384	281	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Ayudante	4	Docente auxiliar JTP - TSP -Lab Computación IV	2	2193/2017	2193/2017	\N	\N	\N	\N
+6389	299	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP	2	2219/2017	2219/2017	\N	\N	\N	\N
+6453	339	18	2017-08-01 00:00:00-03	2017-09-30 00:00:00-03	13	5	Jardinero	18	Jardinero	2	2084/2017	2084/2017	\N	\N	\N	\N
+6399	305	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	2162/2017	2162/2017	\N	\N	\N	\N
+6404	336	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSA	2	2161/2017	2161/2017	\N	\N	\N	\N
+6409	296	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	2160/2017	2160/2017	\N	\N	\N	\N
+6414	380	4	2017-05-22 00:00:00-03	2017-06-19 00:00:00-03	10	5	Profesor	4	Profesor "Seminario Integrador"	2	2551/2017	2551/2017	\N	\N	\N	\N
+6415	422	4	2017-08-03 00:00:00-03	2017-12-20 00:00:00-03	10	5	Ayudante	4	Auxiliar JTP Tecnicatura TSP	2	2186/2017	2186/2017	\N	\N	\N	\N
+6420	301	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	2165/2017	2165/2017	\N	\N	\N	\N
+6425	304	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	2180/2017	2180/2017	\N	\N	\N	\N
+6430	291	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	2164/2017	2164/2017	\N	\N	\N	\N
+6436	282	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	2163/2017	2163/2017	\N	\N	\N	\N
+6441	384	12	2017-07-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia y Sec. Medico	2	2149/2017	2149/2017	\N	\N	\N	\N
+6442	282	4	2017-08-01 00:00:00-03	2017-10-31 00:00:00-03	10	5	Referente Funcional	4	Referente Funcional Grupo ESTE	2	2197/2017	2197/2017	\N	\N	\N	\N
+6445	372	4	2017-07-12 00:00:00-03	2017-08-30 00:00:00-03	10	5	Profesor	4	Profesor Seminario "Costos para la Gestón"	2	2461/2017	2461/2017	\N	\N	\N	\N
+6446	311	12	2017-09-09 00:00:00-03	2017-10-28 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Soldadura TIG	2	2147/2017	2147/2017	\N	\N	\N	\N
+6448	300	12	2017-09-04 00:00:00-03	2017-09-25 00:00:00-03	11	5	Profesor	12	Profesor Polo Informatico - Excel Básico	2	2148/2017	2148/2017	\N	\N	\N	\N
+6449	338	18	2017-08-01 00:00:00-03	2017-09-30 00:00:00-03	13	5	Jardinero	18	Jardinero	2	2082/2017	2082/2017	\N	\N	\N	\N
+6451	337	18	2017-08-01 00:00:00-03	2017-09-30 00:00:00-03	13	5	Jardinero	18	Jardinero	2	2083/2017	2083/2017	\N	\N	\N	\N
+6455	283	18	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	13	5	Soporte Técnico	18	Soporte Técnico SACC	2	2121/2017	2121/2017	\N	\N	\N	\N
+6460	305	4	2017-09-12 00:00:00-03	2017-11-10 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura INGRESO TSA -	2	2140/2017	2140/2017	\N	\N	\N	\N
+6463	346	4	2017-08-04 00:00:00-03	2017-12-31 00:00:00-03	10	5	Coordinador	4	Coordinador Articulación Esc. Secundaria	2	2124/2017	2124/2017	\N	\N	\N	\N
+6468	279	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSP -Programación II-	2	2204/2017	2204/2017	\N	\N	\N	\N
+6474	301	4	2017-09-12 00:00:00-03	2017-11-09 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	2222/2017	2222/2017	\N	\N	\N	\N
+6478	381	4	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Prof. Carrera Grado	2	2371/2017	2371/2017	\N	\N	\N	\N
+6481	423	4	2017-04-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Docente JTP a cargo -Redes- TSSI	2	2393/2017	2393/2017	\N	\N	\N	\N
+6485	423	4	2017-06-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Profesor	4	Docente JTP a cargo -Introducción a la Programación- Ingreso TSP	2	2394/2017	2394/2017	\N	\N	\N	\N
+6487	336	4	2017-08-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Auxiliar JTP	4	Profesor Tecnicatura TSP -JTP Auxiliar- Met. En sistemas I	2	2389/2017	2389/2017	\N	\N	\N	\N
+6492	322	12	2017-08-30 00:00:00-03	2017-12-13 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Analista Contable (mie 19 a 22)	2	2237/2017	2237/2017	\N	\N	\N	\N
+6497	424	12	2017-02-01 00:00:00-03	2017-12-31 00:00:00-03	11	5	Locutor	12	Locutor Mundo UTN	2	2370/2017	2370/2017	\N	\N	\N	\N
+6508	315	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Intr. Redes Infor.	2	2357/2017	2357/2017	\N	\N	\N	\N
+6509	315	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Instalación Cámaras de Seguridad.	2	2358/2017	2358/2017	\N	\N	\N	\N
+6510	315	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Reparación PC y Notebook	2	2359/2017	2359/2017	\N	\N	\N	\N
+6511	287	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	5	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	2361/2017	2361/2017	\N	\N	\N	\N
+6512	386	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	5	Profesor	12	Prof. Polo Automotriz	2	2363/2017	2363/2017	\N	\N	\N	\N
+6513	313	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Inst. Eléct., Aires	2	2362/2017	2362/2017	\N	\N	\N	\N
+6514	384	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia y Sec. Medico	2	2367/2017	2367/2017	\N	\N	\N	\N
+6515	387	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	5	Responsable taller	12	Responsable taller soldadura	2	2235/2017	2235/2017	\N	\N	\N	\N
+6516	286	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	5	Profesor	12	Profesora Polo Idiomas - Inglés Niv. 1 a 6	2	2360/2017	2360/2017	\N	\N	\N	\N
+6517	316	12	2017-09-06 00:00:00-03	2017-11-22 00:00:00-03	11	5	Profesor	12	Profesor Polo Automotriz - Reparación y Mantenimiento de Motor	2	2234/2017	2234/2017	\N	\N	\N	\N
+6520	316	12	2017-09-07 00:00:00-03	2017-11-23 00:00:00-03	11	5	Profesor	12	Profesor Polo Automotriz - Conoc. Electricidad de Autom (jue 19 a 22)	2	2233/2017	2233/2017	\N	\N	\N	\N
+6523	425	12	2017-09-05 00:00:00-03	2017-10-12 00:00:00-03	11	5	Profesor	12	Profesor in Company -curso Soldadura General- (mar y jue de 8 a 12)	2	2369/2017	2369/2017	\N	\N	\N	\N
+6524	426	12	2017-09-05 00:00:00-03	2017-10-12 00:00:00-03	11	5	Profesor	12	Profesor in Company -curso Soldadura General- (mar y jue de 8 a 12)	2	2495/2017	2495/2017	\N	\N	\N	\N
+6525	324	12	2017-09-09 00:00:00-03	2017-12-23 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Liquidación Sueldos (sab)	2	2368/2017	2368/2017	\N	\N	\N	\N
+6529	300	12	2017-08-07 00:00:00-03	2017-09-04 00:00:00-03	11	5	Profesor	12	Profesor Polo Informatico - Excel Básico y Avanzado para VW	2	2397/2017	2397/2017	\N	\N	\N	\N
+6531	314	12	2017-09-12 00:00:00-03	2017-11-30 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Automatiz. Industrial	2	2400/2017	2400/2017	\N	\N	\N	\N
+6534	321	12	2017-07-06 00:00:00-03	2017-09-21 00:00:00-03	11	5	Profesor	12	Profesor Polo Automotriz - Inst. Eléctricas del Automovil (jue 19 a 22)	2	2236/2017	2236/2017	\N	\N	\N	\N
+6537	342	12	2017-08-01 00:00:00-03	2017-08-31 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2365/2017	2365/2017	\N	\N	\N	\N
+6562	302	4	2017-09-15 00:00:00-03	2017-11-30 00:00:00-03	10	5	Profesor	4	Ayudante TP 1ra Simple - Introd. A la Universidad	2	2464/2017	2464/2017	\N	\N	\N	\N
+6565	372	4	2017-09-04 00:00:00-03	2017-10-11 00:00:00-03	10	5	Profesor	4	Profesor Seminario Información Financiera	2	2479/2017	2479/2017	\N	\N	\N	\N
+6566	385	4	2017-09-04 00:00:00-03	2017-10-16 00:00:00-03	10	5	Profesor	4	Profesor seminario "Formulación y Evaluación de Proyectos"	2	2617/2017	2617/2017	\N	\N	\N	\N
+6568	369	4	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Docente JTP Simple -Matemática Nivel I-	2	2638/2017	2638/2017	\N	\N	\N	\N
+6571	322	12	2017-09-19 00:00:00-03	2017-10-10 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Monot. E Ing. Brutos	2	2402/2017	2402/2017	\N	\N	\N	\N
+6573	324	12	2017-10-17 00:00:00-03	2017-11-07 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Monot. E Ing. Brutos	2	2403/2017	2403/2017	\N	\N	\N	\N
+6575	386	12	2017-09-04 00:00:00-03	2017-11-27 00:00:00-03	11	5	Profesor	12	Profesor curso Elec. Nivel I y Mant. Express In Company (Toyota)	2	2401/2017	2401/2017	\N	\N	\N	\N
+6578	\N	13	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	14	5	Director	13	Director CIDIV	2	2395/2017	2395/2017	\N	\N	\N	\N
+6581	375	12	2017-05-16 00:00:00-03	2017-08-10 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Tornería Avanzada (Mar y Jue de 15 a 18)	2	2459/2017	2459/2017	\N	\N	\N	\N
+6585	317	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	5	Profesor	12	Ayudante Form. Dist. Y Transm. De la energía elect. Edic 8	2	2405/2017	2405/2017	\N	\N	\N	\N
+6592	350	18	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	13	5	Controlador	18	Control Admin. Prod. Ppios.	2	2390/2017	2390/2017	\N	\N	\N	\N
+6607	396	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	5	Profesor	12	Ayudante de Docente Form. Dist. Y Transm. De la energía elect. Edic 8	2	2490/2017	2490/2017	\N	\N	\N	\N
+6611	399	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	5	Profesor	12	Coordinador Curso: Form. Dist. Y Transm. De la energía elect. Edic 8	2	 2484/2017	 2484/2017	\N	\N	\N	\N
+6612	399	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	5	Profesor	12	Ayudante Curso: Form. Dist. Y Transm. De la energía elect. Edic 8	2	2489/2017	2489/2017	\N	\N	\N	\N
+6610	1	12	2017-08-29 21:00:00-03	2018-01-29 21:00:00-03	9	5	Profesor	8	                                                                                     Profesor Form. Dist. Y Transm. De la energía elect. Edic 8\r\n              \r\n              \r\n              \r\n              \r\n              	2	2486/2017	2486/2017	1	1	\N	\N
+6613	318	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	5	Profesor	12	Coordinación Form. Dist. Y Transm. De la energía elect. Edic 8	2	2494/2017	2494/2017	\N	\N	\N	\N
+6614	396	12	2017-09-25 00:00:00-03	2017-11-07 00:00:00-03	11	5	Profesor	12	Coordinación Form. Dist. Y Transm. De la energía elect. Edic 8	2	2487/2017	2487/2017	\N	\N	\N	\N
+6667	384	12	2017-08-31 21:00:00-03	2017-09-29 21:00:00-03	11	5	Profesor	12	                                  Profesor Polo Administrativo - Auxiliar de Farmacia y Sec. Medico\r\n              \r\n              	2	2542/2017	2542/2017	0	0	\N	\N
+6665	432	4	2017-09-06 00:00:00-03	2017-10-18 00:00:00-03	10	5	Profesor	4	Profesor seminario -Metodología de la investigación	2	2550/2017	2550/2017	\N	\N	\N	\N
+6666	386	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Profesor	12	Prof. Polo Automotriz	2	2547/2017	2547/2017	\N	\N	\N	\N
+6668	384	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Profesor	12	Profesor Polo Administrativo - Auxiliar de Farmacia y Sec. Medico	2	2543/2017	2543/2017	\N	\N	\N	\N
+6669	315	12	2017-09-01 00:00:00-03	2017-08-31 00:00:00-03	11	5	Profesor	12	Profesor Polo Informático - Intr. Redes Infor.	2	2498/2017	2498/2017	\N	\N	\N	\N
+6711	301	4	2017-10-16 00:00:00-03	2017-11-11 00:00:00-03	10	5	Profesor	4	Ayudante TP 2da Simple -Matematica Nivel I	2	2552/2017	2552/2017	\N	\N	\N	\N
+6713	\N	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	\N	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2602/2017	2602/2017	\N	\N	\N	\N
+6714	342	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2605/2017	2605/2017	\N	\N	\N	\N
+6715	342	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2603/2017	2603/2017	\N	\N	\N	\N
+6716	\N	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	\N	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2606/2017	2606/2017	\N	\N	\N	\N
+6717	374	12	2017-10-24 00:00:00-03	2017-12-05 00:00:00-03	11	5	Profesor	12	Profesor Polo Informatico - Robotica Básica	2	2555/2017	2555/2017	\N	\N	\N	\N
+6720	434	12	2017-10-10 00:00:00-03	2017-11-28 00:00:00-03	11	5	Profesor	12	Profesor curso Torno CNC -2 ejes- (mar de 19 a 22)	2	2616/2017	2616/2017	\N	\N	\N	\N
+6722	435	\N	2017-09-06 00:00:00-03	2017-10-18 00:00:00-03	10	5	Profesor	\N	Profesor materia "Marketing Estratégico"	2	2647/2017	2647/2017	\N	\N	\N	\N
+6723	342	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2608/2017	2608/2017	\N	\N	\N	\N
+6724	342	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2604/2017	2604/2017	\N	\N	\N	\N
+6726	437	4	2017-08-07 00:00:00-03	2017-12-15 00:00:00-03	10	5	Profesor	4	Profesor Tecnicatura TSA	2	2549/2017	2549/2017	\N	\N	\N	\N
+6732	439	12	2017-01-01 00:00:00-03	2017-07-31 00:00:00-03	11	5	Diseño y Publicidad	12	Diseño y publicidad en: Pacheco Dig, Rincon Dig y Don Torcuato.com.ar	2	2702/2017	2702/2017	\N	\N	\N	\N
+6739	432	4	2017-04-26 00:00:00-03	2017-08-09 00:00:00-03	10	5	Profesor	4	Profesor materia "Metodología de la Investigación"	2	2615/2017	2615/2017	\N	\N	\N	\N
+6740	434	12	2017-08-01 00:00:00-03	2017-09-19 00:00:00-03	11	5	Profesor	12	Profesor curso Torno CNC -2 ejes- (mar de 19 a 22)	2	2609/2017	2609/2017	\N	\N	\N	\N
+6744	440	12	2017-10-23 00:00:00-03	2017-12-18 00:00:00-03	11	5	Profesor	12	Profesor Polo Oficios - Progr. Lógicos Control. Nivel 2 (lun de 19 a 22)	2	2646/2017	2646/2017	\N	\N	\N	\N
+6758	340	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón	2	2644/2017	2644/2017	\N	\N	\N	\N
+6759	342	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2641/2017	2641/2017	\N	\N	\N	\N
+6760	\N	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	\N	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2639/2017	2639/2017	\N	\N	\N	\N
+6761	342	12	2017-09-01 00:00:00-03	2017-09-30 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2642/2017	2642/2017	\N	\N	\N	\N
+6762	\N	12	2017-10-01 00:00:00-03	2017-10-31 00:00:00-03	11	5	\N	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2640/2017	2640/2017	\N	\N	\N	\N
+6763	340	12	2017-10-01 00:00:00-03	2017-10-31 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón	2	2645/2017	2645/2017	\N	\N	\N	\N
+6764	342	12	2017-10-01 00:00:00-03	2017-10-31 00:00:00-03	11	5	Jefe Laboratorio	12	Asist. Técnico del laboratorio ensayos mecánicos	2	2643/2017	2643/2017	\N	\N	\N	\N
+6767	427	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	5	Supervisor Técnico	12	Supervisor Técnico - Inspección de Buques	2	2713/2017	2713/2017	\N	\N	\N	\N
+6768	340	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2703/2017	2703/2017	\N	\N	\N	\N
+6769	340	12	2017-10-01 00:00:00-03	2018-03-31 00:00:00-03	11	5	Inspector	12	Director Técnico de laboratorio de Hormigón -Durmientes de china-	2	2704/2017	2704/2017	\N	\N	\N	\N
+6829	406	4	2017-12-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor LEM -Finales Diciembre-	2	2797/2017	2797/2017	\N	\N	\N	2018-02-20 23:34:10.121193
+6826	1	1	2017-08-29 21:00:00-03	2018-01-29 21:00:00-03	9	5	Profesor	8	                                                   Prof. de Defensa de Proyecto Final/Jorn. Outdoor -Dip. Post Venta VW-\r\n              \r\n              \r\n              	2	2803/2017	2803/2017	0	\N	\N	2018-01-30 19:27:51.030885
+6821	1	1	2017-08-29 21:00:00-03	2018-01-29 21:00:00-03	9	5	Profesor	8	                 Profesor "Comportamiento Organizacional"\r\n              	2	2800/2017	2800/2017	0	\N	\N	2018-01-30 19:30:45.29857
+6811	352	4	2017-05-22 00:00:00-03	2017-07-17 00:00:00-03	10	5	Ayudante	4	Ayudante Tecnicatura TSP - Nivelación	2	2649/2017	2649/2017	\N	\N	\N	\N
+6815	341	4	2017-07-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Gestión	4	Gestión de la calidad	2	2801/2017	2801/2017	\N	\N	\N	\N
+6820	345	1	2017-10-15 21:00:00-03	2017-11-26 21:00:00-03	10	5	Profesor	4	                 Profesor "Gestión de Personas"\r\n              	2	2724/2017	2724/2017	1	100	\N	2018-01-30 20:24:53.694131
+6822	356	4	2017-09-30 21:00:00-03	2017-12-30 21:00:00-03	10	5	Asistente	4	                 Asist. Administrativo\r\n              	2	2788/2017	2788/2017	0	0	\N	2018-01-30 20:33:42.271867
+6825	372	4	2017-11-01 00:00:00-03	2017-11-30 00:00:00-03	10	5	Profesor	4	Profesor de Defensa de Proyecto Final -Diplomatura Post Venta VW-	2	2805/2017	2805/2017	\N	\N	\N	\N
+6828	380	4	2017-11-01 00:00:00-03	2017-11-30 00:00:00-03	10	5	Profesor	4	Profesor de Defensa de Proyecto Final -Diplomatura Post Venta VW-	2	2804/2017	2804/2017	\N	\N	\N	\N
+6830	331	4	2017-12-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor LEM -Finales Diciembre-	2	2798/2017	2798/2017	\N	\N	\N	\N
+6831	411	4	2017-12-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Profesor	4	Profesor LEM -Finales Diciembre-	2	2796/2017	2796/2017	\N	\N	\N	\N
+6835	284	4	2017-10-01 00:00:00-03	2017-12-31 00:00:00-03	10	5	Soporte Técnico	4	Soporte Técnico Recursos Informáticos -TSA-	2	2789/2017	2789/2017	\N	\N	\N	\N
+6840	443	17	2017-11-06 00:00:00-03	2017-04-30 00:00:00-03	11	5	Inspector	17	Inspector durmientes -Convenio ADIF-	2	2790/2017	2790/2017	\N	\N	\N	\N
+6846	444	17	2017-11-06 00:00:00-03	2017-04-30 00:00:00-03	11	5	Inspector	17	Inspector durmientes -Convenio ADIF-	2	2791/2017	2791/2017	\N	\N	\N	\N
+6852	427	17	2017-11-06 00:00:00-03	2017-04-30 00:00:00-03	11	5	Inspector	17	Inspector durmientes -Convenio ADIF-	2	2792/2017	2792/2017	\N	\N	\N	\N
+6870	447	17	2017-11-06 00:00:00-03	2017-04-30 00:00:00-03	11	5	Inspector	17	Inspector durmientes -Convenio ADIF-	2	2795/2017	2795/2017	\N	\N	\N	2018-02-20 23:34:39.867977
+6864	446	17	2017-11-06 00:00:00-03	2017-04-30 00:00:00-03	11	5	Inspector	17	Inspector durmientes -Convenio ADIF-	2	2794/2017	2794/2017	\N	\N	\N	2018-02-20 23:34:45.367354
+6858	445	17	2017-11-06 00:00:00-03	2017-04-30 00:00:00-03	11	5	Responsable de calidad	17	Responsable de calidad laboratorio de hormigon -durmientes-	2	2793/2017	2793/2017	\N	\N	\N	\N
+6882	355	4	2018-01-01 00:00:00-03	2018-03-31 00:00:00-03	10	5	Asistente	4	Asist. Administrativo	2	2802/2017	2802/2017	\N	\N	\N	\N
+4669	335	12	2017-01-01 00:00:00-03	2017-03-31 00:00:00-03	11	5	Locutor	12	Locutor Mundo UTN	2	114/2017	114/2017	\N	\N	\N	\N
+4670	335	12	2017-04-01 00:00:00-03	2017-06-30 00:00:00-03	11	5	Locutor	12	Locutor Mundo UTN	2	1064/2017	1064/2017	\N	\N	\N	\N
+4674	346	4	2017-02-01 00:00:00-03	2017-07-31 00:00:00-03	10	5	Director	4	Director LEM	2	295/2017	295/2017	\N	\N	\N	\N
 \.
 
 
@@ -3510,7 +3512,7 @@ COPY contratos (id, personas_id, usuarios_id, fecha_desde, fecha_hasta, area_id,
 -- Name: contratos_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('contratos_id_seq', 9862, true);
+SELECT pg_catalog.setval('contratos_id_seq', 9864, true);
 
 
 --
@@ -3518,6 +3520,9 @@ SELECT pg_catalog.setval('contratos_id_seq', 9862, true);
 --
 
 COPY cuotas (id, mes, horas_mensuales, horas_semanales, valor_hora, valor_cuota, estado, valor_letras, contrato_id, fecha) FROM stdin;
+78	0	20	5	500	10000	\N	diez mil 	9864	09/2017
+79	1	20	5	500	10000	\N	diez mil 	9864	10/2017
+80	2	20	5	500	10000	\N	diez mil 	9864	11/2017
 4	1	4	1	1	4	\N	cuatro	6610	09/2017
 5	2	4	1	1	4	\N	cuatro	6610	10/2017
 6	3	4	1	1	4	\N	cuatro	6610	11/2017
@@ -3556,6 +3561,15 @@ COPY cuotas (id, mes, horas_mensuales, horas_semanales, valor_hora, valor_cuota,
 69	0	140	35	73.4399999999999977	10281.6000000000004	\N	diez mil doscientos ochenta y un	5406	04/2017
 70	1	140	35	73.4399999999999977	10281.6000000000004	\N	diez mil doscientos ochenta y un	5406	05/2017
 71	2	140	35	73.4399999999999977	10281.6000000000004	\N	diez mil doscientos ochenta y un	5406	06/2017
+72	0	0	0	0	0	\N	cero	9863	09/2017
+73	1	0	0	0	0	\N	cero	9863	10/2017
+74	2	0	0	0	0	\N	cero	9863	11/2017
+75	3	0	0	0	0	\N	cero	9863	12/2017
+76	4	0	0	0	0	\N	cero	9863	01/2018
+77	5	0	0	0	0	\N	cero	9863	02/2018
+81	3	20	5	500	10000	\N	diez mil 	9864	12/2017
+82	4	20	5	500	10000	\N	diez mil 	9864	01/2018
+83	5	20	5	500	10000	\N	diez mil 	9864	02/2018
 \.
 
 
@@ -3563,7 +3577,7 @@ COPY cuotas (id, mes, horas_mensuales, horas_semanales, valor_hora, valor_cuota,
 -- Name: cuotas_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('cuotas_id_seq', 71, true);
+SELECT pg_catalog.setval('cuotas_id_seq', 83, true);
 
 
 --
@@ -3603,6 +3617,9 @@ SELECT pg_catalog.setval('logs_id_seq', 1, false);
 COPY perfiles (id, descripcion) FROM stdin;
 2	usuario
 1	admin
+4	autoridad
+3	solicitante
+5	decano
 \.
 
 
@@ -6080,21 +6097,23 @@ SELECT pg_catalog.setval('tipo_contrato_id_seq', 2, true);
 --
 
 COPY usuarios (id, usuario, password, estado, fecha_alta, fecha_baja, perfil_id, nombre, apellido, email, area_id) FROM stdin;
+17	jrodriguez	e681067edaf560e96fdf4974b1dcf4a41ed0300602695dcd337656b2e418154c	1	2017-12-11 21:38:11.287553	\N	4	Julio	Rodriguez	\N	\N
+18	jbosetti	e681067edaf560e96fdf4974b1dcf4a41ed0300602695dcd337656b2e418154c	1	2017-12-11 21:38:11.287553	\N	4	Juan	Carlos Bossetti	\N	\N
+13	acanzian	e681067edaf560e96fdf4974b1dcf4a41ed0300602695dcd337656b2e418154c	1	2017-12-11 21:38:11.287553	\N	4	Adrián	Canzian	\N	\N
 8	prueba	52bb988c721aabbed61f817cbf83c1df7906a7dc213da63e0f72b4b9daa3fc71	1	\N	2017-07-20 23:38:08.804257	1	Prueba	Prueba	prueba@prueba.com	3
 3	mcorbalan	e42aa9f8fc68623374785d2c131a77d7236bcb1097f60430f8205eaf4c639615	1	2017-06-27 00:00:00	\N	1	Mariano	Corbalan	mcorbalan@frgp.utn.edu.ar	1
 1	admin	471c134ef75cea04d4ba5701dd01b10224613052121b1a95691f7f61fa967afe	1	2017-06-27 00:00:00	\N	1	Admin	Istrador	atarrio@frgp.utn.edu.ar	1
-5	jlgarcia	471c134ef75cea04d4ba5701dd01b10224613052121b1a95691f7f61fa967afe	1	2017-06-27 00:00:00	\N	1	José Luis	García	jlgarcia@red.frgp.utn.edu.ar	3
-2	atarrio	52bb988c721aabbed61f817cbf83c1df7906a7dc213da63e0f72b4b9daa3fc71	1	2017-06-27 00:00:00	\N	1	Andrés	Tarrío	atarrio@frgp.utn.edu.ar	1
-12	\N	\N	1	2017-12-11 21:38:11.287553	\N	\N	Oscar	Ozuna	\N	\N
-13	\N	\N	1	2017-12-11 21:38:11.287553	\N	\N	Adrián	Canzian	\N	\N
-14	\N	\N	1	2017-12-11 21:38:11.287553	\N	\N	Enzo	Fattore	\N	\N
-15	\N	\N	1	2017-12-11 21:38:11.287553	\N	\N	Natalia	Sebok	\N	\N
-16	\N	\N	1	2017-12-11 21:38:11.287553	\N	\N	Ricardo	Crivicich	\N	\N
-17	\N	\N	1	2017-12-11 21:38:11.287553	\N	\N	Julio	Rodriguez	\N	\N
-18	\N	\N	1	2017-12-11 21:38:11.287553	\N	\N	Juan	Carlos Bossetti	\N	\N
-19	\N	\N	1	2017-12-11 21:38:11.287553	\N	\N	Jose	Luis Garcia	\N	\N
-4	rcrivi	e681067edaf560e96fdf4974b1dcf4a41ed0300602695dcd337656b2e418154c	1	2017-06-27 00:00:00	\N	2	Ricardo	Crivicich	rcrivi@frgp.utn.edu.ar	10
-20	ccarrera	e681067edaf560e96fdf4974b1dcf4a41ed0300602695dcd337656b2e418154c	1	2018-01-30 20:45:42.442671	\N	1	Cesar	Carrera	ccarrera@red.frgp.utn.edu.ar	1
+15	nsebok	e681067edaf560e96fdf4974b1dcf4a41ed0300602695dcd337656b2e418154c	1	2017-12-11 21:38:11.287553	\N	4	Natalia	Sebok	\N	\N
+14	efattore	e681067edaf560e96fdf4974b1dcf4a41ed0300602695dcd337656b2e418154c	1	2017-12-11 21:38:11.287553	\N	4	Enzo	Fattore	\N	\N
+2	atarrio	df64c8572ac99c075b79459a5f1447b91c340639119a70c867260c8993440f4a	1	2017-06-27 00:00:00	\N	2	Andrés	Tarrío	atarrio@frgp.utn.edu.ar	9
+12	oozuna	e681067edaf560e96fdf4974b1dcf4a41ed0300602695dcd337656b2e418154c	1	2017-12-11 21:38:11.287553	\N	4	Oscar	Ozuna	\N	\N
+4	rcrivi	e681067edaf560e96fdf4974b1dcf4a41ed0300602695dcd337656b2e418154c	1	2017-06-27 00:00:00	\N	4	Ricardo	Crivicich	rcrivi@frgp.utn.edu.ar	10
+16	rcrivic	e681067edaf560e96fdf4974b1dcf4a41ed0300602695dcd337656b2e418154c	1	2017-12-11 21:38:11.287553	\N	4	Ricardo	Crivicich	\N	9
+5	jlgarcia	df64c8572ac99c075b79459a5f1447b91c340639119a70c867260c8993440f4a	1	2017-06-27 00:00:00	\N	5	José Luis	García	atarrio@red.frgp.utn.edu.ar	1
+21	gpittaluga	df64c8572ac99c075b79459a5f1447b91c340639119a70c867260c8993440f4a	1	2018-02-08 23:33:49.575814	\N	3	Gisele	Pittaluga	gpittaluga@red.frgp.utn.edu.ar	1
+20	ccarrera	e681067edaf560e96fdf4974b1dcf4a41ed0300602695dcd337656b2e418154c	1	2018-01-30 20:45:42.442671	\N	3	Cesar	Carrera	ccarrera@red.frgp.utn.edu.ar	1
+22	gricci	df64c8572ac99c075b79459a5f1447b91c340639119a70c867260c8993440f4a	1	2018-02-08 23:38:02.114948	\N	3	Guillermo	Ricci	gricci@red.frgp.utn.edu.ar	1
+19	jgarcia	e681067edaf560e96fdf4974b1dcf4a41ed0300602695dcd337656b2e418154c	1	2017-12-11 21:38:11.287553	\N	5	Jose	Luis Garcia	\N	\N
 \.
 
 
@@ -6102,7 +6121,7 @@ COPY usuarios (id, usuario, password, estado, fecha_alta, fecha_baja, perfil_id,
 -- Name: usuarios_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('usuarios_id_seq', 20, true);
+SELECT pg_catalog.setval('usuarios_id_seq', 22, true);
 
 
 --
