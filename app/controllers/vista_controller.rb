@@ -62,7 +62,7 @@ class VistaController < ApplicationController
        mails.push(u.email)
       rescue
         puts "Error"
-      end_id
+      end
     end
     rescue
      puts "Error"
