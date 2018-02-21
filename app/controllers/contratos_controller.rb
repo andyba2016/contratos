@@ -1,8 +1,13 @@
+require 'httparty'
+
 class ContratosController < ApplicationController
   before_action :require_login
   include CuotasHelper
 
   def index
+
+
+
     @usuario = User.new(JSON.parse(session[:user].to_json))
     @object = ContratoImplementacion.new(@usuario)
     params[:perfil] = @usuario.perfil_id
