@@ -23,7 +23,7 @@ class VistaController < ApplicationController
     if request[:accion]=="Presentar" or request[:accion]=="Aprobar"
       @contrato.estado = @contrato.estado + 1
     elsif request[:accion]=="Rechazar"
-      @contrato.estado = @contrato.estado + 1
+      @contrato.estado = @contrato.estado - 1
     end
     puts @contrato
     @contrato.save()
@@ -38,8 +38,10 @@ class VistaController < ApplicationController
       subject = subject + " fue rechazado "
     end
 
-
-    if contrato.estado == 2
+    if contrato.estado == 1 
+      @usuarios_adm = User.where("id = "+contrato.usuarios_id.to_s)
+      subject = subject + " requiere de su revision "
+    elsif contrato.estado == 2
       @usuarios_adm = User.where("estado = 1 and perfil_id = 3")
       subject = subject + " requiere de su revision "
     elsif contrato.estado == 3
@@ -70,22 +72,14 @@ class VistaController < ApplicationController
 
     to = mails.join(", ").to_s
 
-begin
+ActionMailer::Base.delivery_method = :smtp 
+ActionMailer::Base.smtp_settings = {
+  :domain => 'frgp.utn.edu.ar',
+  :address => ''
+}
+ActionMailer::Base.mail(from: "noreply@frgp.utn.edu.ar", to: to, subject: subject, body: email).deliver_now
 
-  puts to
-  puts subject
-  puts email
-
-    @result = HTTParty.post('http://127.0.0.1:8081/post',
-                            :body => { :to => to,
-                                       :subject => subject,
-                                       :email => email,
-                            }.to_json,
-                            :headers => { 'Content-Type' => 'application/json' } )
-
-rescue
-  puts "Error"
-end
+puts to
 
   end
 

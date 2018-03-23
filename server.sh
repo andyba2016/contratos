@@ -1,1 +1,1 @@
-bin/rails server --binding 0.0.0.0 --port 80
+proxychains4  bin/rails server --binding 0.0.0.0 --port 80 &
