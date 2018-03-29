@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('.eliminar').click(function(e) {
-            if(!confirm("Desea eliminar")) {
-                e.preventDefault();
+            if(confirm("Desea eliminar")) {
+		eval(this.getAttribute("href"));
             }
         }
     );

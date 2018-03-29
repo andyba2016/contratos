@@ -24,25 +24,21 @@
             </div>
           </div>
           <form class="form-inline" method="post" action="/contratos">
-            <div class="form-group">
-              <div class="controls">
-                <div class="col-md-11 col-sm-11 xdisplay_inputx form-group has-feedback">
-                  <input type="text" id="datetimepicker1" class="form-control has-feedback-left datetimepicker" name="fecha_desde" placeholder="First Date" aria-describedby="inputSuccess2Status4">
-                  <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
-                  <span id="inputSuccess2Status4" class="sr-only">(success)</span>
+            <div class="form-group" style="width:100%">
+		<div class="input-group">
+			<!-- removed class has-feedback-left -->
+                	<input type="text" size="10"  id="datetimepicker1" class="form-control datetimepicker" name="fecha_desde" placeholder="First Date" aria-describedby="inputSuccess2Status4">
+    			<span class="glyphicon glyphicon-calendar form-control-feedback"></span>
+		</div>
+                  <!--span id="inputSuccess2Status4" class="sr-only">(success)</span-->
+		<div class="input-group">
+                        <!-- removed class has-feedback-left -->
+                	<input type="text" size="10" id="datetimepicker2" class="form-control datetimepicker" name="fecha_hasta" data-datetimepicker data-click-target id="single_cal4" placeholder="First Date" aria-describedby="inputSuccess2Status4">
+                  	<span class="glyphicon glyphicon-calendar form-control-feedback"></span>
+			<!--span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span-->
                 </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="controls">
-                <div class="col-md-11 col-sm-11 xdisplay_inputx form-group has-feedback">
-                  <input type="text" id="datetimepicker2" class="form-control has-feedback-left datetimepicker" name="fecha_hasta" data-datetimepicker data-click-target id="single_cal4" placeholder="First Date" aria-describedby="inputSuccess2Status4">
-                  <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
-                  <span id="inputSuccess2Status4" class="sr-only">(success)</span>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
+		  <!--span id="inputSuccess2Status4" class="sr-only">(success)</span-->
+
               <label for="area">Area:</label>
               <select name="area" class="form-control">
                 <option value="">Todas</option>
@@ -50,20 +46,17 @@
                     <option value="<%= attr_name.id %>"><%= attr_name.descripcion.camelize %></option>
                 <% end %>
               </select>
-            </div>
-            <div class="form-group">
+
               <label for="tipo">Tipo:</label>
               <select name="tipo" class="form-control">
                 <% @lista_tipo.each do |attr_name| %>
                     <option value="<%= attr_name %>"><%= attr_name[0] %></option>
                 <% end %>
               </select>
-            </div>
-            <div class="form-group">
-              <label for="res">N. Resol.:</label>
-              <label></label>
-              <input type="text" width="12" name="resol" id="resol" maxlength="12" class="form-control">
-            </div>
+
+              <label for="resol">N. Resol.:</label>
+              <input class="form-control"  type="text" name="resol" id="resol" size="12" maxlength="12">
+
             <div class="form-group pull-right">
               <input type="hidden" name="busqueda" id="busqueda" value="1"/>
               <button type="submit" class="btn btn-default">Buscar</button>
@@ -72,11 +65,10 @@
           <table class="table table-bordered dataTable  table-stripped" id="tabla">
             <thead>
             <tr>
-              <th>ID</th>
               <th>Contratado</th>
               <th>Autoridad</th>
               <th>Area</th>
-              <th>Cargo</th>
+              <th style="width:10PX;">Cargo</th>
               <th>N. Resol.</th>
               <th>Fecha desde</th>
               <th>Fecha hasta</th>
@@ -88,10 +80,6 @@
 
             <% @result.reorder("id ASC").each do |r| %>
                 <tr>
-                  <td>
-                    <%= r.id
-                    %>
-                  </td>
                   <td>
                     <%=
                       if (r.personas)
@@ -158,16 +146,22 @@
                     end
                   %><span class="label <%=color%>"><%= estado %></span></td>
                   <td>
-                    <a href="/vista/<%= r.id %>"><span class="fa fa-eye" style='padding-left:15Px;cursor:pointer;' alt="Ver"/></a>
-                    <a href="/cuotas/<%= r.id %>"><span class="fa fa-money" style='cursor:pointer;padding-right:5Px;padding-left:5Px;cursor:pointer;' alt="Pagos"/></a>
-                    <% if r.estado <=2 and (r.usuarios_id == @usuario.id or @usuario.perfil_id=3)%>
-                    <a href="/<%= controller_name %>/update/<%= r.id %>"><span class="fa fa-pencil" style='padding-left:5Px;cursor:pointer;' alt="Editar"/></a>
-                    <% end %>
-                    <% if r.estado == 1 and r.usuarios_id == @usuario.id%>
-                    <a href="/<%= controller_name %>/delete/<%= r.id %>" class="eliminar"><span class="fa fa-close" style='padding-left:5Px;cursor:pointer;' style="cursor:pointer;" alt="Eliminar"/></a>
-                    <% end %>
 
-                    <a><span style='padding-left:5Px;cursor:pointer;' class="fa fa-file" alt="Ver"/></a>
+<div class="btn-group">
+<button type="button" class="btn btn-success btn-sm" onclick="window.location.href='/vista/<%= r.id %>'"><span class="glyphicon glyphicon-eye-open"></span></button>
+<button type="button" class="btn btn-warning  btn-sm"  onclick="window.location.href='/cuotas/<%= r.id %>'"><span class="glyphicon glyphicon-usd"></span></button>
+
+<% if r.estado <=2 and (r.usuarios_id == @usuario.id or @usuario.perfil_id=3)%>
+<button type="button" class="btn btn-info btn-sm"  onclick="window.location.href='/<%= controller_name %>/update/<%= r.id %>'"><span class="glyphicon glyphicon-pencil"></span></button>
+<% end %>
+
+<% if r.estado == 1 and r.usuarios_id == @usuario.id%>
+<button type="button" class="btn btn-danger btn-sm eliminar"  href="window.location.href='/<%= controller_name %>/delete/<%= r.id %>'"><span class="glyphicon glyphicon-trash"></span></button>
+<% end %>
+
+
+<button type="button" class="btn btn-default btn-sm"  onclick="window.location.href='/files/<%= r.id %>'"><span class="glyphicon glyphicon-file"></span></button>
+</div>
 
 
                   </td>
